@@ -26,14 +26,9 @@
             <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
                 <a href="index.html" class="hover:text-[#0A2540]">Home</a>
                 <a href="about.html" class="hover:text-[#0A2540]">Tentang Kami</a>
-                <a href="index.html#services" class="hover:text-[#0A2540]">Layanan</a>
+                <a href="services.html" class="hover:text-[#0A2540]">Layanan</a>
                 <a href="contact.html" class="text-[#0A2540] font-semibold">Kontak</a>
             </div>
-
-            <a href="https://wa.me/6281214144214" target="_blank" class="hidden md:flex items-center gap-x-2 px-5 py-2.5 text-sm font-semibold border border-gray-300 hover:bg-gray-50 rounded-2xl">
-                <i class="fa-brands fa-whatsapp text-green-500"></i>
-                <span>WhatsApp</span>
-            </a>
         </div>
     </nav>
 
@@ -52,37 +47,48 @@
         <div>
             <h2 class="text-3xl font-semibold tracking-tight mb-6">Kirim Pesan</h2>
             
-            <form id="contact-form" class="space-y-5">
+            <!-- Web3Forms Contact Form -->
+            <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="space-y-5">
+                
+                <!-- GANTI DENGAN ACCESS KEY KAMU DARI https://web3forms.com/ -->
+                <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY_HERE">
+                <input type="hidden" name="subject" value="Pesan Baru dari Website PERADA GROUP">
+                <input type="hidden" name="from_name" value="Website PERADA GROUP">
+
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
                     <div>
                         <label class="block text-sm font-medium mb-1.5">Nama Lengkap</label>
-                        <input type="text" class="w-full border border-gray-300 focus:border-[#0A2540] rounded-2xl px-5 py-3 text-sm" placeholder="Nama Anda" required>
+                        <input type="text" name="name" class="w-full border border-gray-300 focus:border-[#0A2540] rounded-2xl px-5 py-3 text-sm" placeholder="Nama Anda" required>
                     </div>
                     <div>
                         <label class="block text-sm font-medium mb-1.5">Perusahaan</label>
-                        <input type="text" class="w-full border border-gray-300 focus:border-[#0A2540] rounded-2xl px-5 py-3 text-sm" placeholder="Nama Perusahaan">
+                        <input type="text" name="company" class="w-full border border-gray-300 focus:border-[#0A2540] rounded-2xl px-5 py-3 text-sm" placeholder="Nama Perusahaan">
                     </div>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
                     <div>
                         <label class="block text-sm font-medium mb-1.5">Email</label>
-                        <input type="email" class="w-full border border-gray-300 focus:border-[#0A2540] rounded-2xl px-5 py-3 text-sm" placeholder="email@perusahaan.com" required>
+                        <input type="email" name="email" class="w-full border border-gray-300 focus:border-[#0A2540] rounded-2xl px-5 py-3 text-sm" placeholder="email@perusahaan.com" required>
                     </div>
                     <div>
                         <label class="block text-sm font-medium mb-1.5">No. Telepon / WA</label>
-                        <input type="tel" class="w-full border border-gray-300 focus:border-[#0A2540] rounded-2xl px-5 py-3 text-sm" placeholder="0812-XXXX-XXXX" required>
+                        <input type="tel" name="phone" class="w-full border border-gray-300 focus:border-[#0A2540] rounded-2xl px-5 py-3 text-sm" placeholder="0812-XXXX-XXXX" required>
                     </div>
                 </div>
 
                 <div>
-                    <label class="block text-sm font-medium mb-1.5">Kebutuhan</label>
-                    <textarea rows="5" class="w-full border border-gray-300 focus:border-[#0A2540] rounded-3xl px-5 py-4 text-sm resize-y" placeholder="Jelaskan kebutuhan Anda..." required></textarea>
+                    <label class="block text-sm font-medium mb-1.5">Kebutuhan / Pesan</label>
+                    <textarea name="message" rows="5" class="w-full border border-gray-300 focus:border-[#0A2540] rounded-3xl px-5 py-4 text-sm resize-y" placeholder="Jelaskan kebutuhan Anda..." required></textarea>
                 </div>
 
-                <button type="submit" class="w-full bg-[#0A2540] hover:bg-[#1E3A5F] text-white font-semibold py-4 rounded-3xl transition-all">
+                <button type="submit" 
+                        class="w-full bg-[#0A2540] hover:bg-[#1E3A5F] text-white font-semibold py-4 rounded-3xl transition-all">
                     Kirim Pesan
                 </button>
+
+                <!-- Hasil Pengiriman -->
+                <div id="form-result" class="hidden mt-4 text-center text-sm font-medium"></div>
             </form>
         </div>
 
@@ -92,8 +98,8 @@
             
             <div class="space-y-6 text-gray-700">
                 <div>
-                    <div class="font-semibold text-sm tracking-wider text-gray-500 mb-1">ALAMAT</div>
-                    <div>Plaza Summarecon Bekasi Lt. 7<br>Jl. Boulevard Ahmad Yani, Bekasi</div>
+                    <div class="font-semibold text-sm tracking-wider text-gray-500 mb-1">ALAMAT KANTOR</div>
+                    <div>Plaza Summarecon Bekasi Lt. 7<br>Jl. Boulevard Ahmad Yani, Sentra Summarecon - Bekasi</div>
                 </div>
 
                 <div>
@@ -103,7 +109,8 @@
 
                 <div>
                     <div class="font-semibold text-sm tracking-wider text-gray-500 mb-1">WHATSAPP</div>
-                    <a href="https://wa.me/6281214144214" target="_blank" class="flex items-center gap-x-2 text-lg font-medium hover:text-[#0A2540]">
+                    <a href="https://wa.me/6281214144214" target="_blank" 
+                       class="flex items-center gap-x-2 text-lg font-medium hover:text-[#0A2540]">
                         <i class="fa-brands fa-whatsapp text-[#25D366]"></i>
                         <span>0812-1414-4214</span>
                     </a>
