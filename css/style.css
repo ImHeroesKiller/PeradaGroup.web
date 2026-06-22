@@ -92,15 +92,23 @@ body {
 }
 
 /* Brand & entity logos */
-.brand-logo {
-    height: 2.25rem;
-    width: auto;
-    object-fit: contain;
+.brand-logo-link {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
     transition: opacity 0.25s ease;
 }
 
-a:hover .brand-logo {
+.brand-logo-link:hover {
     opacity: 0.85;
+}
+
+.brand-logo {
+    height: 2rem;
+    width: auto;
+    max-width: 9rem;
+    object-fit: contain;
+    display: block;
 }
 
 .entity-logo {
@@ -126,15 +134,26 @@ a:hover .brand-logo {
     transform: scale(1.03);
 }
 
+.footer-logo-link {
+    display: inline-block;
+    transition: opacity 0.25s ease;
+}
+
+.footer-logo-link:hover {
+    opacity: 1;
+}
+
 .footer-logo {
-    height: 2rem;
+    height: 1.75rem;
     width: auto;
+    max-width: 9rem;
     object-fit: contain;
+    display: block;
     opacity: 0.9;
     transition: opacity 0.25s ease;
 }
 
-.footer-logo:hover {
+.footer-logo-link:hover .footer-logo {
     opacity: 1;
 }
 
@@ -145,6 +164,24 @@ a:hover .brand-logo {
     }
 
     .brand-logo {
-        height: 2rem;
+        height: 1.75rem;
+        max-width: 7.5rem;
+    }
+
+    .footer-logo {
+        height: 1.5rem;
+        max-width: 7.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .brand-logo {
+        height: 2.25rem;
+        max-width: 11.25rem;
+    }
+
+    .footer-logo {
+        height: 2.25rem;
+        max-width: 11.25rem;
     }
 }
