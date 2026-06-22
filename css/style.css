@@ -104,9 +104,9 @@ body {
 }
 
 img.brand-logo {
-    height: 2.5rem;
+    height: 4rem;
     width: auto;
-    max-width: 10rem;
+    max-width: 18rem;
     aspect-ratio: 3 / 2;
     object-fit: contain;
     display: block;
@@ -146,9 +146,9 @@ img.brand-logo {
 }
 
 img.footer-logo {
-    height: 3rem;
+    height: 5rem;
     width: auto;
-    max-width: 14rem;
+    max-width: 22rem;
     aspect-ratio: 3 / 2;
     object-fit: contain;
     display: block;
@@ -168,24 +168,24 @@ img.footer-logo {
     }
 
     img.brand-logo {
-        height: 2rem;
-        max-width: 8rem;
-    }
-
-    img.footer-logo {
-        height: 2.5rem;
-        max-width: 12rem;
-    }
-}
-
-@media (min-width: 768px) {
-    img.brand-logo {
-        height: 3rem;
-        max-width: 12rem;
+        height: 3.5rem;
+        max-width: 16rem;
     }
 
     img.footer-logo {
         height: 4rem;
         max-width: 18rem;
+    }
+}
+
+@media (min-width: 768px) {
+    img.brand-logo {
+        height: 5rem;
+        max-width: 22rem;
+    }
+
+    img.footer-logo {
+        height: 6.5rem;
+        max-width: 28rem;
     }
 }
