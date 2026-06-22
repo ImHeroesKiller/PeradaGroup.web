@@ -91,6 +91,30 @@ body {
     }
 }
 
+/* Navbar */
+.navbar-inner {
+    padding: 0.625rem 1.25rem;
+}
+
+@media (min-width: 768px) {
+    .navbar-inner {
+        padding: 0.75rem 1.5rem;
+    }
+}
+
+.navbar-menu {
+    gap: 1.25rem;
+}
+
+.navbar-cta {
+    padding: 0.5rem 1.25rem;
+}
+
+.navbar-toggle {
+    width: 2.25rem;
+    height: 2.25rem;
+}
+
 /* Brand & entity logos */
 .brand-logo-link {
     display: flex;
@@ -104,9 +128,9 @@ body {
 }
 
 img.brand-logo {
-    height: 2.75rem; /* 44px — mobile */
+    height: 2.5rem; /* 40px — mobile */
     width: auto;
-    max-width: 11rem;
+    max-width: none;
     aspect-ratio: 1798 / 875;
     object-fit: contain;
     object-position: left center;
@@ -182,8 +206,8 @@ img.footer-logo {
 
 @media (min-width: 768px) {
     img.brand-logo {
-        height: 3.5rem; /* 56px — desktop */
-        max-width: 13rem;
+        height: 3rem; /* 48px — desktop */
+        max-width: none;
     }
 
     img.footer-logo {
