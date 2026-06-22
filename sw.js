@@ -1,4 +1,4 @@
-const CACHE_NAME = 'perada-group-v2';
+const CACHE_NAME = 'perada-group-v3';
 
 const PRECACHE_URLS = [
     '/offline.html',
@@ -9,6 +9,7 @@ const PRECACHE_URLS = [
     '/assets/logo-new-perada.png',
     '/assets/icon-192.png',
     '/assets/icon-512.png',
+    '/assets/icon-maskable-512.png',
     '/assets/logo_perkasa.png',
     '/assets/logo_perdana.png',
 ];
