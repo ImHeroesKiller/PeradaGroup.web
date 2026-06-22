@@ -11,23 +11,43 @@
 <body class="bg-white text-gray-800">
 
     <!-- Navbar -->
-    <nav class="bg-white border-b border-gray-100 sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
-            <a href="index.html" class="flex items-center shrink-0">
-                <img src="assets/logo_perada.svg" alt="PERADA GROUP" class="brand-logo" width="180" height="40">
-            </a>
+    <nav id="navbar" class="bg-white border-b border-gray-100 sticky top-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto">
+            <div class="px-6 py-5 flex items-center justify-between">
+                <a href="index.html" class="flex items-center shrink-0">
+                    <img src="assets/logo_perada.svg" alt="PERADA GROUP" class="brand-logo" width="180" height="40">
+                </a>
 
-            <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
-                <a href="index.html" class="hover:text-[#0A2540]">Home</a>
-                <a href="about.html" class="text-[#0A2540] font-semibold">Tentang Kami</a>
-                <a href="services.html" class="hover:text-[#0A2540]">Layanan</a>
-                <a href="careers.html" class="hover:text-[#0A2540]">Karir</a>
-                <a href="contact.html" class="hover:text-[#0A2540]">Kontak</a>
+                <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
+                    <a href="index.html" class="hover:text-[#0A2540] transition-colors">Home</a>
+                    <a href="about.html" class="text-[#0A2540] font-semibold">Tentang Kami</a>
+                    <a href="services.html" class="hover:text-[#0A2540] transition-colors">Layanan</a>
+                    <a href="careers.html" class="hover:text-[#0A2540] transition-colors">Karir</a>
+                    <a href="contact.html" class="hover:text-[#0A2540] transition-colors">Kontak</a>
+                </div>
+
+                <div class="flex items-center gap-x-3">
+                    <a href="contact.html"
+                       class="hidden md:inline-flex px-6 py-2.5 text-sm font-semibold bg-[#0A2540] hover:bg-[#1E3A5F] text-white rounded-2xl transition-colors">
+                        Hubungi Kami
+                    </a>
+                    <button id="mobile-menu-btn" type="button" aria-label="Buka menu"
+                            class="md:hidden w-10 h-10 flex items-center justify-center text-gray-600 hover:text-[#0A2540]">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
             </div>
+        </div>
 
-            <a href="contact.html" class="hidden md:block px-6 py-2.5 text-sm font-semibold bg-[#0A2540] hover:bg-[#1E3A5F] text-white rounded-2xl transition-colors">
-                Hubungi Kami
-            </a>
+        <div id="mobile-menu" class="hidden md:hidden border-t bg-white">
+            <div class="px-6 py-6 flex flex-col gap-y-4 text-sm font-medium">
+                <a href="index.html" class="py-1 hover:text-[#0A2540]">Home</a>
+                <a href="about.html" class="py-1 text-[#0A2540] font-semibold">Tentang Kami</a>
+                <a href="services.html" class="py-1 hover:text-[#0A2540]">Layanan</a>
+                <a href="careers.html" class="py-1 hover:text-[#0A2540]">Karir</a>
+                <a href="contact.html" class="py-1 hover:text-[#0A2540]">Kontak</a>
+                <a href="contact.html" class="mt-2 text-center py-3 bg-[#0A2540] text-white rounded-2xl font-semibold">Hubungi Kami</a>
+            </div>
         </div>
     </nav>
 
@@ -93,5 +113,6 @@
         </div>
     </footer>
 
+    <script src="js/main.js"></script>
 </body>
 </html>
