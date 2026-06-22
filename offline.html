@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offline | PERADA GROUP</title>
+    <meta name="theme-color" content="#0A2540">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-white text-gray-800 min-h-screen flex flex-col">
+    <header class="border-b border-gray-100">
+        <div class="navbar-inner flex items-center justify-between max-w-7xl mx-auto">
+            <a href="index.html" class="brand-logo-link" aria-label="PERADA GROUP — Home">
+                <img src="assets/logo-new-perada.png" alt="PERADA GROUP" class="brand-logo" width="1000" height="486">
+            </a>
+        </div>
+    </header>
+
+    <main class="flex-1 flex items-center justify-center px-5 sm:px-6 py-16">
+        <div class="max-w-md text-center">
+            <div class="w-16 h-16 mx-auto mb-6 flex items-center justify-center rounded-2xl bg-[#0A2540]/5 text-[#0A2540]">
+                <i class="fa-solid fa-wifi text-2xl"></i>
+            </div>
+            <h1 class="text-2xl sm:text-3xl font-semibold text-[#0A2540] mb-3 tracking-tight">Anda Sedang Offline</h1>
+            <p class="text-base text-gray-600 leading-relaxed mb-8">
+                Koneksi internet tidak tersedia. Periksa jaringan Anda, lalu coba muat ulang halaman.
+            </p>
+            <button type="button" onclick="window.location.reload()"
+                    class="btn-tap inline-flex items-center justify-center gap-x-2 bg-[#0A2540] hover:bg-[#1E3A5F] text-white font-semibold px-6 py-3 rounded-xl transition-colors text-base">
+                <i class="fa-solid fa-rotate-right text-sm"></i>
+                Coba Lagi
+            </button>
+            <p class="mt-6 text-sm text-gray-500">
+                <a href="index.html" class="text-[#0A2540] font-medium hover:underline">Kembali ke Beranda</a>
+            </p>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white/60 text-sm py-6 text-center">
+        <p>© 2026 PERADA GROUP</p>
+    </footer>
+</body>
+</html>
