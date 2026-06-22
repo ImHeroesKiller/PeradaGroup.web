@@ -146,9 +146,9 @@ img.brand-logo {
 }
 
 img.footer-logo {
-    height: 2rem;
+    height: 3rem;
     width: auto;
-    max-width: 9rem;
+    max-width: 14rem;
     aspect-ratio: 3 / 2;
     object-fit: contain;
     display: block;
@@ -173,8 +173,8 @@ img.footer-logo {
     }
 
     img.footer-logo {
-        height: 1.75rem;
-        max-width: 7rem;
+        height: 2.5rem;
+        max-width: 12rem;
     }
 }
 
@@ -185,7 +185,7 @@ img.footer-logo {
     }
 
     img.footer-logo {
-        height: 2.5rem;
-        max-width: 10rem;
+        height: 4rem;
+        max-width: 18rem;
     }
 }
