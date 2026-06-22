@@ -269,6 +269,43 @@ img.footer-logo {
     }
 }
 
+/* Sticky CTA bar */
+.sticky-cta {
+    transform: translateY(100%);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+                opacity 0.35s ease,
+                visibility 0.35s ease;
+}
+
+.sticky-cta.is-visible {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.sticky-cta.is-dismissed {
+    display: none;
+}
+
+.wa-float {
+    transition: bottom 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.3s ease;
+}
+
+.wa-float.wa-float--raised {
+    bottom: 5.5rem;
+}
+
+@media (min-width: 640px) {
+    .wa-float.wa-float--raised {
+        bottom: 5rem;
+    }
+}
+
 /* Mobile experience */
 @media (max-width: 767px) {
     .service-card:hover {

@@ -149,7 +149,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="relative text-white overflow-hidden">
+    <header id="hero" class="relative text-white overflow-hidden">
         <div class="absolute inset-0 bg-cover bg-center"
              style="background-image: url('https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=2000&q=80');">
             <div class="absolute inset-0 hero-overlay"></div>
@@ -397,9 +397,32 @@
         </div>
     </footer>
 
+    <!-- Sticky CTA Bar -->
+    <div id="sticky-cta" class="sticky-cta fixed inset-x-0 bottom-0 z-40" aria-hidden="true">
+        <div class="bg-white/95 backdrop-blur-md border-t border-gray-200 shadow-[0_-4px_24px_rgba(0,0,0,0.08)]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-3.5">
+                <div class="flex items-center gap-3 sm:gap-4 pr-1">
+                    <p class="flex-1 min-w-0 text-sm sm:text-base text-gray-600 leading-snug">
+                        <span class="text-[#0A2540] font-medium">Butuh solusi logistik atau SDM?</span>
+                        <span class="hidden sm:inline"> Hubungi tim PERADA GROUP sekarang.</span>
+                    </p>
+                    <a href="contact.html"
+                       class="btn-tap shrink-0 inline-flex items-center justify-center gap-x-2 bg-[#0A2540] hover:bg-[#1E3A5F] text-white font-semibold px-4 sm:px-6 py-2.5 sm:py-3 rounded-xl transition-colors text-sm sm:text-base whitespace-nowrap">
+                        Hubungi Kami
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                    <button type="button" id="sticky-cta-close" aria-label="Tutup banner"
+                            class="sticky-cta-close shrink-0 flex items-center justify-center w-8 h-8 sm:w-9 sm:h-9 rounded-lg text-gray-400 hover:text-gray-600 hover:bg-gray-100 transition-colors">
+                        <i class="fa-solid fa-xmark text-sm"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/6281214144214" target="_blank"
-       class="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 bg-[#25D366] hover:bg-[#128C7E] text-white rounded-full shadow-2xl transition-all hover:scale-110 active:scale-95">
+    <a id="wa-float" href="https://wa.me/6281214144214" target="_blank" rel="noopener"
+       class="wa-float fixed bottom-6 right-4 sm:right-6 z-50 flex items-center justify-center w-14 h-14 bg-[#25D366] hover:bg-[#128C7E] text-white rounded-full shadow-2xl transition-all duration-300 hover:scale-110 active:scale-95">
         <i class="fa-brands fa-whatsapp text-3xl"></i>
     </a>
 
@@ -468,12 +491,47 @@
             });
         }
         
+        // Sticky CTA bar — muncul setelah hero tidak terlihat
+        function initStickyCta() {
+            const hero = document.getElementById('hero');
+            const bar = document.getElementById('sticky-cta');
+            const closeBtn = document.getElementById('sticky-cta-close');
+            const waFloat = document.getElementById('wa-float');
+
+            if (!hero || !bar) return;
+
+            if (sessionStorage.getItem('stickyCtaDismissed') === '1') {
+                bar.classList.add('is-dismissed');
+                return;
+            }
+
+            const setVisible = (visible) => {
+                bar.classList.toggle('is-visible', visible);
+                bar.setAttribute('aria-hidden', visible ? 'false' : 'true');
+                waFloat?.classList.toggle('wa-float--raised', visible);
+            };
+
+            const observer = new IntersectionObserver(([entry]) => {
+                setVisible(!entry.isIntersecting);
+            }, { threshold: 0 });
+
+            observer.observe(hero);
+
+            closeBtn?.addEventListener('click', () => {
+                setVisible(false);
+                bar.classList.add('is-dismissed');
+                sessionStorage.setItem('stickyCtaDismissed', '1');
+                observer.disconnect();
+            });
+        }
+
         // Initialize everything
         function init() {
             initializeTailwind();
             initNavbar();
             initMobileMenu();
             initSmoothScroll();
+            initStickyCta();
             
             // Optional: console log for dev
             console.log('%c[PERADA] Modern corporate website initialized successfully.', 'color:#64748b');
