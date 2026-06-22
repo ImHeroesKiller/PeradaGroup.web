@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERADA GROUP | Logistics &amp; HR Solutions | Corporate Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Playfair+Display:wght@700&amp;display=swap');
+        
+        :root {
+            --primary: #0A2540;
+        }
+        
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .heading-font {
+            font-family: 'Playfair Display', Georgia, serif;
+        }
+
+        .nav-scrolled {
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        .service-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+
+        .section-header {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-header:after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(to right, #0A2540, #3B82F6);
+            border-radius: 3px;
+        }
+
+        .hero-bg {
+            background: linear-gradient(135deg, #0A2540 0%, #1E3A5F 100%);
+        }
+
+        .modern-btn {
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Ken Burns Effect for Hero - subtle moving background */
+        .hero-moving-bg {
+            animation: kenburns 25s ease-in-out infinite alternate;
+            transform-origin: center;
+        }
+
+        @keyframes kenburns {
+            0% {
+                transform: scale(1.0) translate(0, 0);
+            }
+            50% {
+                transform: scale(1.12) translate(-1%, -2%);
+            }
+            100% {
+                transform: scale(1.05) translate(1%, 2%);
+            }
+        }
+        
+        .modern-btn:after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -100%;
+            width: 50%;
+            height: 200%;
+            background: linear-gradient(
+                to right,
+                transparent 20%,
+                rgba(255,255,255,0.3) 50%,
+                transparent 80%
+            );
+            transition: 0.6s;
+        }
+        
+        .modern-btn:hover:after {
+            left: 200%;
+        }
+
+        .stat-number {
+            font-variant-numeric: tabular-nums;
+        }
+
+        .corporate-blue {
+            color: #0A2540;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Navbar -->
+    <nav id="navbar" class="bg-white border-b border-gray-100 sticky top-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto">
+            <div class="px-6 py-5 flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center gap-x-3">
+                    <div class="w-9 h-9 bg-[#0A2540] rounded-xl flex items-center justify-center">
+                        <span class="text-white font-bold text-xl tracking-tighter">P</span>
+                    </div>
+                    <div>
+                        <div class="font-semibold text-xl tracking-tighter corporate-blue">PERADA</div>
+                        <div class="text-[9px] text-gray-500 -mt-0.5 font-medium tracking-[1.5px]">GROUP</div>
+                    </div>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center gap-x-9 text-sm font-medium">
+                    <a href="#services" class="hover:text-[#0A2540] transition-colors">Layanan</a>
+                    <a href="#about" class="hover:text-[#0A2540] transition-colors">Tentang Kami</a>
+                    <a href="#why" class="hover:text-[#0A2540] transition-colors">Mengapa Kami</a>
+                    <a href="#portal" class="hover:text-[#0A2540] transition-colors">Portal Karir</a>
+                    <a href="#contact" class="hover:text-[#0A2540] transition-colors">Kontak</a>
+                </div>
+
+                <div class="hidden md:flex items-center gap-x-4">
+                    <a href="#contact" 
+                       class="px-5 py-2.5 text-sm font-semibold border border-gray-300 hover:bg-gray-50 rounded-2xl transition-colors">
+                        Minta Penawaran
+                    </a>
+                    <a href="#contact" 
+                       class="px-6 py-2.5 text-sm font-semibold bg-[#0A2540] hover:bg-[#1E3A5F] text-white rounded-2xl transition-colors modern-btn">
+                        Hubungi Kami
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn"
+                        class="md:hidden w-10 h-10 flex items-center justify-center text-gray-600 hover:text-[#0A2540]">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden border-t bg-white">
+            <div class="px-6 py-6 flex flex-col gap-y-4 text-sm font-medium">
+                <a href="#services" class="py-1 hover:text-[#0A2540]">Layanan</a>
+                <a href="#about" class="py-1 hover:text-[#0A2540]">Tentang Kami</a>
+                <a href="#why" class="py-1 hover:text-[#0A2540]">Mengapa Kami</a>
+                <a href="#portal" class="py-1 hover:text-[#0A2540]">Portal Karir</a>
+                <a href="#contact" class="py-1 hover:text-[#0A2540]">Kontak</a>
+                <div class="pt-4 flex flex-col gap-y-3">
+                    <a href="#contact" class="text-center py-3 border border-gray-300 rounded-2xl font-semibold">Minta Penawaran</a>
+                    <a href="#contact" class="text-center py-3 bg-[#0A2540] text-white rounded-2xl font-semibold">Hubungi Kami</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative text-white overflow-hidden min-h-[680px] flex items-center">
+        <!-- Background Image + Dark Overlay + Ken Burns Animation -->
+        <div class="absolute inset-0 bg-cover bg-center hero-moving-bg" 
+             style="background-image: url('https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=2000&q=80');">
+            <div class="absolute inset-0 bg-gradient-to-br from-[#0A2540]/95 via-[#0A2540]/85 to-black/70"></div>
+        </div>
+        
+        <div class="relative max-w-7xl mx-auto px-5 md:px-6 pt-16 pb-20 md:pt-24 md:pb-28">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-x-2 bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-3xl text-sm mb-5 border border-white/20">
+                    <div class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
+                    <span class="font-medium">Melayani Indonesia sejak 2018</span>
+                </div>
+                
+                <h1 class="text-5xl md:text-7xl leading-none tracking-tighter font-semibold mb-5 drop-shadow">
+                    PERADA GROUP<br>
+                    <span class="text-3xl md:text-[42px] text-blue-300 font-medium">Two Entities.<br>One Excellence.</span>
+                </h1>
+                
+                <p class="max-w-lg text-lg md:text-xl text-white/90 mb-8 leading-relaxed">
+                    Solusi terintegrasi <strong>Logistics &amp; Freight Forwarding</strong> 
+                    dan <strong>Outsourcing &amp; HR Solutions</strong> untuk pertumbuhan bisnis Anda.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contact" 
+                       class="inline-flex items-center justify-center gap-x-3 bg-white text-[#0A2540] font-semibold px-9 h-14 rounded-3xl hover:bg-blue-50 active:scale-[0.985] transition-all text-base modern-btn shadow-xl">
+                        <span>Minta Penawaran Gratis</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="#services" 
+                       class="inline-flex items-center justify-center gap-x-3 border border-white/50 hover:bg-white/10 font-medium px-9 h-14 rounded-3xl transition-all text-base active:scale-[0.985]">
+                        Lihat Layanan
+                    </a>
+                </div>
+                
+                <div class="mt-14 flex items-center gap-x-4 text-sm">
+                    <div class="flex -space-x-2">
+                        <div class="w-8 h-8 bg-white/90 rounded-full border-2 border-[#0A2540]"></div>
+                        <div class="w-8 h-8 bg-white/90 rounded-full border-2 border-[#0A2540]"></div>
+                        <div class="w-8 h-8 bg-white/90 rounded-full border-2 border-[#0A2540]"></div>
+                    </div>
+                    <div class="text-white/80">
+                        Dipercaya <span class="font-semibold text-white">200+</span> klien korporat
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 hidden md:block">
+            <a href="#services" class="flex flex-col items-center text-white/60 hover:text-white/90 transition-colors text-xs tracking-[2px]">
+                SCROLL TO EXPLORE
+                <i class="fa-solid fa-chevron-down mt-1 animate-bounce"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Trust Bar -->
+    <div class="border-b bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6 py-5">
+            <div class="flex flex-wrap justify-center md:justify-between items-center gap-x-8 gap-y-4 opacity-60 text-sm font-medium tracking-wider">
+                <div>PT PERDANA ADI YUDA</div>
+                <div>PT PERKASA ADI YUDA</div>
+                <div>SPG Agency &amp; Event Organizer</div>
+                <div>Jaringan Nasional</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section - Group Level -->
+    <section id="services" class="max-w-7xl mx-auto px-5 md:px-6 py-16 md:py-20">
+        <div class="text-center mb-12">
+            <div class="text-sm font-semibold tracking-[3px] text-blue-600 mb-3">OUR SOLUTIONS</div>
+            <h2 class="text-5xl tracking-tighter font-semibold corporate-blue">Solusi dari Dua Entitas Utama</h2>
+            <p class="mt-4 text-gray-600 max-w-lg mx-auto">PERADA GROUP menghadirkan layanan terintegrasi melalui dua perusahaan spesialis</p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-8">
+            <!-- PT Perkasa Adi Yuda - Logistics -->
+            <div class="bg-white border border-gray-200 rounded-3xl p-8 lg:p-10 shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 group">
+                <div class="flex items-center gap-x-4 mb-6">
+                    <img src="https://lh3.googleusercontent.com/sitesv/AA5AbUCFjX80_4d7jsghIBkWNLqwPWAAMybKqDV1Pda15B6L1cKKGEp63tKZVdEbwWDm_jhFGHkDk35bP6ctGYPmgAcj9JMfTUTzF5sFttNAJNVrrkG4rqcev9cqjkK2FRSDFck8-GV5v-gT0zOvF9fcE6vKi3aoxH1ocBaDsaCOLxJVpJe73fMiTt59PfEPByq55-Ap8mVF8TlLtglHodt0RAmyU3frBC-Hx6CxaXlY=w1280" 
+                         alt="PT Perkasa Adi Yuda Logo" class="h-12 md:h-16 w-auto object-contain flex-shrink-0">
+                    <div>
+                        <div class="text-xs tracking-[2px] font-semibold text-blue-600">PT PERKASA ADI YUDA</div>
+                        <h3 class="text-3xl font-semibold tracking-tight corporate-blue">Logistics &amp; Freight Forwarding</h3>
+                    </div>
+                </div>
+                
+                <p class="text-gray-600 mb-6">Solusi end-to-end untuk pengiriman barang, alat berat, dan supply chain nasional dengan jaringan luas dan profesional.</p>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
+                    <div class="flex items-start gap-x-2"><i class="fa-solid fa-check text-blue-600 mt-1"></i> <span>Freight Forwarding (Export-Import)</span></div>
+                    <div class="flex items-start gap-x-2"><i class="fa-solid fa-check text-blue-600 mt-1"></i> <span>Shipping &amp; Supply Chain</span></div>
+                    <div class="flex items-start gap-x-2"><i class="fa-solid fa-check text-blue-600 mt-1"></i> <span>Heavy Equipment &amp; Mining Transport</span></div>
+                    <div class="flex items-start gap-x-2"><i class="fa-solid fa-check text-blue-600 mt-1"></i> <span>Coal &amp; Bulk Cargo Handling</span></div>
+                    <div class="flex items-start gap-x-2"><i class="fa-solid fa-check text-blue-600 mt-1"></i> <span>Bus &amp; Special Vehicle Transport</span></div>
+                    <div class="flex items-start gap-x-2"><i class="fa-solid fa-check text-blue-600 mt-1"></i> <span>National Logistics Network</span></div>
+                </div>
+            </div>
+
+            <!-- PT Perdana Adi Yuda - HR & Outsourcing -->
+            <div class="bg-white border border-gray-200 rounded-3xl p-8 lg:p-10 shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 group">
+                <div class="flex items-center gap-x-4 mb-6">
+                    <img src="https://lh3.googleusercontent.com/sitesv/AA5AbUDMyRxRrVRRb3WgYawMveUILo2YmcQdnbQy2VpQVX2-csXYUyZ84EvTowzW70J0eT3sKaVmeMKqy-_zeyK1hj7-G05pduDCwKuBaXpZ4EkUsIfdUOQxW7UT3oupzD0Qn50QjUB48ooAxG5dqyEUxbp72iRTASePIq8avYuNRyOwRLyAeXE2FNiobkBo1YwUVyOc0ho5illeB03anXMmaiCwu8YfhiTzhiOE3iWy=w1280" 
+                         alt="PT Perdana Adi Yuda Logo" class="h-12 md:h-16 w-auto object-contain flex-shrink-0">
+                    <div>
+                        <div class="text-xs tracking-[2px] font-semibold text-emerald-600">PT PERDANA ADI YUDA</div>
+                        <h3 class="text-3xl font-semibold tracking-tight corporate-blue">Outsourcing &amp; HR Solutions</h3>
+                    </div>
+                </div>
+                
+                <p class="text-gray-600 mb-6">Penyedia tenaga kerja profesional, pelatihan, rekrutmen, event, dan perlengkapan kantor untuk mendukung operasional mitra secara efisien.</p>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
+                    <div class="flex items-start gap-x-2"><i class="fa-solid fa-check text-emerald-600 mt-1"></i> <span>General Manpower &amp; Sales Force</span></div>
+                    <div class="flex items-start gap-x-2"><i class="fa-solid fa-check text-emerald-600 mt-1"></i> <span>Training &amp; Development (Inhouse/Outdoor)</span></div>
+                    <div class="flex items-start gap-x-2"><i class="fa-solid fa-check text-emerald-600 mt-1"></i> <span>Recruitment &amp; Selection</span></div>
+                    <div class="flex items-start gap-x-2"><i class="fa-solid fa-check text-emerald-600 mt-1"></i> <span>Event Management (MICE, Gathering, Activation)</span></div>
+                    <div class="flex items-start gap-x-2"><i class="fa-solid fa-check text-emerald-600 mt-1"></i> <span>Office Supplies &amp; Equipment</span></div>
+                    <div class="flex items-start gap-x-2"><i class="fa-solid fa-check text-emerald-600 mt-1"></i> <span>SPG / FOB &amp; Brand Activation</span></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-8 text-sm text-gray-500">
+            Semua layanan didukung oleh tim profesional, kepatuhan regulasi, dan komitmen kualitas tinggi.
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-gray-50 border-y">
+        <div class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-12 gap-x-12 items-center">
+            <div class="md:col-span-7">
+                <div class="text-sm font-semibold tracking-[3px] text-blue-600 mb-3">OUR STORY</div>
+                <h2 class="text-5xl tracking-tighter font-semibold leading-none corporate-blue mb-6">Membangun Kepercayaan<br>Sejak 2018</h2>
+                
+                <div class="space-y-6 text-[15px] leading-relaxed text-gray-700">
+                    <p>PERADA Group terdiri dari dua entitas utama. <strong>PT Perdana Adi Yuda</strong> (didirikan 2022) berfokus pada Outsourcing &amp; HR Solution, menyediakan General Manpower, Training, Recruitment, Event Management, dan Office Supplies &amp; Equipment.</p>
+                    
+                    <p><strong>PT Perkasa Adi Yuda</strong> (dibentuk 2023) berfokus pada Logistics &amp; Freight Forwarding, melayani Shipping &amp; Supply Chain termasuk pengiriman alat berat, bus, batubara, dan barang pertambangan dengan jaringan nasional luas.</p>
+                    
+                    <p>Kedua perusahaan berkomitmen memberikan solusi profesional dan terintegrasi untuk mendukung kesuksesan mitra bisnis di seluruh Indonesia.</p>
+                </div>
+            </div>
+            
+            <div class="md:col-span-5 mt-10 md:mt-0">
+                <div class="bg-white border border-gray-100 p-8 rounded-3xl">
+                    <div class="grid grid-cols-2 gap-6">
+                        <div>
+                            <div class="text-4xl font-semibold tracking-tighter corporate-blue">7+</div>
+                            <div class="text-sm text-gray-500 mt-1">Tahun Pengalaman</div>
+                        </div>
+                        <div>
+                            <div class="text-4xl font-semibold tracking-tighter corporate-blue">Nasional</div>
+                            <div class="text-sm text-gray-500 mt-1">Jangkauan Layanan</div>
+                        </div>
+                        <div>
+                            <div class="text-4xl font-semibold tracking-tighter corporate-blue">2022</div>
+                            <div class="text-sm text-gray-500 mt-1">Perusahaan Resmi</div>
+                        </div>
+                        <div>
+                            <div class="text-4xl font-semibold tracking-tighter corporate-blue">2025</div>
+                            <div class="text-sm text-gray-500 mt-1">Ekspansi SPG &amp; EO</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Perusahaan Kami Section -->
+    <section id="companies" class="bg-gray-50 border-y py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <div class="text-sm font-semibold tracking-[3px] text-blue-600 mb-3">OUR COMPANIES</div>
+                <h2 class="text-5xl tracking-tighter font-semibold corporate-blue">Dua Entitas Utama</h2>
+                <p class="mt-3 text-gray-600 max-w-md mx-auto">PERADA Group terdiri dari dua perusahaan inti yang saling mendukung.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- PT Perdana Adi Yuda -->
+                <div class="group relative overflow-hidden rounded-3xl shadow-xl border border-gray-100 bg-white">
+                    <div class="h-48 md:h-64 bg-cover bg-center" 
+                         style="background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&q=80')">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-8 text-white">
+                        <div class="uppercase tracking-[2px] text-xs font-semibold mb-1 text-blue-300">Est. 2022</div>
+                        <h3 class="text-3xl font-semibold tracking-tight mb-2">PT Perdana Adi Yuda</h3>
+                        <p class="text-white/90 text-sm leading-relaxed">Spesialis Outsourcing &amp; HR Solution. Menyediakan General Manpower, Training, Recruitment, Event Management, dan Office Supplies &amp; Equipment untuk mendukung operasional mitra.</p>
+                    </div>
+                </div>
+
+                <!-- PT Perkasa Adi Yuda -->
+                <div class="group relative overflow-hidden rounded-3xl shadow-xl border border-gray-100 bg-white">
+                    <div class="h-48 md:h-64 bg-cover bg-center" 
+                         style="background-image: url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200&q=80')">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-8 text-white">
+                        <div class="uppercase tracking-[2px] text-xs font-semibold mb-1 text-emerald-300">Est. 2023</div>
+                        <h3 class="text-3xl font-semibold tracking-tight mb-2">PT Perkasa Adi Yuda</h3>
+                        <p class="text-white/90 text-sm leading-relaxed">Spesialis Logistics &amp; Freight Forwarding. Menyediakan Shipping &amp; Supply Chain termasuk pengiriman alat berat, bus, batubara, dan barang pertambangan dengan jaringan nasional.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us -->
+    <section id="why" class="max-w-7xl mx-auto px-6 py-20">
+        <div class="text-center mb-12">
+            <div class="text-sm font-semibold tracking-[3px] text-blue-600 mb-3">WHY PERADA</div>
+            <h2 class="text-5xl tracking-tighter font-semibold corporate-blue">Keunggulan Kami</h2>
+        </div>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+            <div class="p-7 border border-gray-100 rounded-3xl">
+                <i class="fa-solid fa-globe fa-2x text-blue-600 mb-5"></i>
+                <h4 class="font-semibold text-xl mb-2">Jaringan Luas</h4>
+                <p class="text-sm text-gray-600">Koneksi kuat di seluruh Indonesia untuk pengiriman cepat dan efisien.</p>
+            </div>
+            <div class="p-7 border border-gray-100 rounded-3xl">
+                <i class="fa-solid fa-shield-halved fa-2x text-blue-600 mb-5"></i>
+                <h4 class="font-semibold text-xl mb-2">Profesional &amp; Terpercaya</h4>
+                <p class="text-sm text-gray-600">Tim berpengalaman dengan standar operasional tinggi dan integritas.</p>
+            </div>
+            <div class="p-7 border border-gray-100 rounded-3xl">
+                <i class="fa-solid fa-clock fa-2x text-blue-600 mb-5"></i>
+                <h4 class="font-semibold text-xl mb-2">Responsif 24/7</h4>
+                <p class="text-sm text-gray-600">Dukungan penuh dan komunikasi cepat untuk setiap kebutuhan klien.</p>
+            </div>
+            <div class="p-7 border border-gray-100 rounded-3xl">
+                <i class="fa-solid fa-handshake fa-2x text-blue-600 mb-5"></i>
+                <h4 class="font-semibold text-xl mb-2">Solusi Terintegrasi</h4>
+                <p class="text-sm text-gray-600">Dari freight hingga event organizer — satu mitra untuk semua kebutuhan.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portal Karir & Karyawan -->
+    <section id="portal" class="max-w-5xl mx-auto px-6 py-16">
+        <div class="bg-white border border-gray-200 rounded-3xl p-10 lg:p-14 text-center shadow-sm">
+            <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-[#0A2540] to-blue-800 text-white rounded-2xl mb-6">
+                <i class="fa-solid fa-briefcase text-3xl"></i>
+            </div>
+            
+            <h2 class="text-4xl tracking-tighter font-semibold corporate-blue mb-3">Portal Karir &amp; Karyawan</h2>
+            <p class="text-gray-600 max-w-md mx-auto mb-8">Bergabung dengan tim PERADA GROUP atau akses portal internal karyawan untuk informasi, pengembangan, dan kesempatan karir.</p>
+            
+            <a href="https://portal.perada.net" target="_blank" 
+               class="inline-flex items-center justify-center gap-x-3 bg-[#0A2540] hover:bg-[#1E3A5F] active:scale-[0.985] transition-all text-white font-semibold px-10 py-4 rounded-3xl text-base modern-btn shadow-lg">
+                <span>Masuk ke Portal Karir</span>
+                <i class="fa-solid fa-external-link-alt ml-1"></i>
+            </a>
+            
+            <p class="mt-4 text-xs text-gray-500">portal.perada.net — Akses untuk pelamar &amp; karyawan</p>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <div class="bg-[#0A2540] text-white">
+        <div class="max-w-5xl mx-auto px-6 py-16 text-center">
+            <h2 class="text-4xl md:text-5xl tracking-tight font-semibold mb-4">Siap Tingkatkan<br>Operasional &amp; SDM Anda?</h2>
+            <p class="text-white/70 max-w-md mx-auto mb-8">Dapatkan solusi terintegrasi Logistics atau HR Outsourcing dari tim PERADA GROUP.</p>
+            <a href="#contact" class="inline-block bg-white text-[#0A2540] font-semibold px-10 py-4 rounded-3xl hover:bg-blue-50 transition-colors">Hubungi Tim Kami Sekarang</a>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="max-w-4xl mx-auto px-6 py-20">
+        <div class="text-center mb-10">
+            <div class="text-sm font-semibold tracking-[3px] text-blue-600 mb-3">GET IN TOUCH</div>
+            <h2 class="text-5xl tracking-tighter font-semibold corporate-blue">Mari Bekerja Sama</h2>
+        </div>
+        
+        <div class="bg-white border border-gray-100 p-10 rounded-3xl max-w-2xl mx-auto">
+            <form id="contact-form" class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-medium mb-1.5 text-gray-700">Nama Lengkap</label>
+                        <input type="text" class="w-full border border-gray-200 focus:border-[#0A2540] rounded-2xl px-5 py-3 text-sm outline-none transition-colors" placeholder="Nama Anda" required>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-1.5 text-gray-700">Perusahaan</label>
+                        <input type="text" class="w-full border border-gray-200 focus:border-[#0A2540] rounded-2xl px-5 py-3 text-sm outline-none transition-colors" placeholder="Nama Perusahaan">
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-medium mb-1.5 text-gray-700">Email</label>
+                        <input type="email" class="w-full border border-gray-200 focus:border-[#0A2540] rounded-2xl px-5 py-3 text-sm outline-none transition-colors" placeholder="email@perusahaan.com" required>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-1.5 text-gray-700">No. Telepon / WA</label>
+                        <input type="tel" class="w-full border border-gray-200 focus:border-[#0A2540] rounded-2xl px-5 py-3 text-sm outline-none transition-colors" placeholder="+62 8xx-xxxx-xxxx" required>
+                    </div>
+                </div>
+                
+                <div>
+                    <label class="block text-sm font-medium mb-1.5 text-gray-700">Kebutuhan / Pesan</label>
+                    <textarea rows="4" class="w-full border border-gray-200 focus:border-[#0A2540] rounded-3xl px-5 py-4 text-sm outline-none transition-colors resize-y min-h-[120px]" placeholder="Jelaskan kebutuhan logistik atau proyek Anda..." required></textarea>
+                </div>
+                
+                <button type="submit" 
+                        class="w-full bg-[#0A2540] hover:bg-[#1E3A5F] transition-colors text-white font-semibold py-4 rounded-3xl text-base modern-btn">
+                    Kirim Permintaan Penawaran
+                </button>
+                
+                <p class="text-center text-xs text-gray-500">Kami akan merespons dalam 1x24 jam kerja.</p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white/70 text-sm">
+        <div class="max-w-7xl mx-auto px-6 pt-14 pb-10">
+            <div class="flex flex-col md:flex-row justify-between gap-y-10">
+                <div>
+                    <div class="flex items-center gap-x-3 mb-4">
+                        <div class="w-9 h-9 bg-white rounded-xl flex items-center justify-center">
+                            <span class="text-[#0A2540] font-bold text-xl tracking-tighter">P</span>
+                        </div>
+                        <div class="font-semibold text-white text-xl tracking-tighter">PERADA GROUP</div>
+                    </div>
+                    <p class="max-w-xs text-sm">Solusi logistik terpercaya untuk pertumbuhan bisnis Anda.</p>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-x-12 gap-y-8 text-sm">
+                    <div>
+                        <div class="font-semibold text-white mb-3 tracking-wider text-xs">PERUSAHAAN</div>
+                        <div class="space-y-1.5">
+                            <a href="#about" class="hover:text-white transition-colors">Tentang Kami</a>
+                            <a href="#about" class="hover:text-white transition-colors">Sejarah</a>
+                            <a href="#portal" class="hover:text-white transition-colors">Karir</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="font-semibold text-white mb-3 tracking-wider text-xs">LAYANAN</div>
+                        <div class="space-y-1.5">
+                            <a href="#services" class="hover:text-white transition-colors">Freight Forwarding</a>
+                            <a href="#services" class="hover:text-white transition-colors">Shipping &amp; Supply Chain</a>
+                            <a href="#services" class="hover:text-white transition-colors">Office &amp; SEAT Management</a>
+                            <a href="#services" class="hover:text-white transition-colors">SPG &amp; Event Organizer</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="font-semibold text-white mb-3 tracking-wider text-xs">HUBUNGI</div>
+                        <div class="space-y-1.5">
+                            <a href="https://maps.google.com/?q=Plaza+Summarecon+Bekasi" target="_blank" class="hover:text-white transition-colors">Jakarta, Indonesia</a><br>
+                            <a href="mailto:info@perada.co.id" class="hover:text-white transition-colors">info@perada.co.id</a><br>
+                            <a href="https://wa.me/6281214144214" target="_blank" class="hover:text-white transition-colors flex items-center gap-x-2">
+                                <i class="fa-brands fa-whatsapp text-green-400"></i> 
+                                <span>0812-1414-4214</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-16 pt-8 border-t border-white/10 text-xs flex flex-col md:flex-row justify-between items-center gap-y-2">
+                <div>© 2026 PERADA GROUP. All rights reserved.</div>
+                <div class="flex gap-x-5">
+                    <div>Privacy</div>
+                    <div>Terms</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/6281214144214" target="_blank"
+       class="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 bg-[#25D366] hover:bg-[#128C7E] text-white rounded-full shadow-2xl transition-all hover:scale-110 active:scale-95">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
+
+    <script>
+        // Tailwind script
+        function initializeTailwind() {
+            document.documentElement.style.setProperty('--accent', '#0A2540');
+        }
+        
+        // Navbar scroll effect
+        function initNavbar() {
+            const navbar = document.getElementById('navbar');
+            let lastScroll = 0;
+            
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 20) {
+                    navbar.classList.add('nav-scrolled', 'bg-white/95', 'backdrop-blur-lg');
+                } else {
+                    navbar.classList.remove('nav-scrolled', 'bg-white/95', 'backdrop-blur-lg');
+                }
+            });
+        }
+        
+        // Mobile menu
+        function initMobileMenu() {
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            
+            btn.addEventListener('click', () => {
+                if (menu.classList.contains('hidden')) {
+                    menu.classList.remove('hidden');
+                    btn.innerHTML = '<i class="fa-solid fa-times text-xl"></i>';
+                } else {
+                    menu.classList.add('hidden');
+                    btn.innerHTML = '<i class="fa-solid fa-bars text-xl"></i>';
+                }
+            });
+            
+            // Close menu on link click
+            menu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    menu.classList.add('hidden');
+                    btn.innerHTML = '<i class="fa-solid fa-bars text-xl"></i>';
+                });
+            });
+        }
+        
+        // Contact form handler (static)
+        function initContactForm() {
+            const form = document.getElementById('contact-form');
+            
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const btn = form.querySelector('button[type="submit"]');
+                const originalText = btn.innerHTML;
+                
+                btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-2"></i> Mengirim...';
+                btn.disabled = true;
+                
+                setTimeout(() => {
+                    btn.innerHTML = '<i class="fa-solid fa-check mr-2"></i> Terkirim! Terima kasih.';
+                    btn.classList.remove('bg-[#0A2540]');
+                    btn.classList.add('bg-emerald-600');
+                    
+                    setTimeout(() => {
+                        form.reset();
+                        btn.innerHTML = originalText;
+                        btn.disabled = false;
+                        btn.classList.add('bg-[#0A2540]');
+                        btn.classList.remove('bg-emerald-600');
+                        
+                        // Show success message
+                        const successMsg = document.createElement('div');
+                        successMsg.className = 'mt-4 text-center text-emerald-600 text-sm font-medium';
+                        successMsg.innerHTML = 'Pesan Anda telah diterima. Tim kami akan menghubungi segera.';
+                        form.appendChild(successMsg);
+                        
+                        setTimeout(() => {
+                            successMsg.remove();
+                        }, 4000);
+                    }, 2200);
+                }, 1600);
+            });
+        }
+        
+        // Smooth scroll for anchor links
+        function initSmoothScroll() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        e.preventDefault();
+                        const offset = 80;
+                        const bodyRect = document.body.getBoundingClientRect().top;
+                        const elementPosition = target.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition - bodyRect - offset;
+                        
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        }
+        
+        // Initialize everything
+        function init() {
+            initializeTailwind();
+            initNavbar();
+            initMobileMenu();
+            initContactForm();
+            initSmoothScroll();
+            
+            // Optional: console log for dev
+            console.log('%c[PERADA] Modern corporate website initialized successfully.', 'color:#64748b');
+        }
+        
+        window.onload = init;
+    </script>
+</body>
+</html>
