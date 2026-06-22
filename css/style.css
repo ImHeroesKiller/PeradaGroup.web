@@ -103,12 +103,14 @@ body {
     opacity: 0.85;
 }
 
-.brand-logo {
+img.brand-logo {
     height: 2rem;
     width: auto;
-    max-width: 9rem;
+    min-width: 5rem;
+    max-width: 11.25rem;
     object-fit: contain;
     display: block;
+    flex-shrink: 0;
 }
 
 .entity-logo {
@@ -143,14 +145,16 @@ body {
     opacity: 1;
 }
 
-.footer-logo {
+img.footer-logo {
     height: 1.75rem;
     width: auto;
-    max-width: 9rem;
+    min-width: 4.5rem;
+    max-width: 11.25rem;
     object-fit: contain;
     display: block;
     opacity: 0.9;
     transition: opacity 0.25s ease;
+    flex-shrink: 0;
 }
 
 .footer-logo-link:hover .footer-logo {
@@ -163,25 +167,29 @@ body {
         animation-duration: 20s;
     }
 
-    .brand-logo {
+    img.brand-logo {
         height: 1.75rem;
+        min-width: 4.5rem;
         max-width: 7.5rem;
     }
 
-    .footer-logo {
+    img.footer-logo {
         height: 1.5rem;
+        min-width: 4rem;
         max-width: 7.5rem;
     }
 }
 
 @media (min-width: 768px) {
-    .brand-logo {
+    img.brand-logo {
         height: 2.25rem;
+        min-width: 5.5rem;
         max-width: 11.25rem;
     }
 
-    .footer-logo {
+    img.footer-logo {
         height: 2.25rem;
+        min-width: 5rem;
         max-width: 11.25rem;
     }
 }
