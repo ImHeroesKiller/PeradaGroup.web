@@ -91,9 +91,60 @@ body {
     }
 }
 
+/* Brand & entity logos */
+.brand-logo {
+    height: 2.25rem;
+    width: auto;
+    object-fit: contain;
+    transition: opacity 0.25s ease;
+}
+
+a:hover .brand-logo {
+    opacity: 0.85;
+}
+
+.entity-logo {
+    height: 3rem;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+@media (min-width: 768px) {
+    .entity-logo {
+        height: 3.5rem;
+    }
+
+    .entity-logo-lg {
+        height: 4rem;
+    }
+}
+
+.entity-logo-wrap:hover .entity-logo,
+.group:hover .entity-logo {
+    transform: scale(1.03);
+}
+
+.footer-logo {
+    height: 2rem;
+    width: auto;
+    object-fit: contain;
+    opacity: 0.9;
+    transition: opacity 0.25s ease;
+}
+
+.footer-logo:hover {
+    opacity: 1;
+}
+
 /* Additional responsive improvements */
 @media (max-width: 768px) {
     .hero-moving-bg {
         animation-duration: 20s;
+    }
+
+    .brand-logo {
+        height: 2rem;
     }
 }
