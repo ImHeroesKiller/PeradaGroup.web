@@ -131,7 +131,7 @@ img.brand-logo {
     height: 2.5rem; /* 40px — mobile */
     width: auto;
     max-width: none;
-    aspect-ratio: 1798 / 875;
+    aspect-ratio: 1000 / 486;
     object-fit: contain;
     object-position: left center;
     display: block;
@@ -174,7 +174,7 @@ img.footer-logo {
     height: 5rem;
     width: auto;
     max-width: 22rem;
-    aspect-ratio: 1798 / 875;
+    aspect-ratio: 1000 / 486;
     object-fit: contain;
     display: block;
     background: #ffffff;
