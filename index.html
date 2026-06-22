@@ -71,8 +71,39 @@
             overflow: hidden;
         }
 
+        .hero-media {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+        }
+
+        .hero-video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .hero-poster-fallback {
+            display: none;
+            position: absolute;
+            inset: 0;
+            background-size: cover;
+            background-position: center;
+        }
+
         .hero-overlay {
-            background: linear-gradient(105deg, rgba(10, 37, 64, 0.97) 0%, rgba(10, 37, 64, 0.88) 45%, rgba(10, 37, 64, 0.75) 100%);
+            background: linear-gradient(105deg, rgba(10, 37, 64, 0.94) 0%, rgba(10, 37, 64, 0.82) 45%, rgba(10, 37, 64, 0.68) 100%);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .hero-video {
+                display: none !important;
+            }
+
+            .hero-poster-fallback {
+                display: block;
+            }
         }
 
         .modern-btn:after {
@@ -179,25 +210,25 @@
     </nav>
 
     <!-- Hero Section -->
-    <header id="hero" class="relative text-white overflow-hidden">
-        <div class="absolute inset-0 bg-cover bg-center"
-             style="background-image: url('https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=2000&q=80');">
+    <header id="hero" class="relative text-white overflow-hidden min-h-[min(88vh,920px)] flex items-center">
+        <div class="hero-media" aria-hidden="true">
+            <video id="hero-video" class="hero-video" autoplay muted loop playsinline
+                   poster="/assets/hero-poster.jpg" preload="metadata">
+            </video>
+            <div class="hero-poster-fallback hero-moving-bg"
+                 style="background-image: url('/assets/hero-poster.jpg');"></div>
             <div class="absolute inset-0 hero-overlay"></div>
         </div>
 
-        <div class="relative max-w-7xl mx-auto px-5 sm:px-6 py-20 sm:py-24 md:py-28 lg:py-32">
-            <div class="max-w-3xl">
-                <p class="text-xs sm:text-sm font-medium tracking-[0.2em] sm:tracking-[0.25em] uppercase text-blue-300/90 mb-5 sm:mb-6 md:mb-8">
-                    Logistics &amp; HR Solutions
+        <div class="relative w-full max-w-7xl mx-auto px-5 sm:px-6 py-16 sm:py-20 md:py-24 lg:py-28">
+            <div class="max-w-2xl">
+                <p class="heading-font text-sm sm:text-base font-bold tracking-[0.18em] sm:tracking-[0.22em] uppercase text-white/90 mb-4 sm:mb-5 md:mb-6">
+                    PERADA GROUP
                 </p>
 
-                <h1 class="text-3xl sm:text-4xl md:text-6xl lg:text-[4.25rem] font-semibold tracking-tight leading-[1.12] sm:leading-[1.08] mb-5 sm:mb-6 md:mb-8">
+                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight leading-[1.14] sm:leading-[1.1] mb-8 sm:mb-10 md:mb-12">
                     Logistik &amp; SDM.<br>Satu mitra terpercaya.
                 </h1>
-
-                <p class="text-base sm:text-lg md:text-xl text-white/80 leading-relaxed max-w-xl mb-8 sm:mb-10 md:mb-12">
-                    PERADA GROUP mengintegrasikan freight forwarding dan outsourcing HR untuk mendukung operasional bisnis Anda di seluruh Indonesia.
-                </p>
 
                 <div class="flex flex-col sm:flex-row gap-3 sm:gap-4">
                     <a href="contact.html"
@@ -212,17 +243,17 @@
                     </a>
                 </div>
 
-                <div class="mt-10 sm:mt-14 md:mt-20 pt-6 sm:pt-8 border-t border-white/15 grid grid-cols-2 sm:grid-cols-3 gap-6 sm:gap-8 max-w-lg">
+                <div class="mt-10 sm:mt-12 md:mt-16 pt-6 sm:pt-8 border-t border-white/15 grid grid-cols-3 gap-4 sm:gap-8 max-w-md">
                     <div>
-                        <div class="text-2xl md:text-3xl font-semibold tracking-tight stat-number">200+</div>
+                        <div class="text-xl sm:text-2xl md:text-3xl font-semibold tracking-tight stat-number">200+</div>
                         <div class="text-xs sm:text-sm text-white/55 mt-1">Klien Korporat</div>
                     </div>
                     <div>
-                        <div class="text-2xl md:text-3xl font-semibold tracking-tight">Nasional</div>
+                        <div class="text-xl sm:text-2xl md:text-3xl font-semibold tracking-tight">Nasional</div>
                         <div class="text-xs sm:text-sm text-white/55 mt-1">Jangkauan Layanan</div>
                     </div>
-                    <div class="col-span-2 sm:col-span-1">
-                        <div class="text-2xl md:text-3xl font-semibold tracking-tight">2018</div>
+                    <div>
+                        <div class="text-xl sm:text-2xl md:text-3xl font-semibold tracking-tight">2018</div>
                         <div class="text-xs sm:text-sm text-white/55 mt-1">Melayani Indonesia</div>
                     </div>
                 </div>
@@ -233,11 +264,9 @@
     <!-- Trust Bar -->
     <div class="border-b bg-gray-50">
         <div class="max-w-7xl mx-auto px-5 sm:px-6 py-4 sm:py-5">
-            <div class="flex flex-wrap justify-center md:justify-between items-center gap-x-6 sm:gap-x-8 gap-y-3 sm:gap-y-4 opacity-60 text-xs sm:text-sm font-medium tracking-wider text-center">
+            <div class="flex flex-wrap justify-center items-center gap-x-10 sm:gap-x-16 gap-y-2 opacity-60 text-xs sm:text-sm font-medium tracking-wider text-center">
                 <div>PT PERDANA ADI YUDA</div>
                 <div>PT PERKASA ADI YUDA</div>
-                <div>SPG Agency &amp; Event Organizer</div>
-                <div>Jaringan Nasional</div>
             </div>
         </div>
     </div>
@@ -522,6 +551,20 @@
             });
         }
         
+        // Hero background video — mobile/desktop source + reduced-motion fallback
+        function initHeroVideo() {
+            const video = document.getElementById('hero-video');
+            if (!video || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+            const source = window.matchMedia('(max-width: 767px)').matches
+                ? '/assets/hero-logistics-mobile.mp4'
+                : '/assets/hero-logistics.mp4';
+
+            video.src = source;
+            video.load();
+            video.play().catch(() => {});
+        }
+
         // Sticky CTA bar — muncul setelah hero tidak terlihat
         function initStickyCta() {
             const hero = document.getElementById('hero');
@@ -562,6 +605,7 @@
             initNavbar();
             initMobileMenu();
             initSmoothScroll();
+            initHeroVideo();
             initStickyCta();
             
             // Optional: console log for dev
