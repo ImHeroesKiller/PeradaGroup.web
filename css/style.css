@@ -104,11 +104,12 @@ body {
 }
 
 img.brand-logo {
-    height: 4rem;
+    height: 2.75rem; /* 44px — mobile */
     width: auto;
-    max-width: 18rem;
+    max-width: 11rem;
     aspect-ratio: 3 / 2;
     object-fit: contain;
+    object-position: left center;
     display: block;
     flex-shrink: 0;
 }
@@ -171,11 +172,6 @@ img.footer-logo {
         animation-duration: 20s;
     }
 
-    img.brand-logo {
-        height: 3.5rem;
-        max-width: 16rem;
-    }
-
     img.footer-logo {
         height: 4rem;
         max-width: 18rem;
@@ -186,8 +182,8 @@ img.footer-logo {
 
 @media (min-width: 768px) {
     img.brand-logo {
-        height: 5rem;
-        max-width: 22rem;
+        height: 3.5rem; /* 56px — desktop */
+        max-width: 13rem;
     }
 
     img.footer-logo {
