@@ -40,24 +40,23 @@
         </div>
     </section>
 
-    <!-- Contact Content -->
+    <!-- Contact Section -->
     <section class="max-w-5xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-12">
         
         <!-- Form -->
         <div>
             <h2 class="text-3xl font-semibold tracking-tight mb-6">Kirim Pesan</h2>
             
-            <!-- Web3Forms Contact Form -->
-            <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="space-y-5">
+            <form action="https://api.web3forms.com/submit" method="POST" class="space-y-5">
                 
-                <!-- GANTI DENGAN ACCESS KEY KAMU DARI https://web3forms.com/ -->
-                <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY_HERE">
+                <!-- Web3Forms Access Key -->
+                <input type="hidden" name="access_key" value="11aabbc0-02fe-48a0-b0c5-f01b89bc1116">
                 <input type="hidden" name="subject" value="Pesan Baru dari Website PERADA GROUP">
                 <input type="hidden" name="from_name" value="Website PERADA GROUP">
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
                     <div>
-                        <label class="block text-sm font-medium mb-1.5">Nama Lengkap</label>
+                        <label class="block text-sm font-medium mb-1.5">Nama Lengkap *</label>
                         <input type="text" name="name" class="w-full border border-gray-300 focus:border-[#0A2540] rounded-2xl px-5 py-3 text-sm" placeholder="Nama Anda" required>
                     </div>
                     <div>
@@ -68,17 +67,17 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
                     <div>
-                        <label class="block text-sm font-medium mb-1.5">Email</label>
+                        <label class="block text-sm font-medium mb-1.5">Email *</label>
                         <input type="email" name="email" class="w-full border border-gray-300 focus:border-[#0A2540] rounded-2xl px-5 py-3 text-sm" placeholder="email@perusahaan.com" required>
                     </div>
                     <div>
-                        <label class="block text-sm font-medium mb-1.5">No. Telepon / WA</label>
+                        <label class="block text-sm font-medium mb-1.5">No. Telepon / WA *</label>
                         <input type="tel" name="phone" class="w-full border border-gray-300 focus:border-[#0A2540] rounded-2xl px-5 py-3 text-sm" placeholder="0812-XXXX-XXXX" required>
                     </div>
                 </div>
 
                 <div>
-                    <label class="block text-sm font-medium mb-1.5">Kebutuhan / Pesan</label>
+                    <label class="block text-sm font-medium mb-1.5">Kebutuhan / Pesan *</label>
                     <textarea name="message" rows="5" class="w-full border border-gray-300 focus:border-[#0A2540] rounded-3xl px-5 py-4 text-sm resize-y" placeholder="Jelaskan kebutuhan Anda..." required></textarea>
                 </div>
 
@@ -86,9 +85,6 @@
                         class="w-full bg-[#0A2540] hover:bg-[#1E3A5F] text-white font-semibold py-4 rounded-3xl transition-all">
                     Kirim Pesan
                 </button>
-
-                <!-- Hasil Pengiriman -->
-                <div id="form-result" class="hidden mt-4 text-center text-sm font-medium"></div>
             </form>
         </div>
 
@@ -130,6 +126,5 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
 </body>
 </html>
