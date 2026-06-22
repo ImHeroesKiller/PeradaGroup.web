@@ -1,0 +1,25 @@
+{
+  "name": "PERADA GROUP",
+  "short_name": "PERADA",
+  "description": "Solusi logistik dan sumber daya manusia terintegrasi dari PERADA GROUP untuk mendukung bisnis di seluruh Indonesia.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0A2540",
+  "lang": "id",
+  "icons": [
+    {
+      "src": "/assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
