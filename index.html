@@ -60,24 +60,10 @@
             overflow: hidden;
         }
 
-        /* Ken Burns Effect for Hero - subtle moving background */
-        .hero-moving-bg {
-            animation: kenburns 25s ease-in-out infinite alternate;
-            transform-origin: center;
+        .hero-overlay {
+            background: linear-gradient(105deg, rgba(10, 37, 64, 0.97) 0%, rgba(10, 37, 64, 0.88) 45%, rgba(10, 37, 64, 0.75) 100%);
         }
 
-        @keyframes kenburns {
-            0% {
-                transform: scale(1.0) translate(0, 0);
-            }
-            50% {
-                transform: scale(1.12) translate(-1%, -2%);
-            }
-            100% {
-                transform: scale(1.05) translate(1%, 2%);
-            }
-        }
-        
         .modern-btn:after {
             content: '';
             position: absolute;
@@ -124,24 +110,18 @@
                 </a>
 
                 <!-- Desktop Menu -->
-                <div class="hidden md:flex items-center gap-x-9 text-sm font-medium">
-                    <a href="services.html" class="hover:text-[#0A2540] transition-colors">Layanan</a>
+                <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
+                    <a href="index.html" class="text-[#0A2540] font-semibold">Home</a>
                     <a href="about.html" class="hover:text-[#0A2540] transition-colors">Tentang Kami</a>
-                    <a href="#why" class="hover:text-[#0A2540] transition-colors">Mengapa Kami</a>
+                    <a href="services.html" class="hover:text-[#0A2540] transition-colors">Layanan</a>
                     <a href="careers.html" class="hover:text-[#0A2540] transition-colors">Karir</a>
                     <a href="contact.html" class="hover:text-[#0A2540] transition-colors">Kontak</a>
                 </div>
 
-                <div class="hidden md:flex items-center gap-x-4">
-                    <a href="contact.html" 
-                       class="px-5 py-2.5 text-sm font-semibold border border-gray-300 hover:bg-gray-50 rounded-2xl transition-colors">
-                        Minta Penawaran
-                    </a>
-                    <a href="contact.html" 
-                       class="px-6 py-2.5 text-sm font-semibold bg-[#0A2540] hover:bg-[#1E3A5F] text-white rounded-2xl transition-colors modern-btn">
-                        Hubungi Kami
-                    </a>
-                </div>
+                <a href="contact.html"
+                   class="hidden md:block px-6 py-2.5 text-sm font-semibold bg-[#0A2540] hover:bg-[#1E3A5F] text-white rounded-2xl transition-colors">
+                    Hubungi Kami
+                </a>
 
                 <!-- Mobile Menu Button -->
                 <button id="mobile-menu-btn"
@@ -154,75 +134,65 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden border-t bg-white">
             <div class="px-6 py-6 flex flex-col gap-y-4 text-sm font-medium">
-                <a href="services.html" class="py-1 hover:text-[#0A2540]">Layanan</a>
+                <a href="index.html" class="py-1 text-[#0A2540] font-semibold">Home</a>
                 <a href="about.html" class="py-1 hover:text-[#0A2540]">Tentang Kami</a>
-                <a href="#why" class="py-1 hover:text-[#0A2540]">Mengapa Kami</a>
+                <a href="services.html" class="py-1 hover:text-[#0A2540]">Layanan</a>
                 <a href="careers.html" class="py-1 hover:text-[#0A2540]">Karir</a>
                 <a href="contact.html" class="py-1 hover:text-[#0A2540]">Kontak</a>
-                <div class="pt-4 flex flex-col gap-y-3">
-                    <a href="contact.html" class="text-center py-3 border border-gray-300 rounded-2xl font-semibold">Minta Penawaran</a>
-                    <a href="contact.html" class="text-center py-3 bg-[#0A2540] text-white rounded-2xl font-semibold">Hubungi Kami</a>
-                </div>
+                <a href="contact.html" class="mt-2 text-center py-3 bg-[#0A2540] text-white rounded-2xl font-semibold">Hubungi Kami</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="relative text-white overflow-hidden min-h-[680px] flex items-center">
-        <!-- Background Image + Dark Overlay + Ken Burns Animation -->
-        <div class="absolute inset-0 bg-cover bg-center hero-moving-bg" 
+    <header class="relative text-white overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center"
              style="background-image: url('https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=2000&q=80');">
-            <div class="absolute inset-0 bg-gradient-to-br from-[#0A2540]/95 via-[#0A2540]/85 to-black/70"></div>
+            <div class="absolute inset-0 hero-overlay"></div>
         </div>
-        
-        <div class="relative max-w-7xl mx-auto px-5 md:px-6 pt-16 pb-20 md:pt-24 md:pb-28">
+
+        <div class="relative max-w-7xl mx-auto px-6 py-20 sm:py-28 md:py-36 lg:py-44">
             <div class="max-w-3xl">
-                <div class="inline-flex items-center gap-x-2 bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-3xl text-sm mb-5 border border-white/20">
-                    <div class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
-                    <span class="font-medium">Melayani Indonesia sejak 2018</span>
-                </div>
-                
-                <h1 class="text-5xl md:text-7xl leading-none tracking-tighter font-semibold mb-5 drop-shadow">
-                    PERADA GROUP<br>
-                    <span class="text-3xl md:text-[42px] text-blue-300 font-medium">Two Entities.<br>One Excellence.</span>
-                </h1>
-                
-                <p class="max-w-lg text-lg md:text-xl text-white/90 mb-8 leading-relaxed">
-                    Solusi terintegrasi <strong>Logistics &amp; Freight Forwarding</strong> 
-                    dan <strong>Outsourcing &amp; HR Solutions</strong> untuk pertumbuhan bisnis Anda.
+                <p class="text-xs sm:text-sm font-medium tracking-[0.25em] uppercase text-blue-300/90 mb-6 md:mb-8">
+                    Logistics &amp; HR Solutions
                 </p>
-                
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="#contact" 
-                       class="inline-flex items-center justify-center gap-x-3 bg-white text-[#0A2540] font-semibold px-9 h-14 rounded-3xl hover:bg-blue-50 active:scale-[0.985] transition-all text-base modern-btn shadow-xl">
-                        <span>Minta Penawaran Gratis</span>
-                        <i class="fa-solid fa-arrow-right"></i>
+
+                <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-[4.25rem] font-semibold tracking-tight leading-[1.08] mb-6 md:mb-8">
+                    Logistik &amp; SDM.<br>Satu mitra terpercaya.
+                </h1>
+
+                <p class="text-base sm:text-lg md:text-xl text-white/75 leading-relaxed max-w-xl mb-10 md:mb-12">
+                    PERADA GROUP mengintegrasikan freight forwarding dan outsourcing HR untuk mendukung operasional bisnis Anda di seluruh Indonesia.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-3 sm:gap-4">
+                    <a href="contact.html"
+                       class="inline-flex items-center justify-center gap-x-2.5 bg-white text-[#0A2540] font-semibold px-8 h-12 sm:h-14 rounded-xl hover:bg-blue-50 transition-colors text-sm sm:text-base">
+                        <span>Minta Penawaran</span>
+                        <i class="fa-solid fa-arrow-right text-sm"></i>
                     </a>
-                    <a href="#services" 
-                       class="inline-flex items-center justify-center gap-x-3 border border-white/50 hover:bg-white/10 font-medium px-9 h-14 rounded-3xl transition-all text-base active:scale-[0.985]">
-                        Lihat Layanan
+                    <a href="services.html"
+                       class="inline-flex items-center justify-center gap-x-2.5 border border-white/40 hover:border-white/70 hover:bg-white/5 font-medium px-8 h-12 sm:h-14 rounded-xl transition-colors text-sm sm:text-base">
+                        <span>Jelajahi Layanan</span>
+                        <i class="fa-solid fa-chevron-right text-xs opacity-70"></i>
                     </a>
                 </div>
-                
-                <div class="mt-14 flex items-center gap-x-4 text-sm">
-                    <div class="flex -space-x-2">
-                        <div class="w-8 h-8 bg-white/90 rounded-full border-2 border-[#0A2540]"></div>
-                        <div class="w-8 h-8 bg-white/90 rounded-full border-2 border-[#0A2540]"></div>
-                        <div class="w-8 h-8 bg-white/90 rounded-full border-2 border-[#0A2540]"></div>
+
+                <div class="mt-14 md:mt-20 pt-8 border-t border-white/15 grid grid-cols-2 sm:grid-cols-3 gap-8 max-w-lg">
+                    <div>
+                        <div class="text-2xl md:text-3xl font-semibold tracking-tight stat-number">200+</div>
+                        <div class="text-xs sm:text-sm text-white/55 mt-1">Klien Korporat</div>
                     </div>
-                    <div class="text-white/80">
-                        Dipercaya <span class="font-semibold text-white">200+</span> klien korporat
+                    <div>
+                        <div class="text-2xl md:text-3xl font-semibold tracking-tight">Nasional</div>
+                        <div class="text-xs sm:text-sm text-white/55 mt-1">Jangkauan Layanan</div>
+                    </div>
+                    <div class="col-span-2 sm:col-span-1">
+                        <div class="text-2xl md:text-3xl font-semibold tracking-tight">2018</div>
+                        <div class="text-xs sm:text-sm text-white/55 mt-1">Melayani Indonesia</div>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <!-- Scroll Indicator -->
-        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 hidden md:block">
-            <a href="#services" class="flex flex-col items-center text-white/60 hover:text-white/90 transition-colors text-xs tracking-[2px]">
-                SCROLL TO EXPLORE
-                <i class="fa-solid fa-chevron-down mt-1 animate-bounce"></i>
-            </a>
         </div>
     </header>
 
@@ -435,7 +405,7 @@
         <div class="max-w-5xl mx-auto px-6 py-16 text-center">
             <h2 class="text-4xl md:text-5xl tracking-tight font-semibold mb-4">Siap Tingkatkan<br>Operasional &amp; SDM Anda?</h2>
             <p class="text-white/70 max-w-md mx-auto mb-8">Dapatkan solusi terintegrasi Logistics atau HR Outsourcing dari tim PERADA GROUP.</p>
-            <a href="#contact" class="inline-block bg-white text-[#0A2540] font-semibold px-10 py-4 rounded-3xl hover:bg-blue-50 transition-colors">Hubungi Tim Kami Sekarang</a>
+            <a href="contact.html" class="inline-block bg-white text-[#0A2540] font-semibold px-10 py-4 rounded-3xl hover:bg-blue-50 transition-colors">Hubungi Tim Kami Sekarang</a>
         </div>
     </div>
 
@@ -522,11 +492,12 @@
                     </div>
                     <div>
                         <div class="font-semibold text-white mb-3 tracking-wider text-xs">HUBUNGI</div>
-                        <div class="space-y-1.5">
-                            <a href="https://maps.google.com/?q=Plaza+Summarecon+Bekasi" target="_blank" class="hover:text-white transition-colors">Jakarta, Indonesia</a><br>
-                            <a href="mailto:info@perada.co.id" class="hover:text-white transition-colors">info@perada.co.id</a><br>
-                            <a href="https://wa.me/6281214144214" target="_blank" class="hover:text-white transition-colors flex items-center gap-x-2">
-                                <i class="fa-brands fa-whatsapp text-green-400"></i> 
+                        <div class="space-y-1.5 flex flex-col">
+                            <a href="contact.html" class="hover:text-white transition-colors">Kontak Kami</a>
+                            <a href="https://maps.google.com/?q=Plaza+Summarecon+Bekasi+Lt.+7" target="_blank" rel="noopener" class="hover:text-white transition-colors">Plaza Summarecon Bekasi Lt. 7</a>
+                            <a href="mailto:info@perada.co.id" class="hover:text-white transition-colors">info@perada.co.id</a>
+                            <a href="https://wa.me/6281214144214" target="_blank" rel="noopener" class="hover:text-white transition-colors flex items-center gap-x-2">
+                                <i class="fa-brands fa-whatsapp text-green-400"></i>
                                 <span>0812-1414-4214</span>
                             </a>
                         </div>
