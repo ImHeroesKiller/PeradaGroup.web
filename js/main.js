@@ -74,9 +74,7 @@ function init() {
     initMobileMenu();
     initSmoothScroll();
 
-    // Catatan: Contact form sekarang menggunakan Web3Forms
-    // Jadi tidak perlu handler JavaScript lagi
-    console.log('%c[PERADA GROUP] Website initialized (Clean Version)', 'color:#64748b');
+    console.log('%c[PERADA GROUP] Website initialized', 'color:#64748b');
 }
 
 // Jalankan saat halaman siap

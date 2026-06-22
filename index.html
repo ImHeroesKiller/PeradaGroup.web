@@ -113,7 +113,7 @@
         <div class="max-w-7xl mx-auto">
             <div class="px-6 py-5 flex items-center justify-between">
                 <!-- Logo -->
-                <div class="flex items-center gap-x-3">
+                <a href="index.html" class="flex items-center gap-x-3">
                     <div class="w-9 h-9 bg-[#0A2540] rounded-xl flex items-center justify-center">
                         <span class="text-white font-bold text-xl tracking-tighter">P</span>
                     </div>
@@ -121,23 +121,23 @@
                         <div class="font-semibold text-xl tracking-tighter corporate-blue">PERADA</div>
                         <div class="text-[9px] text-gray-500 -mt-0.5 font-medium tracking-[1.5px]">GROUP</div>
                     </div>
-                </div>
+                </a>
 
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex items-center gap-x-9 text-sm font-medium">
-                    <a href="#services" class="hover:text-[#0A2540] transition-colors">Layanan</a>
-                    <a href="#about" class="hover:text-[#0A2540] transition-colors">Tentang Kami</a>
+                    <a href="services.html" class="hover:text-[#0A2540] transition-colors">Layanan</a>
+                    <a href="about.html" class="hover:text-[#0A2540] transition-colors">Tentang Kami</a>
                     <a href="#why" class="hover:text-[#0A2540] transition-colors">Mengapa Kami</a>
-                    <a href="#portal" class="hover:text-[#0A2540] transition-colors">Portal Karir</a>
-                    <a href="#contact" class="hover:text-[#0A2540] transition-colors">Kontak</a>
+                    <a href="careers.html" class="hover:text-[#0A2540] transition-colors">Karir</a>
+                    <a href="contact.html" class="hover:text-[#0A2540] transition-colors">Kontak</a>
                 </div>
 
                 <div class="hidden md:flex items-center gap-x-4">
-                    <a href="#contact" 
+                    <a href="contact.html" 
                        class="px-5 py-2.5 text-sm font-semibold border border-gray-300 hover:bg-gray-50 rounded-2xl transition-colors">
                         Minta Penawaran
                     </a>
-                    <a href="#contact" 
+                    <a href="contact.html" 
                        class="px-6 py-2.5 text-sm font-semibold bg-[#0A2540] hover:bg-[#1E3A5F] text-white rounded-2xl transition-colors modern-btn">
                         Hubungi Kami
                     </a>
@@ -154,14 +154,14 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden border-t bg-white">
             <div class="px-6 py-6 flex flex-col gap-y-4 text-sm font-medium">
-                <a href="#services" class="py-1 hover:text-[#0A2540]">Layanan</a>
-                <a href="#about" class="py-1 hover:text-[#0A2540]">Tentang Kami</a>
+                <a href="services.html" class="py-1 hover:text-[#0A2540]">Layanan</a>
+                <a href="about.html" class="py-1 hover:text-[#0A2540]">Tentang Kami</a>
                 <a href="#why" class="py-1 hover:text-[#0A2540]">Mengapa Kami</a>
-                <a href="#portal" class="py-1 hover:text-[#0A2540]">Portal Karir</a>
-                <a href="#contact" class="py-1 hover:text-[#0A2540]">Kontak</a>
+                <a href="careers.html" class="py-1 hover:text-[#0A2540]">Karir</a>
+                <a href="contact.html" class="py-1 hover:text-[#0A2540]">Kontak</a>
                 <div class="pt-4 flex flex-col gap-y-3">
-                    <a href="#contact" class="text-center py-3 border border-gray-300 rounded-2xl font-semibold">Minta Penawaran</a>
-                    <a href="#contact" class="text-center py-3 bg-[#0A2540] text-white rounded-2xl font-semibold">Hubungi Kami</a>
+                    <a href="contact.html" class="text-center py-3 border border-gray-300 rounded-2xl font-semibold">Minta Penawaran</a>
+                    <a href="contact.html" class="text-center py-3 bg-[#0A2540] text-white rounded-2xl font-semibold">Hubungi Kami</a>
                 </div>
             </div>
         </div>
@@ -440,46 +440,49 @@
     </div>
 
     <!-- Contact Section -->
-    <section id="contact" class="max-w-4xl mx-auto px-6 py-20">
+    <section id="contact" class="max-w-6xl mx-auto px-6 py-20">
         <div class="text-center mb-10">
             <div class="text-sm font-semibold tracking-[3px] text-blue-600 mb-3">GET IN TOUCH</div>
             <h2 class="text-5xl tracking-tighter font-semibold corporate-blue">Mari Bekerja Sama</h2>
         </div>
         
         <div class="bg-white border border-gray-100 p-10 rounded-3xl max-w-2xl mx-auto">
-            <form id="contact-form" class="space-y-6">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <form action="https://api.web3forms.com/submit" method="POST" class="space-y-5">
+                <input type="hidden" name="access_key" value="11aabbc0-02fe-48a0-b0c5-f01b89bc1116">
+                <input type="hidden" name="subject" value="Pesan Baru dari Website PERADA GROUP">
+                <input type="hidden" name="from_name" value="Website PERADA GROUP">
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
                     <div>
-                        <label class="block text-sm font-medium mb-1.5 text-gray-700">Nama Lengkap</label>
-                        <input type="text" class="w-full border border-gray-200 focus:border-[#0A2540] rounded-2xl px-5 py-3 text-sm outline-none transition-colors" placeholder="Nama Anda" required>
+                        <label class="block text-sm font-medium mb-1.5">Nama Lengkap *</label>
+                        <input type="text" name="name" class="w-full border border-gray-300 focus:border-[#0A2540] rounded-2xl px-5 py-3 text-sm" placeholder="Nama Anda" required>
                     </div>
                     <div>
-                        <label class="block text-sm font-medium mb-1.5 text-gray-700">Perusahaan</label>
-                        <input type="text" class="w-full border border-gray-200 focus:border-[#0A2540] rounded-2xl px-5 py-3 text-sm outline-none transition-colors" placeholder="Nama Perusahaan">
-                    </div>
-                </div>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                        <label class="block text-sm font-medium mb-1.5 text-gray-700">Email</label>
-                        <input type="email" class="w-full border border-gray-200 focus:border-[#0A2540] rounded-2xl px-5 py-3 text-sm outline-none transition-colors" placeholder="email@perusahaan.com" required>
-                    </div>
-                    <div>
-                        <label class="block text-sm font-medium mb-1.5 text-gray-700">No. Telepon / WA</label>
-                        <input type="tel" class="w-full border border-gray-200 focus:border-[#0A2540] rounded-2xl px-5 py-3 text-sm outline-none transition-colors" placeholder="+62 8xx-xxxx-xxxx" required>
+                        <label class="block text-sm font-medium mb-1.5">Perusahaan</label>
+                        <input type="text" name="company" class="w-full border border-gray-300 focus:border-[#0A2540] rounded-2xl px-5 py-3 text-sm" placeholder="Nama Perusahaan">
                     </div>
                 </div>
-                
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <div>
+                        <label class="block text-sm font-medium mb-1.5">Email *</label>
+                        <input type="email" name="email" class="w-full border border-gray-300 focus:border-[#0A2540] rounded-2xl px-5 py-3 text-sm" placeholder="email@perusahaan.com" required>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-1.5">No. Telepon / WA *</label>
+                        <input type="tel" name="phone" class="w-full border border-gray-300 focus:border-[#0A2540] rounded-2xl px-5 py-3 text-sm" placeholder="0812-XXXX-XXXX" required>
+                    </div>
+                </div>
+
                 <div>
-                    <label class="block text-sm font-medium mb-1.5 text-gray-700">Kebutuhan / Pesan</label>
-                    <textarea rows="4" class="w-full border border-gray-200 focus:border-[#0A2540] rounded-3xl px-5 py-4 text-sm outline-none transition-colors resize-y min-h-[120px]" placeholder="Jelaskan kebutuhan logistik atau proyek Anda..." required></textarea>
+                    <label class="block text-sm font-medium mb-1.5">Kebutuhan / Pesan *</label>
+                    <textarea name="message" rows="5" class="w-full border border-gray-300 focus:border-[#0A2540] rounded-3xl px-5 py-4 text-sm resize-y" placeholder="Jelaskan kebutuhan Anda..." required></textarea>
                 </div>
-                
-                <button type="submit" 
-                        class="w-full bg-[#0A2540] hover:bg-[#1E3A5F] transition-colors text-white font-semibold py-4 rounded-3xl text-base modern-btn">
-                    Kirim Permintaan Penawaran
+
+                <button type="submit" class="w-full bg-[#0A2540] hover:bg-[#1E3A5F] text-white font-semibold py-4 rounded-3xl transition-all">
+                    Kirim Pesan
                 </button>
-                
+
                 <p class="text-center text-xs text-gray-500">Kami akan merespons dalam 1x24 jam kerja.</p>
             </form>
         </div>
@@ -502,19 +505,19 @@
                 <div class="grid grid-cols-2 md:grid-cols-3 gap-x-12 gap-y-8 text-sm">
                     <div>
                         <div class="font-semibold text-white mb-3 tracking-wider text-xs">PERUSAHAAN</div>
-                        <div class="space-y-1.5">
-                            <a href="#about" class="hover:text-white transition-colors">Tentang Kami</a>
-                            <a href="#about" class="hover:text-white transition-colors">Sejarah</a>
-                            <a href="#portal" class="hover:text-white transition-colors">Karir</a>
+                        <div class="space-y-1.5 flex flex-col">
+                            <a href="about.html" class="hover:text-white transition-colors">Tentang Kami</a>
+                            <a href="about.html" class="hover:text-white transition-colors">Sejarah</a>
+                            <a href="careers.html" class="hover:text-white transition-colors">Karir</a>
                         </div>
                     </div>
                     <div>
                         <div class="font-semibold text-white mb-3 tracking-wider text-xs">LAYANAN</div>
-                        <div class="space-y-1.5">
-                            <a href="#services" class="hover:text-white transition-colors">Freight Forwarding</a>
-                            <a href="#services" class="hover:text-white transition-colors">Shipping &amp; Supply Chain</a>
-                            <a href="#services" class="hover:text-white transition-colors">Office &amp; SEAT Management</a>
-                            <a href="#services" class="hover:text-white transition-colors">SPG &amp; Event Organizer</a>
+                        <div class="space-y-1.5 flex flex-col">
+                            <a href="services.html" class="hover:text-white transition-colors">Freight Forwarding</a>
+                            <a href="services.html" class="hover:text-white transition-colors">Shipping &amp; Supply Chain</a>
+                            <a href="services.html" class="hover:text-white transition-colors">Office &amp; SEAT Management</a>
+                            <a href="services.html" class="hover:text-white transition-colors">SPG &amp; Event Organizer</a>
                         </div>
                     </div>
                     <div>
@@ -591,45 +594,6 @@
             });
         }
         
-        // Contact form handler (static)
-        function initContactForm() {
-            const form = document.getElementById('contact-form');
-            
-            form.addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                const btn = form.querySelector('button[type="submit"]');
-                const originalText = btn.innerHTML;
-                
-                btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-2"></i> Mengirim...';
-                btn.disabled = true;
-                
-                setTimeout(() => {
-                    btn.innerHTML = '<i class="fa-solid fa-check mr-2"></i> Terkirim! Terima kasih.';
-                    btn.classList.remove('bg-[#0A2540]');
-                    btn.classList.add('bg-emerald-600');
-                    
-                    setTimeout(() => {
-                        form.reset();
-                        btn.innerHTML = originalText;
-                        btn.disabled = false;
-                        btn.classList.add('bg-[#0A2540]');
-                        btn.classList.remove('bg-emerald-600');
-                        
-                        // Show success message
-                        const successMsg = document.createElement('div');
-                        successMsg.className = 'mt-4 text-center text-emerald-600 text-sm font-medium';
-                        successMsg.innerHTML = 'Pesan Anda telah diterima. Tim kami akan menghubungi segera.';
-                        form.appendChild(successMsg);
-                        
-                        setTimeout(() => {
-                            successMsg.remove();
-                        }, 4000);
-                    }, 2200);
-                }, 1600);
-            });
-        }
-        
         // Smooth scroll for anchor links
         function initSmoothScroll() {
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -656,7 +620,6 @@
             initializeTailwind();
             initNavbar();
             initMobileMenu();
-            initContactForm();
             initSmoothScroll();
             
             // Optional: console log for dev
