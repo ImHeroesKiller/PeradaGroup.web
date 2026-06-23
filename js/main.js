@@ -67,49 +67,107 @@ function initSmoothScroll() {
     });
 }
 
-// Hero slideshow — fade transition, autoplay, pause on hover
+// Hero slideshow — fade transition, preload, autoplay, pause on hover
 function initHeroSlideshows() {
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const TRANSITION_DELAY_MS = 120;
+    const INTERVAL_MS = 5000;
 
     document.querySelectorAll('[data-slideshow]').forEach((root) => {
         const slides = root.querySelectorAll('.hero-slideshow__slide');
         const dots = root.querySelectorAll('.hero-slideshow__dot');
         if (!slides.length) return;
 
+        const preloaded = new Map();
         let current = 0;
         let timer = null;
-        const interval = 5000;
+        let transitioning = false;
 
-        function goTo(index) {
+        function getSlideImage(slide) {
+            return slide.querySelector('.hero-slideshow__image');
+        }
+
+        function preloadImage(src) {
+            if (!src) return Promise.resolve();
+            if (preloaded.has(src)) return preloaded.get(src);
+
+            const promise = new Promise((resolve) => {
+                const img = new Image();
+                img.decoding = 'async';
+                img.onload = () => resolve(img);
+                img.onerror = () => resolve(null);
+                img.src = src;
+            });
+
+            preloaded.set(src, promise);
+            return promise;
+        }
+
+        function preloadAround(index) {
+            const nextIndex = (index + 1) % slides.length;
+            const prevIndex = (index - 1 + slides.length) % slides.length;
+
+            [index, nextIndex, prevIndex].forEach((i) => {
+                const src = getSlideImage(slides[i])?.src;
+                if (src) preloadImage(src);
+            });
+        }
+
+        async function goTo(index) {
+            if (transitioning) return;
+
+            const target = (index + slides.length) % slides.length;
+            if (target === current) return;
+
+            transitioning = true;
+
+            const targetImg = getSlideImage(slides[target]);
+            if (targetImg?.src) {
+                await preloadImage(targetImg.src);
+                await new Promise((resolve) => setTimeout(resolve, TRANSITION_DELAY_MS));
+            }
+
             slides[current]?.classList.remove('is-active');
             dots[current]?.classList.remove('is-active');
             dots[current]?.setAttribute('aria-selected', 'false');
 
-            current = (index + slides.length) % slides.length;
+            current = target;
 
             slides[current]?.classList.add('is-active');
             dots[current]?.classList.add('is-active');
             dots[current]?.setAttribute('aria-selected', 'true');
+
+            preloadAround(current);
+            transitioning = false;
         }
 
-        function next() {
-            goTo(current + 1);
+        async function next() {
+            await goTo(current + 1);
+        }
+
+        function scheduleNext() {
+            stop();
+            if (reducedMotion || slides.length < 2) return;
+
+            timer = setTimeout(async () => {
+                await next();
+                scheduleNext();
+            }, INTERVAL_MS);
         }
 
         function start() {
-            if (reducedMotion || slides.length < 2) return;
-            stop();
-            timer = setInterval(next, interval);
+            scheduleNext();
         }
 
         function stop() {
-            if (timer) clearInterval(timer);
+            if (timer) clearTimeout(timer);
             timer = null;
         }
 
         dots.forEach((dot, index) => {
-            dot.addEventListener('click', () => {
-                goTo(index);
+            dot.addEventListener('click', async () => {
+                stop();
+                await goTo(index);
                 start();
             });
         });
@@ -119,6 +177,7 @@ function initHeroSlideshows() {
         root.addEventListener('focusin', stop);
         root.addEventListener('focusout', start);
 
+        preloadAround(0);
         if (!reducedMotion) start();
     });
 }
