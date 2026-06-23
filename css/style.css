@@ -490,3 +490,112 @@ img.footer-logo {
         padding: 2.5rem 1.25rem;
     }
 }
+
+/* FAQ accordion */
+.faq-accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.faq-item {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.faq-item:hover {
+    border-color: #bfdbfe;
+}
+
+.faq-item[open] {
+    border-color: #93c5fd;
+    box-shadow: 0 4px 12px rgb(10 37 64 / 0.06);
+}
+
+.faq-item__summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+    cursor: pointer;
+    list-style: none;
+    font-weight: 600;
+    color: #0A2540;
+    line-height: 1.45;
+    user-select: none;
+}
+
+.faq-item__summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item__question {
+    flex: 1;
+    font-size: 0.9375rem;
+}
+
+@media (min-width: 640px) {
+    .faq-item__question {
+        font-size: 1rem;
+    }
+}
+
+.faq-item__icon {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    background: rgb(10 37 64 / 0.05);
+    color: #0A2540;
+    transition: background-color 0.2s ease;
+}
+
+.faq-item[open] .faq-item__icon {
+    background: #eff6ff;
+}
+
+.faq-item__chevron {
+    font-size: 0.75rem;
+    transition: transform 0.2s ease;
+}
+
+.faq-item[open] .faq-item__chevron {
+    transform: rotate(180deg);
+}
+
+.faq-item__answer {
+    padding: 0 1.25rem 1.125rem;
+    color: #4b5563;
+    font-size: 0.9375rem;
+    line-height: 1.65;
+    border-top: 1px solid #f3f4f6;
+}
+
+.faq-item__answer p {
+    margin: 0;
+    padding-top: 1rem;
+}
+
+.faq-item__answer strong {
+    color: #0A2540;
+    font-weight: 600;
+}
+
+.faq-link {
+    color: #2563eb;
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: color 0.15s ease;
+}
+
+.faq-link:hover {
+    color: #0A2540;
+}
