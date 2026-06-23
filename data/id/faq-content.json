@@ -1,4 +1,11 @@
 {
+  "page": {
+    "title": "FAQ | PERADA GROUP",
+    "description": "Pertanyaan yang sering diajukan seputar layanan logistik, SDM, impor API-U, dan operasional bisnis PERADA GROUP.",
+    "heroAriaLabel": "FAQ PERADA GROUP",
+    "heroHeadline": "Pertanyaan yang Sering Diajukan",
+    "heroSubheadline": "Temukan jawaban seputar layanan logistik, sumber daya manusia, dan solusi operasional bisnis PERADA GROUP."
+  },
   "section": {
     "eyebrow": "FAQ",
     "title": "Pertanyaan yang Sering Diajukan",
@@ -48,6 +55,26 @@
       "id": "customs-clearance",
       "question": "Apakah layanan logistik mencakup customs clearance dan dokumentasi kepabeanan?",
       "answer": "Ya. Melalui PT Perkasa Adi Yuda, layanan logistik kami mencakup <strong>customs clearance</strong>, pengurusan dokumentasi kepabeanan, dan kepatuhan regulasi dalam proses export-import. Tim kami berfokus pada efisiensi waktu, optimasi biaya, dan kepatuhan regulasi di setiap pengurusan transportasi."
+    },
+    {
+      "id": "outsourcing-sdm",
+      "question": "Apakah layanan outsourcing SDM mencakup rekrutmen dan pelatihan?",
+      "answer": "Ya. Melalui PT Perdana Adi Yuda, layanan <strong>Human Capital &amp; Outsourcing</strong> dapat mencakup rekrutmen, penempatan tenaga kerja, administrasi kepegawaian, pelatihan, serta dukungan operasional SDM sesuai kebutuhan proyek klien korporat. Ruang lingkup disesuaikan dalam proposal kerja sama."
+    },
+    {
+      "id": "sla-pelaporan",
+      "question": "Apakah tersedia SLA dan laporan berkala untuk klien korporat?",
+      "answer": "Ya. Untuk klien korporat, PERADA GROUP menetapkan <strong>Service Level Agreement (SLA)</strong> yang disepakati bersama — meliputi target respons, jadwal pelaksanaan, dan mekanisme pelaporan berkala. Laporan disesuaikan dengan jenis layanan, baik logistik maupun operasional bisnis."
+    },
+    {
+      "id": "jenis-pengiriman",
+      "question": "Jenis pengiriman dan barang apa yang dapat ditangani?",
+      "answer": "PT Perkasa Adi Yuda menangani pengiriman <strong>domestik dan internasional</strong> — termasuk barang umum, alat berat, material industri, dan kargo proyek. Jenis barang, rute, dan persyaratan dokumentasi akan dikonfirmasi saat konsultasi awal agar sesuai regulasi dan kapabilitas operasional."
+    },
+    {
+      "id": "estimasi-biaya",
+      "question": "Bagaimana struktur biaya dan estimasi penawaran layanan?",
+      "answer": "Biaya disusun berdasarkan <strong>ruang lingkup layanan</strong>, volume, lokasi, dan kompleksitas operasional. Setelah konsultasi awal, tim kami memberikan estimasi atau penawaran tertulis yang transparan. Untuk proyek berkelanjutan, tersedia skema kerja sama yang disesuaikan dengan kebutuhan dan skala klien."
     }
   ]
 }

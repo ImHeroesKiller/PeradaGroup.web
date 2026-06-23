@@ -1,0 +1,86 @@
+{
+  "page": {
+    "title": "条款与条件 | PERADA GROUP",
+    "description": "PERADA GROUP 网站及服务的使用条款与条件，适用于企业合作伙伴与访客。"
+  },
+  "hero": {
+    "ariaLabel": "PERADA GROUP 条款与条件",
+    "headline": "条款与条件",
+    "subheadline": "PERADA GROUP 网站及服务的使用条款。",
+    "updated": "最后更新：2026年6月24日"
+  },
+  "sections": [
+    {
+      "title": "1. 一般条款",
+      "paragraphs": [
+        "访问 perada.net 或使用 <strong>PERADA GROUP</strong>（PT Perkasa Adi Yuda 与 PT Perdana Adi Yuda）提供的服务，即表示您同意受本条款与条件约束。",
+        "如您不同意本条款，请勿使用本网站或我们的服务。"
+      ]
+    },
+    {
+      "title": "2. 服务",
+      "paragraphs": [
+        "PERADA GROUP 提供物流、货运代理、人力资本与外包、进口与贸易（API-U）及综合业务运营支持服务。",
+        "各项服务的范围、时间表、费用及 SLA 均在与客户商定的方案、合同或单独合作协议中确定。"
+      ]
+    },
+    {
+      "title": "3. 网站使用",
+      "paragraphs": [
+        "您同意合法使用本网站，且不得："
+      ],
+      "list": [
+        "破坏网站的安全性、完整性或可用性。",
+        "上传或传播违法、误导性或损害他人利益的内容。",
+        "未经 PERADA GROUP 书面许可，将网站内容用于商业目的。",
+        "滥用联系信息或表单进行垃圾信息或无关活动。"
+      ]
+    },
+    {
+      "title": "4. 知识产权",
+      "paragraphs": [
+        "本网站全部内容——包括标识、文字、设计及营销材料——均受知识产权法律保护，归 PERADA GROUP 或其许可方所有。",
+        "未经书面许可，禁止使用、复制或分发。"
+      ]
+    },
+    {
+      "title": "5. 报价与信息",
+      "paragraphs": [
+        "网站信息为一般性说明，可能在不事先通知的情况下变更。除非在正式方案或合同中书面载明，否则该等信息不构成具有约束力的要约。",
+        "合作决定基于需求分析、运营可用性及 PERADA GROUP 与客户之间的合同约定。"
+      ]
+    },
+    {
+      "title": "6. 责任限制",
+      "paragraphs": [
+        "PERADA GROUP 力求保持网站信息准确，但不保证全部内容无错误或始终为最新。",
+        "在法律允许的范围内，PERADA GROUP 不对因使用本网站而产生的间接损失承担责任。服务履行的责任以适用的合作协议为准。"
+      ]
+    },
+    {
+      "title": "7. 第三方链接",
+      "paragraphs": [
+        "本网站可能包含指向第三方网站的链接。PERADA GROUP 不对该等外部网站的内容、隐私政策或做法负责。"
+      ]
+    },
+    {
+      "title": "8. 适用法律",
+      "paragraphs": [
+        "本条款与条件受印度尼西亚共和国法律管辖并依其解释。无法通过协商解决的争议，应通过适用的法律机制解决。"
+      ]
+    },
+    {
+      "title": "9. 条款变更",
+      "paragraphs": [
+        "PERADA GROUP 有权随时更新本条款与条件。最新版本将发布于本页，并注明相应更新日期。"
+      ]
+    },
+    {
+      "title": "10. 联系方式",
+      "paragraphs": [
+        "有关本条款与条件的疑问，请联系：",
+        "<strong>PERADA GROUP</strong><br>Plaza Summarecon Bekasi Lt. 7, Bekasi 17142<br>电子邮件：<a href=\"mailto:info@perada.co.id\" class=\"faq-link\">info@perada.co.id</a><br>WhatsApp：<a href=\"https://wa.me/6281214144214\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"faq-link\">0812-1414-4214</a>"
+      ]
+    }
+  ]
+}

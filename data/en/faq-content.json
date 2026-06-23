@@ -1,4 +1,11 @@
 {
+  "page": {
+    "title": "FAQ | PERADA GROUP",
+    "description": "Frequently asked questions about PERADA GROUP logistics, HR, API-U imports, and integrated business operations.",
+    "heroAriaLabel": "PERADA GROUP FAQ",
+    "heroHeadline": "Frequently Asked Questions",
+    "heroSubheadline": "Find answers about logistics, human capital, and integrated business solutions from PERADA GROUP."
+  },
   "section": {
     "eyebrow": "FAQ",
     "title": "Frequently Asked Questions",
@@ -48,6 +55,26 @@
       "id": "customs-clearance",
       "question": "Does the logistics service include customs clearance and documentation?",
       "answer": "Yes. Through PT Perkasa Adi Yuda, our logistics services include <strong>customs clearance</strong>, customs documentation, and regulatory compliance for export-import processes. Our team focuses on time efficiency, cost optimization, and regulatory compliance in every transportation arrangement."
+    },
+    {
+      "id": "outsourcing-sdm",
+      "question": "Does HR outsourcing include recruitment and training?",
+      "answer": "Yes. Through PT Perdana Adi Yuda, <strong>Human Capital &amp; Outsourcing</strong> services can include recruitment, workforce placement, HR administration, training, and operational HR support tailored to corporate project needs. Scope is defined in the partnership proposal."
+    },
+    {
+      "id": "sla-pelaporan",
+      "question": "Are SLAs and periodic reporting available for corporate clients?",
+      "answer": "Yes. For corporate clients, PERADA GROUP establishes mutually agreed <strong>Service Level Agreements (SLAs)</strong> — covering response targets, execution schedules, and periodic reporting mechanisms. Reports are tailored to the type of service, whether logistics or business operations."
+    },
+    {
+      "id": "jenis-pengiriman",
+      "question": "What types of shipments and goods can you handle?",
+      "answer": "PT Perkasa Adi Yuda handles <strong>domestic and international</strong> shipments — including general cargo, heavy equipment, industrial materials, and project cargo. Goods type, routes, and documentation requirements are confirmed during the initial consultation to ensure regulatory and operational compliance."
+    },
+    {
+      "id": "estimasi-biaya",
+      "question": "How are service fees structured and estimated?",
+      "answer": "Fees are based on <strong>service scope</strong>, volume, location, and operational complexity. After an initial consultation, our team provides a transparent estimate or written quotation. For ongoing projects, partnership schemes are tailored to client needs and scale."
     }
   ]
 }

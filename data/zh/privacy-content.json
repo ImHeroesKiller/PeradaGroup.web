@@ -1,0 +1,91 @@
+{
+  "page": {
+    "title": "隐私政策 | PERADA GROUP",
+    "description": "PERADA GROUP 关于收集、使用及保护访客与商业合作伙伴个人数据的隐私政策。"
+  },
+  "hero": {
+    "ariaLabel": "PERADA GROUP 隐私政策",
+    "headline": "隐私政策",
+    "subheadline": "我们致力于以透明、审慎的方式保护您的个人数据。",
+    "updated": "最后更新：2026年6月24日"
+  },
+  "sections": [
+    {
+      "title": "1. 引言",
+      "paragraphs": [
+        "本隐私政策说明 <strong>PERADA GROUP</strong>（PT Perkasa Adi Yuda 与 PT Perdana Adi Yuda）如何通过 perada.net 网站及我们的官方沟通渠道收集、使用、存储及保护个人信息。",
+        "使用本网站或联系我们，即表示您在印度尼西亚适用法律与法规允许的范围内，同意本政策所述的做法。"
+      ]
+    },
+    {
+      "title": "2. 我们收集的数据",
+      "paragraphs": [
+        "我们可能收集以下类别的数据："
+      ],
+      "list": [
+        "身份与联系数据：姓名、公司、电子邮件、电话/WhatsApp 号码。",
+        "沟通数据：您提交的消息内容、咨询请求或联系表单。",
+        "技术数据：IP 地址、设备类型、浏览器、访问页面及语言偏好（如已启用）。",
+        "合作数据：与项目、服务需求相关的信息，以及您自愿提供的文件。"
+      ]
+    },
+    {
+      "title": "3. 我们如何使用数据",
+      "paragraphs": [
+        "个人数据将用于以下目的："
+      ],
+      "list": [
+        "回复咨询、报价请求及商务沟通。",
+        "提供、管理及改进物流与业务运营服务。",
+        "履行法律义务、许可及监管合规要求。",
+        "以汇总方式分析网站使用情况，以改善用户体验。",
+        "在您同意的情况下，发送相关服务信息。"
+      ]
+    },
+    {
+      "title": "4. 向第三方共享数据",
+      "paragraphs": [
+        "我们不会出售您的个人数据。为提供服务、保障安全或履行法律义务，数据可能与运营合作伙伴、技术供应商（如托管或分析服务）或主管机关共享。",
+        "所有参与的第三方均须根据合作协议，对数据保密与安全承担相应义务。"
+      ]
+    },
+    {
+      "title": "5. 数据安全",
+      "paragraphs": [
+        "我们采取合理的技术与组织措施，防止数据遭受未经授权的访问、披露或使用。然而，通过互联网传输数据的方法无法做到绝对安全。",
+        "如您怀疑发生数据泄露，请立即通过 <a href=\"mailto:info@perada.co.id\" class=\"faq-link\">info@perada.co.id</a> 与我们联系。"
+      ]
+    },
+    {
+      "title": "6. 您的权利",
+      "paragraphs": [
+        "根据适用法规，您有权："
+      ],
+      "list": [
+        "请求访问、更正或更新您的个人数据。",
+        "撤回对特定用途的数据使用同意。",
+        "在不与我们的法律义务冲突的范围内，请求删除数据。"
+      ]
+    },
+    {
+      "title": "7. Cookie 与追踪技术",
+      "paragraphs": [
+        "本网站可能使用 Cookie 或类似技术，以保存语言偏好、分析流量（例如通过分析服务）并提升网站性能。",
+        "您可通过浏览器设置管理 Cookie 偏好。"
+      ]
+    },
+    {
+      "title": "8. 政策变更",
+      "paragraphs": [
+        "本隐私政策可能不时更新。重大变更将通过网站告知。最新更新日期见本页顶部。"
+      ]
+    },
+    {
+      "title": "9. 联系我们",
+      "paragraphs": [
+        "有关本隐私政策或个人数据管理的疑问，请联系：",
+        "<strong>PERADA GROUP</strong><br>Plaza Summarecon Bekasi Lt. 7, Jl. Boulevard Ahmad Yani, Sentra Summarecon, Bekasi 17142<br>电子邮件：<a href=\"mailto:info@perada.co.id\" class=\"faq-link\">info@perada.co.id</a><br>WhatsApp：<a href=\"https://wa.me/6281214144214\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"faq-link\">0812-1414-4214</a>"
+      ]
+    }
+  ]
+}

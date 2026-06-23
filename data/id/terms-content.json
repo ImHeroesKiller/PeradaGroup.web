@@ -1,0 +1,86 @@
+{
+  "page": {
+    "title": "Syarat & Ketentuan | PERADA GROUP",
+    "description": "Syarat dan ketentuan penggunaan situs web serta layanan PERADA GROUP untuk mitra korporat dan pengunjung."
+  },
+  "hero": {
+    "ariaLabel": "Syarat dan Ketentuan PERADA GROUP",
+    "headline": "Syarat & Ketentuan",
+    "subheadline": "Ketentuan penggunaan situs web dan layanan PERADA GROUP.",
+    "updated": "Terakhir diperbarui: 24 Juni 2026"
+  },
+  "sections": [
+    {
+      "title": "1. Ketentuan Umum",
+      "paragraphs": [
+        "Dengan mengakses situs perada.net atau menggunakan layanan <strong>PERADA GROUP</strong> (PT Perkasa Adi Yuda dan PT Perdana Adi Yuda), Anda setuju untuk terikat oleh Syarat &amp; Ketentuan ini.",
+        "Jika Anda tidak setuju dengan ketentuan ini, harap tidak menggunakan situs atau layanan kami."
+      ]
+    },
+    {
+      "title": "2. Layanan",
+      "paragraphs": [
+        "PERADA GROUP menyediakan layanan logistik, freight forwarding, human capital &amp; outsourcing, import &amp; trading (API-U), serta dukungan operasional bisnis terintegrasi.",
+        "Ruang lingkup, jadwal, biaya, dan SLA setiap layanan ditetapkan dalam proposal, kontrak, atau perjanjian kerja sama terpisah yang disepakati bersama klien."
+      ]
+    },
+    {
+      "title": "3. Penggunaan Situs Web",
+      "paragraphs": [
+        "Anda setuju untuk menggunakan situs ini secara sah dan tidak:"
+      ],
+      "list": [
+        "Mengganggu keamanan, integritas, atau ketersediaan situs.",
+        "Mengunggah atau menyebarkan konten yang melanggar hukum, menyesatkan, atau merugikan pihak lain.",
+        "Menggunakan konten situs untuk tujuan komersial tanpa izin tertulis dari PERADA GROUP.",
+        "Menyalahgunakan informasi kontak atau formulir untuk spam atau aktivitas yang tidak relevan."
+      ]
+    },
+    {
+      "title": "4. Kekayaan Intelektual",
+      "paragraphs": [
+        "Seluruh konten di situs ini — termasuk logo, teks, desain, dan materi pemasaran — dilindungi oleh hukum kekayaan intelektual dan merupakan milik PERADA GROUP atau pemberi lisensinya.",
+        "Penggunaan, reproduksi, atau distribusi tanpa izin tertulis dilarang."
+      ]
+    },
+    {
+      "title": "5. Penawaran dan Informasi",
+      "paragraphs": [
+        "Informasi di situs bersifat umum dan dapat berubah tanpa pemberitahuan sebelumnya. Informasi tersebut tidak merupakan penawaran mengikat kecuali dinyatakan secara tertulis dalam proposal atau kontrak resmi.",
+        "Keputusan kerja sama didasarkan pada analisis kebutuhan, ketersediaan operasional, dan kesepakatan kontraktual antara PERADA GROUP dan klien."
+      ]
+    },
+    {
+      "title": "6. Pembatasan Tanggung Jawab",
+      "paragraphs": [
+        "PERADA GROUP berupaya menjaga keakuratan informasi di situs, namun tidak menjamin bahwa seluruh konten bebas dari kesalahan atau selalu mutakhir.",
+        "Sejauh diizinkan hukum, PERADA GROUP tidak bertanggung jawab atas kerugian tidak langsung yang timbul dari penggunaan situs. Tanggung jawab atas pelaksanaan layanan diatur dalam perjanjian kerja sama yang berlaku."
+      ]
+    },
+    {
+      "title": "7. Tautan Pihak Ketiga",
+      "paragraphs": [
+        "Situs dapat memuat tautan ke situs pihak ketiga. PERADA GROUP tidak bertanggung jawab atas konten, kebijakan privasi, atau praktik situs eksternal tersebut."
+      ]
+    },
+    {
+      "title": "8. Hukum yang Berlaku",
+      "paragraphs": [
+        "Syarat &amp; Ketentuan ini diatur oleh dan ditafsirkan sesuai hukum Republik Indonesia. Sengketa yang tidak dapat diselesaikan secara musyawarah akan diselesaikan melalui mekanisme hukum yang berlaku."
+      ]
+    },
+    {
+      "title": "9. Perubahan Ketentuan",
+      "paragraphs": [
+        "PERADA GROUP berhak memperbarui Syarat &amp; Ketentuan ini sewaktu-waktu. Versi terbaru akan dipublikasikan di halaman ini dengan tanggal pembaruan yang sesuai."
+      ]
+    },
+    {
+      "title": "10. Kontak",
+      "paragraphs": [
+        "Pertanyaan terkait Syarat &amp; Ketentuan dapat disampaikan ke:",
+        "<strong>PERADA GROUP</strong><br>Plaza Summarecon Bekasi Lt. 7, Bekasi 17142<br>Email: <a href=\"mailto:info@perada.co.id\" class=\"faq-link\">info@perada.co.id</a><br>WhatsApp: <a href=\"https://wa.me/6281214144214\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"faq-link\">0812-1414-4214</a>"
+      ]
+    }
+  ]
+}

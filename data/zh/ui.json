@@ -17,29 +17,33 @@
     "brandAriaLabel": "PERADA GROUP — 首页",
     "logoAlt": "网站页脚中的 PERADA GROUP 标志",
     "tagline": "一个集团，两大专长 — 为印尼企业合作伙伴提供综合物流与商业运营解决方案。",
-    "entities": {
-      "perdana": "PT Perdana Adi Yuda",
-      "perkasa": "PT Perkasa Adi Yuda"
-    },
     "entitiesLine": "PT Perdana Adi Yuda · PT Perkasa Adi Yuda",
     "headings": {
       "company": "公司",
       "services": "服务",
-      "contact": "联系"
+      "contact": "联系",
+      "legal": "法律"
     },
     "links": {
       "about": "关于我们",
       "advantages": "我们的优势",
+      "services": "服务",
       "careers": "职业发展",
+      "faq": "常见问题",
       "logistics": "物流与货运代理",
       "hr": "人力资本与外包",
       "import": "进口与贸易 (API-U)",
       "event": "活动与设施支持",
       "contact": "联系我们",
-      "address": "勿加泗 Summarecon 广场 7 楼"
+      "address": "勿加泗 Summarecon 广场 7 楼",
+      "privacy": "隐私政策",
+      "terms": "条款与条件"
     },
-    "copyright": "© 2026 PERADA GROUP. 保留所有权利。",
-    "privacy": "隐私",
-    "terms": "条款"
+    "social": {
+      "whatsapp": "PERADA GROUP WhatsApp",
+      "email": "PERADA GROUP 电子邮件",
+      "linkedin": "PERADA GROUP LinkedIn"
+    },
+    "copyright": "© 2026 PERADA GROUP. 保留所有权利。"
   }
 }

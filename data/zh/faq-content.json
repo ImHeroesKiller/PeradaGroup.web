@@ -1,10 +1,17 @@
 {
+  "page": {
+    "title": "常见问题 | PERADA GROUP",
+    "description": "关于 PERADA GROUP 物流、人力资源、API-U 进口及综合商业运营的常见问题。",
+    "heroAriaLabel": "PERADA GROUP 常见问题",
+    "heroHeadline": "常见问题",
+    "heroSubheadline": "了解 PERADA GROUP 物流、人力资源及综合商业解决方案的相关问题。"
+  },
   "section": {
-    "eyebrow": "常见问题",
+    "eyebrow": "FAQ",
     "title": "常见问题",
-    "intro": "关于服务、合作流程与运营范围的简要解答。还有其他问题？我们的团队随时为您服务。",
+    "intro": "关于服务、合作流程及运营覆盖范围的简要解答。仍有疑问？我们的团队随时为您服务。",
     "cta": {
-      "label": "联系顾问团队",
+      "label": "联系咨询团队",
       "href": "contact.html"
     }
   },
@@ -12,42 +19,62 @@
     {
       "id": "layanan-utama",
       "question": "PERADA GROUP 的主要服务有哪些？",
-      "answer": "PERADA GROUP 在一个集团下提供两大专长。通过 <strong>PT Perkasa Adi Yuda</strong>，我们提供 <strong>物流与货运代理</strong> — 包括 JPT、国内与国际运输及海关清关。通过 <strong>PT Perdana Adi Yuda</strong>，我们提供 <strong>人力资本与外包</strong>、活动与设施支持、商业咨询，以及作为持证进口商的 <strong>进口与贸易 (API-U)</strong>。"
+      "answer": "PERADA GROUP 在一个集团内提供两大专长。通过 <strong>PT Perkasa Adi Yuda</strong> 提供 <strong>物流与货运代理</strong> — 包括 JPT、国内及国际运输、清关服务。通过 <strong>PT Perdana Adi Yuda</strong> 提供 <strong>人力资本与外包</strong>、活动与设施支持、商业咨询，以及作为合法进口商的 <strong>进口与贸易 (API-U)</strong> 服务。"
     },
     {
       "id": "impor-api-u",
       "question": "PT Perdana Adi Yuda 能否协助进口货物？",
-      "answer": "可以。PT Perdana Adi Yuda 是持有 <strong>进口商识别号 (API-U)</strong> 的 <strong>持证进口商</strong>。我们可依法、有序地支持机械设备、工业装备、电动汽车零部件、太阳能板及其他货物的进口需求，并符合印尼贸易法规。"
+      "answer": "可以。PT Perdana Adi Yuda 是持有 <strong>进口商识别号 (API-U)</strong> 的 <strong>合法进口商</strong>，可依法、有序地支持机械、工业设备、电动汽车零部件、太阳能板及其他货物的进口需求，符合印尼贸易法规。"
     },
     {
       "id": "proses-kerja-sama",
       "question": "与 PERADA GROUP 的合作流程是怎样的？",
-      "answer": "流程从 <strong>需求咨询</strong> 开始 — 可通过联系表单、电子邮件或 WhatsApp。我们的团队分析服务范围，制定方案或报价，并确定 SLA 与执行机制。达成一致后，以结构化协调方式提供服务，并根据企业客户需求定期汇报。"
+      "answer": "流程从 <strong>需求咨询</strong> 开始 — 通过联系表单、电子邮件或 WhatsApp。我们的团队分析服务范围，制定方案或报价，并确定 SLA 和执行机制。达成一致后，以结构化协调和定期报告为企业客户提供服务。"
     },
     {
       "id": "cakupan-layanan",
-      "question": "服务是否覆盖雅加达周边以外地区？",
-      "answer": "是的。PERADA GROUP 为 <strong>印尼全境</strong> 的企业客户提供服务。物流与货运代理涵盖国内与国际运输；人力资源外包、活动与设施支持等运营服务则根据项目地点和客户需求灵活安排 — 详情将在初步咨询时说明。"
+      "question": "雅加达以外地区是否提供服务？",
+      "answer": "是的。PERADA GROUP 为 <strong>全印尼</strong> 的企业客户提供服务。物流与货运代理涵盖国内及国际运输；人力资源外包、活动及设施支持等运营服务根据项目地点和客户需求定制 — 详情将在初步咨询时确认。"
     },
     {
       "id": "perbedaan-entitas",
       "question": "PT Perkasa Adi Yuda 与 PT Perdana Adi Yuda 有何区别？",
-      "answer": "<strong>PT Perkasa Adi Yuda</strong> 专注于物流与运输管理 — 处理货物运输、海关单证及供应链效率。<strong>PT Perdana Adi Yuda</strong> 负责商业运营支持 — 人力资源、活动、设施管理、API-U 进口及商业发展咨询。两者同属 PERADA GROUP，作为一体化合作伙伴协同运作。"
+      "answer": "<strong>PT Perkasa Adi Yuda</strong> 专注于物流与运输管理 — 处理货物运输、海关文件及供应链效率。<strong>PT Perdana Adi Yuda</strong> 负责商业运营支持 — 人力资源、活动、设施管理、API-U 进口及商业发展咨询。两者在 PERADA GROUP 下作为一体化合作伙伴运营。"
     },
     {
       "id": "klien-korporat",
       "question": "PERADA GROUP 是否服务企业及工业客户？",
-      "answer": "是的。PERADA GROUP 在支持各行业 <strong>企业合作伙伴</strong> 方面经验丰富 — 涵盖制造、汽车、电信及重工业等领域。我们深谙中型至大型企业所需的合规、运营规模与服务标准。"
+      "answer": "是的。PERADA GROUP 在制造、汽车、电信及重工业等领域拥有支持 <strong>企业合作伙伴</strong> 的经验，了解中大型企业所需的合规性、运营规模及服务标准。"
     },
     {
       "id": "permintaan-penawaran",
       "question": "如何申请报价或咨询？",
-      "answer": "您可通过 <a href=\"contact.html\" class=\"faq-link\">联系页面</a>、发送邮件至 <a href=\"mailto:info@perada.co.id\" class=\"faq-link\">info@perada.co.id</a>，或 WhatsApp <a href=\"https://wa.me/6281214144214\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"faq-link\">0812-1414-4214</a> 与我们联系。请说明您的业务需求 — 顾问团队将在 1–2 个工作日内与您回复。"
+      "answer": "请通过 <a href=\"contact.html\" class=\"faq-link\">联系页面</a>、发送邮件至 <a href=\"mailto:info@perada.co.id\" class=\"faq-link\">info@perada.co.id</a>，或 WhatsApp <a href=\"https://wa.me/6281214144214\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"faq-link\">0812-1414-4214</a> 联系我们。说明您的业务需求 — 咨询团队将在 1–2 个工作日内回复。"
     },
     {
       "id": "customs-clearance",
-      "question": "物流服务是否包含海关清关与单证办理？",
-      "answer": "是的。通过 PT Perkasa Adi Yuda，我们的物流服务涵盖 <strong>海关清关</strong>、海关单证办理及进出口流程的法规合规。团队专注于运输管理中的时效、成本优化与法规遵从。"
+      "question": "物流服务是否包含清关及海关文件？",
+      "answer": "是的。通过 PT Perkasa Adi Yuda，我们的物流服务包括 <strong>清关</strong>、海关文件办理及进出口流程的法规合规。团队专注于时间效率、成本优化及每项运输安排的法规合规。"
+    },
+    {
+      "id": "outsourcing-sdm",
+      "question": "人力资源外包是否包含招聘和培训？",
+      "answer": "是的。通过 PT Perdana Adi Yuda，<strong>人力资本与外包</strong> 服务可包含招聘、人员安置、人事管理、培训及符合企业项目需求的运营人力资源支持。具体范围在合作方案中确定。"
+    },
+    {
+      "id": "sla-pelaporan",
+      "question": "是否为企业客户提供 SLA 和定期报告？",
+      "answer": "是的。针对企业客户，PERADA GROUP 制定双方认可的 <strong>服务级别协议 (SLA)</strong> — 包括响应目标、执行时间表及定期报告机制。报告根据物流或商业运营服务类型定制。"
+    },
+    {
+      "id": "jenis-pengiriman",
+      "question": "可处理哪些类型的运输和货物？",
+      "answer": "PT Perkasa Adi Yuda 处理 <strong>国内及国际</strong> 运输 — 包括普通货物、重型设备、工业材料及项目货物。货物类型、路线及文件要求将在初步咨询时确认，以确保符合法规及运营能力。"
+    },
+    {
+      "id": "estimasi-biaya",
+      "question": "服务费用如何构成和估算？",
+      "answer": "费用根据 <strong>服务范围</strong>、数量、地点及运营复杂度确定。初步咨询后，团队提供透明估算或书面报价。对于持续项目，合作方案根据客户需求和规模定制。"
     }
   ]
 }

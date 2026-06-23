@@ -1,0 +1,86 @@
+{
+  "page": {
+    "title": "Terms & Conditions | PERADA GROUP",
+    "description": "Terms and conditions for the use of the PERADA GROUP website and services for corporate partners and visitors."
+  },
+  "hero": {
+    "ariaLabel": "PERADA GROUP Terms and Conditions",
+    "headline": "Terms & Conditions",
+    "subheadline": "Terms governing the use of the PERADA GROUP website and services.",
+    "updated": "Last updated: June 24, 2026"
+  },
+  "sections": [
+    {
+      "title": "1. General Terms",
+      "paragraphs": [
+        "By accessing perada.net or using services provided by <strong>PERADA GROUP</strong> (PT Perkasa Adi Yuda and PT Perdana Adi Yuda), you agree to be bound by these Terms &amp; Conditions.",
+        "If you do not agree to these terms, please do not use our site or services."
+      ]
+    },
+    {
+      "title": "2. Services",
+      "paragraphs": [
+        "PERADA GROUP provides logistics, freight forwarding, human capital &amp; outsourcing, import &amp; trading (API-U), and integrated business operations support.",
+        "The scope, schedule, fees, and SLA for each service are defined in proposals, contracts, or separate cooperation agreements agreed upon with the client."
+      ]
+    },
+    {
+      "title": "3. Use of the Website",
+      "paragraphs": [
+        "You agree to use this site lawfully and not to:"
+      ],
+      "list": [
+        "Disrupt the security, integrity, or availability of the site.",
+        "Upload or distribute content that is unlawful, misleading, or harmful to others.",
+        "Use site content for commercial purposes without written permission from PERADA GROUP.",
+        "Misuse contact information or forms for spam or irrelevant activities."
+      ]
+    },
+    {
+      "title": "4. Intellectual Property",
+      "paragraphs": [
+        "All content on this site — including logos, text, design, and marketing materials — is protected by intellectual property laws and is owned by PERADA GROUP or its licensors.",
+        "Use, reproduction, or distribution without written permission is prohibited."
+      ]
+    },
+    {
+      "title": "5. Offers and Information",
+      "paragraphs": [
+        "Information on the site is general in nature and may change without prior notice. Such information does not constitute a binding offer unless expressly stated in an official proposal or contract.",
+        "Cooperation decisions are based on needs analysis, operational availability, and contractual agreement between PERADA GROUP and the client."
+      ]
+    },
+    {
+      "title": "6. Limitation of Liability",
+      "paragraphs": [
+        "PERADA GROUP strives to maintain the accuracy of information on the site but does not guarantee that all content is error-free or always up to date.",
+        "To the extent permitted by law, PERADA GROUP is not liable for indirect losses arising from use of the site. Liability for service delivery is governed by the applicable cooperation agreement."
+      ]
+    },
+    {
+      "title": "7. Third-Party Links",
+      "paragraphs": [
+        "The site may contain links to third-party websites. PERADA GROUP is not responsible for the content, privacy policies, or practices of those external sites."
+      ]
+    },
+    {
+      "title": "8. Governing Law",
+      "paragraphs": [
+        "These Terms &amp; Conditions are governed by and construed in accordance with the laws of the Republic of Indonesia. Disputes that cannot be resolved amicably shall be settled through applicable legal mechanisms."
+      ]
+    },
+    {
+      "title": "9. Changes to Terms",
+      "paragraphs": [
+        "PERADA GROUP reserves the right to update these Terms &amp; Conditions at any time. The latest version will be published on this page with the corresponding update date."
+      ]
+    },
+    {
+      "title": "10. Contact",
+      "paragraphs": [
+        "Questions regarding these Terms &amp; Conditions may be directed to:",
+        "<strong>PERADA GROUP</strong><br>Plaza Summarecon Bekasi Lt. 7, Bekasi 17142<br>Email: <a href=\"mailto:info@perada.co.id\" class=\"faq-link\">info@perada.co.id</a><br>WhatsApp: <a href=\"https://wa.me/6281214144214\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"faq-link\">0812-1414-4214</a>"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "page": {
+    "title": "Privacy Policy | PERADA GROUP",
+    "description": "PERADA GROUP privacy policy on the collection, use, and protection of personal data for visitors and business partners."
+  },
+  "hero": {
+    "ariaLabel": "PERADA GROUP Privacy Policy",
+    "headline": "Privacy Policy",
+    "subheadline": "We are committed to protecting your personal data with transparency and care.",
+    "updated": "Last updated: June 24, 2026"
+  },
+  "sections": [
+    {
+      "title": "1. Introduction",
+      "paragraphs": [
+        "This Privacy Policy explains how <strong>PERADA GROUP</strong> (PT Perkasa Adi Yuda and PT Perdana Adi Yuda) collects, uses, stores, and protects personal information through the perada.net website and our official communication channels.",
+        "By using the site or contacting us, you agree to the practices described in this policy to the extent permitted by applicable laws and regulations in Indonesia."
+      ]
+    },
+    {
+      "title": "2. Data We Collect",
+      "paragraphs": [
+        "We may collect the following categories of data:"
+      ],
+      "list": [
+        "Identity and contact data: name, company, email, phone number/WhatsApp.",
+        "Communication data: message content, consultation requests, or contact forms you submit.",
+        "Technical data: IP address, device type, browser, pages visited, and language preferences (if enabled).",
+        "Partnership data: information related to projects, service requirements, and documents you voluntarily provide."
+      ]
+    },
+    {
+      "title": "3. How We Use Data",
+      "paragraphs": [
+        "Personal data is used for the following purposes:"
+      ],
+      "list": [
+        "Responding to inquiries, quotation requests, and business communications.",
+        "Providing, managing, and improving logistics and business operations services.",
+        "Fulfilling legal obligations, licensing, and regulatory compliance requirements.",
+        "Analyzing site usage in aggregate to improve the user experience.",
+        "Sending relevant service information where you have provided consent."
+      ]
+    },
+    {
+      "title": "4. Sharing Data with Third Parties",
+      "paragraphs": [
+        "We do not sell your personal data. Data may be shared with operational partners, technology providers (such as hosting or analytics services), or competent authorities when required for service delivery, security, or legal compliance.",
+        "Every third party involved is required to maintain data confidentiality and security in accordance with cooperation agreements."
+      ]
+    },
+    {
+      "title": "5. Data Security",
+      "paragraphs": [
+        "We implement reasonable technical and organizational measures to protect data from unauthorized access, disclosure, or use. However, no method of data transmission over the internet is completely secure.",
+        "If you suspect a data breach, please contact us immediately at <a href=\"mailto:info@perada.co.id\" class=\"faq-link\">info@perada.co.id</a>."
+      ]
+    },
+    {
+      "title": "6. Your Rights",
+      "paragraphs": [
+        "In accordance with applicable regulations, you have the right to:"
+      ],
+      "list": [
+        "Request access to, correction of, or updates to your personal data.",
+        "Withdraw consent for the use of data for specific purposes.",
+        "Request deletion of data to the extent it does not conflict with our legal obligations."
+      ]
+    },
+    {
+      "title": "7. Cookies and Tracking Technologies",
+      "paragraphs": [
+        "Our site may use cookies or similar technologies to store language preferences, analyze traffic (for example through analytics services), and improve site performance.",
+        "You can manage cookie preferences through your browser settings."
+      ]
+    },
+    {
+      "title": "8. Policy Changes",
+      "paragraphs": [
+        "This Privacy Policy may be updated from time to time. Material changes will be communicated through the website. The date of the latest update is shown at the top of this page."
+      ]
+    },
+    {
+      "title": "9. Contact Us",
+      "paragraphs": [
+        "For questions regarding this privacy policy or the management of personal data, please contact:",
+        "<strong>PERADA GROUP</strong><br>Plaza Summarecon Bekasi Lt. 7, Jl. Boulevard Ahmad Yani, Sentra Summarecon, Bekasi 17142<br>Email: <a href=\"mailto:info@perada.co.id\" class=\"faq-link\">info@perada.co.id</a><br>WhatsApp: <a href=\"https://wa.me/6281214144214\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"faq-link\">0812-1414-4214</a>"
+      ]
+    }
+  ]
+}

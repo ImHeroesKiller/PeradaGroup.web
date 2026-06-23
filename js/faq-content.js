@@ -2,36 +2,47 @@
     'use strict';
 
     const CONTENT_FILE = 'faq-content.json';
+    const ROOT_IDS = ['services-faq', 'faq-page-content'];
 
     const FALLBACK = {
+        page: {
+            heroAriaLabel: 'FAQ PERADA GROUP',
+            heroHeadline: 'Pertanyaan yang Sering Diajukan',
+            heroSubheadline: 'Temukan jawaban seputar layanan logistik, sumber daya manusia, dan solusi operasional bisnis PERADA GROUP.',
+        },
         section: {
             eyebrow: 'FAQ',
             title: 'Pertanyaan yang Sering Diajukan',
             intro: 'Jawaban singkat seputar layanan, proses kerja sama, dan cakupan operasional PERADA GROUP. Masih ada pertanyaan lain? Tim kami siap membantu.',
             cta: { label: 'Hubungi Tim Konsultan', href: 'contact.html' },
         },
-        items: [
-            {
-                id: 'layanan-utama',
-                question: 'Apa saja layanan utama PERADA GROUP?',
-                answer: 'PERADA GROUP menghadirkan dua spesialisasi dalam satu grup — logistik melalui PT Perkasa Adi Yuda dan dukungan operasional bisnis melalui PT Perdana Adi Yuda, termasuk importir berijin resmi (API-U).',
-            },
-            {
-                id: 'impor-api-u',
-                question: 'Apakah PT Perdana Adi Yuda bisa membantu impor barang?',
-                answer: 'Ya. PT Perdana Adi Yuda memiliki API-U sebagai importir berijin resmi dan dapat mendukung kebutuhan impor klien secara legal dan terstruktur.',
-            },
-        ],
+        items: [],
     };
 
     function getAnswerHtml(item) {
         return item.answer || item.answerHtml || '';
     }
 
-    function renderFaq(faq) {
-        const root = document.getElementById('services-faq');
-        if (!root || !faq) return;
+    function renderPageMeta(page) {
+        if (!page) return;
+        if (page.title) document.title = page.title;
+        const metaDesc = document.querySelector('meta[name="description"]');
+        if (metaDesc && page.description) metaDesc.setAttribute('content', page.description);
+    }
 
+    function renderPageHero(page) {
+        if (!page) return;
+
+        const section = document.getElementById('faq-page-hero');
+        if (section && page.heroAriaLabel) section.setAttribute('aria-label', page.heroAriaLabel);
+
+        const headline = document.getElementById('faq-page-hero-headline');
+        const subheadline = document.getElementById('faq-page-hero-subheadline');
+        if (headline && page.heroHeadline) headline.textContent = page.heroHeadline;
+        if (subheadline && page.heroSubheadline) subheadline.textContent = page.heroSubheadline;
+    }
+
+    function buildFaqHtml(faq) {
         const section = faq.section || {};
         const items = faq.items || [];
 
@@ -48,7 +59,7 @@
                 </div>
             </details>`).join('');
 
-        root.innerHTML = `
+        return `
             <div class="text-center mb-8 sm:mb-10">
                 <div class="text-xs sm:text-sm font-semibold tracking-[2px] sm:tracking-[3px] text-blue-600 mb-2">${section.eyebrow || 'FAQ'}</div>
                 <h2 id="faq-heading" class="text-2xl sm:text-3xl md:text-4xl tracking-tight font-semibold text-[#0A2540] leading-snug">${section.title || ''}</h2>
@@ -61,9 +72,6 @@
                     <i class="fa-solid fa-arrow-right text-sm"></i>
                 </a>
             </div>`;
-
-        initAccordion(root);
-        injectFaqSchema(items);
     }
 
     function initAccordion(root) {
@@ -76,6 +84,11 @@
                 });
             });
         });
+    }
+
+    function renderFaqToRoot(root, faq) {
+        root.innerHTML = buildFaqHtml(faq);
+        initAccordion(root);
     }
 
     function injectFaqSchema(items) {
@@ -108,6 +121,22 @@
         const el = document.createElement('div');
         el.innerHTML = html;
         return el.textContent || '';
+    }
+
+    function renderFaq(faq) {
+        if (!faq) return;
+
+        renderPageMeta(faq.page);
+        renderPageHero(faq.page);
+
+        ROOT_IDS.forEach((id) => {
+            const root = document.getElementById(id);
+            if (root) renderFaqToRoot(root, faq);
+        });
+
+        if (document.getElementById('faq-page-content') || document.getElementById('services-faq')) {
+            injectFaqSchema(faq.items || []);
+        }
     }
 
     function loadContent() {

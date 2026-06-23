@@ -1,0 +1,91 @@
+{
+  "page": {
+    "title": "Kebijakan Privasi | PERADA GROUP",
+    "description": "Kebijakan privasi PERADA GROUP mengenai pengumpulan, penggunaan, dan perlindungan data pribadi pengunjung serta mitra bisnis."
+  },
+  "hero": {
+    "ariaLabel": "Kebijakan Privasi PERADA GROUP",
+    "headline": "Kebijakan Privasi",
+    "subheadline": "Kami berkomitmen melindungi data pribadi Anda dengan transparansi dan kehati-hatian.",
+    "updated": "Terakhir diperbarui: 24 Juni 2026"
+  },
+  "sections": [
+    {
+      "title": "1. Pendahuluan",
+      "paragraphs": [
+        "Kebijakan Privasi ini menjelaskan bagaimana <strong>PERADA GROUP</strong> (PT Perkasa Adi Yuda dan PT Perdana Adi Yuda) mengumpulkan, menggunakan, menyimpan, dan melindungi informasi pribadi melalui situs web perada.net serta saluran komunikasi resmi kami.",
+        "Dengan menggunakan situs atau menghubungi kami, Anda menyetujui praktik yang dijelaskan dalam kebijakan ini sejauh diizinkan oleh peraturan perundang-undangan yang berlaku di Indonesia."
+      ]
+    },
+    {
+      "title": "2. Data yang Kami Kumpulkan",
+      "paragraphs": [
+        "Kami dapat mengumpulkan kategori data berikut:"
+      ],
+      "list": [
+        "Data identitas dan kontak: nama, perusahaan, email, nomor telepon/WhatsApp.",
+        "Data komunikasi: isi pesan, permintaan konsultasi, atau formulir kontak yang Anda kirimkan.",
+        "Data teknis: alamat IP, jenis perangkat, browser, halaman yang dikunjungi, dan preferensi bahasa (jika diaktifkan).",
+        "Data kerja sama: informasi terkait proyek, kebutuhan layanan, dan dokumen yang Anda berikan secara sukarela."
+      ]
+    },
+    {
+      "title": "3. Cara Kami Menggunakan Data",
+      "paragraphs": [
+        "Data pribadi digunakan untuk tujuan berikut:"
+      ],
+      "list": [
+        "Menanggapi pertanyaan, permintaan penawaran, dan komunikasi bisnis.",
+        "Menyediakan, mengelola, dan meningkatkan layanan logistik serta operasional bisnis.",
+        "Memenuhi kewajiban hukum, perizinan, dan kepatuhan regulasi.",
+        "Menganalisis penggunaan situs secara agregat untuk meningkatkan pengalaman pengguna.",
+        "Mengirim informasi layanan yang relevan apabila Anda memberikan persetujuan."
+      ]
+    },
+    {
+      "title": "4. Pembagian Data kepada Pihak Ketiga",
+      "paragraphs": [
+        "Kami tidak menjual data pribadi Anda. Data dapat dibagikan kepada mitra operasional, penyedia teknologi (misalnya hosting atau analitik), atau otoritas berwenang apabila diperlukan untuk pelaksanaan layanan, keamanan, atau pemenuhan hukum.",
+        "Setiap pihak ketiga yang terlibat diwajibkan menjaga kerahasiaan dan keamanan data sesuai perjanjian kerja sama."
+      ]
+    },
+    {
+      "title": "5. Keamanan Data",
+      "paragraphs": [
+        "Kami menerapkan langkah-langkah teknis dan organisasi yang wajar untuk melindungi data dari akses, pengungkapan, atau penggunaan yang tidak sah. Namun, tidak ada metode transmisi data melalui internet yang sepenuhnya aman.",
+        "Jika Anda mencurigai adanya pelanggaran data, segera hubungi kami melalui <a href=\"mailto:info@perada.co.id\" class=\"faq-link\">info@perada.co.id</a>."
+      ]
+    },
+    {
+      "title": "6. Hak Anda",
+      "paragraphs": [
+        "Sesuai peraturan yang berlaku, Anda berhak untuk:"
+      ],
+      "list": [
+        "Meminta akses, koreksi, atau pembaruan data pribadi Anda.",
+        "Menarik persetujuan penggunaan data untuk tujuan tertentu.",
+        "Meminta penghapusan data sejauh tidak bertentangan dengan kewajiban hukum kami."
+      ]
+    },
+    {
+      "title": "7. Cookie dan Teknologi Pelacakan",
+      "paragraphs": [
+        "Situs kami dapat menggunakan cookie atau teknologi serupa untuk menyimpan preferensi bahasa, menganalisis trafik (misalnya melalui layanan analitik), dan meningkatkan performa situs.",
+        "Anda dapat mengatur preferensi cookie melalui pengaturan browser Anda."
+      ]
+    },
+    {
+      "title": "8. Perubahan Kebijakan",
+      "paragraphs": [
+        "Kebijakan Privasi ini dapat diperbarui sewaktu-waktu. Perubahan material akan diinformasikan melalui situs web. Tanggal pembaruan terakhir tercantum di bagian atas halaman ini."
+      ]
+    },
+    {
+      "title": "9. Hubungi Kami",
+      "paragraphs": [
+        "Untuk pertanyaan terkait kebijakan privasi atau pengelolaan data pribadi, hubungi:",
+        "<strong>PERADA GROUP</strong><br>Plaza Summarecon Bekasi Lt. 7, Jl. Boulevard Ahmad Yani, Sentra Summarecon, Bekasi 17142<br>Email: <a href=\"mailto:info@perada.co.id\" class=\"faq-link\">info@perada.co.id</a><br>WhatsApp: <a href=\"https://wa.me/6281214144214\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"faq-link\">0812-1414-4214</a>"
+      ]
+    }
+  ]
+}
