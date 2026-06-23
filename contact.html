@@ -81,16 +81,37 @@
         </div>
     </nav>
 
-    <!-- Hero -->
-    <section class="bg-[#0A2540] text-white py-14 sm:py-16">
-        <div class="max-w-4xl mx-auto px-5 sm:px-6 text-center">
-            <h1 class="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight leading-tight mb-4">Hubungi PERADA GROUP</h1>
-            <p class="text-base sm:text-lg md:text-xl text-white/80 leading-relaxed">Tim kami siap membantu kebutuhan Logistics atau HR Solution Anda.</p>
+    <!-- Hero Slideshow -->
+    <section class="hero-slideshow" data-slideshow aria-label="Hubungi PERADA GROUP">
+        <div class="hero-slideshow__slides" aria-hidden="true">
+            <div class="hero-slideshow__slide is-active"
+                 style="background-image: url('https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=1920&amp;q=80');"></div>
+            <div class="hero-slideshow__slide"
+                 style="background-image: url('https://images.unsplash.com/photo-1553877522-43269d4ea984?w=1920&amp;q=80');"></div>
+            <div class="hero-slideshow__slide"
+                 style="background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&amp;q=80');"></div>
+            <div class="hero-slideshow__slide"
+                 style="background-image: url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1920&amp;q=80');"></div>
+        </div>
+        <div class="hero-slideshow__overlay"></div>
+        <div class="hero-slideshow__content px-5 sm:px-6">
+            <h1>Hubungi PERADA GROUP</h1>
+            <p>Tim kami siap membantu kebutuhan logistik dan SDM Anda — respons cepat, solusi yang disesuaikan.</p>
+            <a href="#contact-form" class="hero-slideshow__cta btn-tap">
+                <span>Kirim Pesan Sekarang</span>
+                <i class="fa-solid fa-envelope text-sm"></i>
+            </a>
+        </div>
+        <div class="hero-slideshow__dots" role="tablist" aria-label="Indikator slide">
+            <button type="button" class="hero-slideshow__dot is-active" role="tab" aria-label="Slide 1" aria-selected="true" data-slide="0"></button>
+            <button type="button" class="hero-slideshow__dot" role="tab" aria-label="Slide 2" aria-selected="false" data-slide="1"></button>
+            <button type="button" class="hero-slideshow__dot" role="tab" aria-label="Slide 3" aria-selected="false" data-slide="2"></button>
+            <button type="button" class="hero-slideshow__dot" role="tab" aria-label="Slide 4" aria-selected="false" data-slide="3"></button>
         </div>
     </section>
 
     <!-- Contact Content -->
-    <section class="max-w-6xl mx-auto px-5 sm:px-6 py-12 sm:py-16">
+    <section id="contact-form" class="max-w-6xl mx-auto px-5 sm:px-6 py-12 sm:py-16">
         <div class="grid lg:grid-cols-5 gap-8 sm:gap-12">
             
             <!-- Form -->

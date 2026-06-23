@@ -158,11 +158,32 @@
         </div>
     </nav>
 
-    <!-- Hero -->
-    <section class="bg-[#0A2540] text-white py-14 sm:py-20">
-        <div class="max-w-5xl mx-auto px-5 sm:px-6 text-center">
-            <h1 class="text-3xl sm:text-4xl md:text-6xl font-semibold tracking-tight leading-tight mb-4">Tentang PERADA GROUP</h1>
-            <p class="text-base sm:text-lg md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">Membangun kepercayaan sejak 2018 — dua entitas spesialis yang saling melengkapi untuk memberikan solusi end-to-end bagi mitra bisnis di seluruh Indonesia.</p>
+    <!-- Hero Slideshow -->
+    <section class="hero-slideshow" data-slideshow aria-label="Tentang PERADA GROUP">
+        <div class="hero-slideshow__slides" aria-hidden="true">
+            <div class="hero-slideshow__slide is-active"
+                 style="background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1920&amp;q=80');"></div>
+            <div class="hero-slideshow__slide"
+                 style="background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&amp;q=80');"></div>
+            <div class="hero-slideshow__slide"
+                 style="background-image: url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1920&amp;q=80');"></div>
+            <div class="hero-slideshow__slide"
+                 style="background-image: url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1920&amp;q=80');"></div>
+        </div>
+        <div class="hero-slideshow__overlay"></div>
+        <div class="hero-slideshow__content px-5 sm:px-6">
+            <h1>Tentang PERADA GROUP</h1>
+            <p>Membangun kepercayaan sejak 2018 — dua entitas spesialis yang saling melengkapi untuk memberikan solusi end-to-end bagi mitra bisnis di seluruh Indonesia.</p>
+            <a href="services.html" class="hero-slideshow__cta btn-tap">
+                <span>Pelajari Layanan Kami</span>
+                <i class="fa-solid fa-arrow-right text-sm"></i>
+            </a>
+        </div>
+        <div class="hero-slideshow__dots" role="tablist" aria-label="Indikator slide">
+            <button type="button" class="hero-slideshow__dot is-active" role="tab" aria-label="Slide 1" aria-selected="true" data-slide="0"></button>
+            <button type="button" class="hero-slideshow__dot" role="tab" aria-label="Slide 2" aria-selected="false" data-slide="1"></button>
+            <button type="button" class="hero-slideshow__dot" role="tab" aria-label="Slide 3" aria-selected="false" data-slide="2"></button>
+            <button type="button" class="hero-slideshow__dot" role="tab" aria-label="Slide 4" aria-selected="false" data-slide="3"></button>
         </div>
     </section>
 

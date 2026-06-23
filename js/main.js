@@ -67,12 +67,69 @@ function initSmoothScroll() {
     });
 }
 
+// Hero slideshow — fade transition, autoplay, pause on hover
+function initHeroSlideshows() {
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    document.querySelectorAll('[data-slideshow]').forEach((root) => {
+        const slides = root.querySelectorAll('.hero-slideshow__slide');
+        const dots = root.querySelectorAll('.hero-slideshow__dot');
+        if (!slides.length) return;
+
+        let current = 0;
+        let timer = null;
+        const interval = 5000;
+
+        function goTo(index) {
+            slides[current]?.classList.remove('is-active');
+            dots[current]?.classList.remove('is-active');
+            dots[current]?.setAttribute('aria-selected', 'false');
+
+            current = (index + slides.length) % slides.length;
+
+            slides[current]?.classList.add('is-active');
+            dots[current]?.classList.add('is-active');
+            dots[current]?.setAttribute('aria-selected', 'true');
+        }
+
+        function next() {
+            goTo(current + 1);
+        }
+
+        function start() {
+            if (reducedMotion || slides.length < 2) return;
+            stop();
+            timer = setInterval(next, interval);
+        }
+
+        function stop() {
+            if (timer) clearInterval(timer);
+            timer = null;
+        }
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                goTo(index);
+                start();
+            });
+        });
+
+        root.addEventListener('mouseenter', stop);
+        root.addEventListener('mouseleave', start);
+        root.addEventListener('focusin', stop);
+        root.addEventListener('focusout', start);
+
+        if (!reducedMotion) start();
+    });
+}
+
 // Inisialisasi semua fungsi
 function init() {
     initializeTailwind();
     initNavbar();
     initMobileMenu();
     initSmoothScroll();
+    initHeroSlideshows();
 
     console.log('%c[PERADA GROUP] Website initialized', 'color:#64748b');
 }

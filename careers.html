@@ -81,17 +81,32 @@
         </div>
     </nav>
 
-    <!-- Hero -->
-    <section class="bg-[#0A2540] text-white py-20">
-        <div class="max-w-4xl mx-auto px-6 text-center">
-            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight leading-tight mb-4">Karir di PERADA GROUP</h1>
-            <p class="text-xl text-white/80 max-w-xl mx-auto">Kami mencari talenta yang ingin berkembang bersama dalam lingkungan kerja profesional dan dinamis.</p>
-            
-            <a href="https://portal.perada.net" target="_blank" 
-               class="mt-8 inline-flex items-center gap-x-3 bg-white text-[#0A2540] font-semibold px-8 py-4 rounded-3xl hover:bg-blue-50 transition-all">
+    <!-- Hero Slideshow -->
+    <section class="hero-slideshow" data-slideshow aria-label="Karir di PERADA GROUP">
+        <div class="hero-slideshow__slides" aria-hidden="true">
+            <div class="hero-slideshow__slide is-active"
+                 style="background-image: url('https://images.unsplash.com/photo-1521737711864-ece3fdac9ca4?w=1920&amp;q=80');"></div>
+            <div class="hero-slideshow__slide"
+                 style="background-image: url('https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?w=1920&amp;q=80');"></div>
+            <div class="hero-slideshow__slide"
+                 style="background-image: url('https://images.unsplash.com/photo-1551836022-deb4986cc5c0?w=1920&amp;q=80');"></div>
+            <div class="hero-slideshow__slide"
+                 style="background-image: url('https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1920&amp;q=80');"></div>
+        </div>
+        <div class="hero-slideshow__overlay"></div>
+        <div class="hero-slideshow__content px-5 sm:px-6">
+            <h1>Karir di PERADA GROUP</h1>
+            <p>Bergabunglah dengan tim profesional yang berkembang di bidang logistik dan sumber daya manusia di seluruh Indonesia.</p>
+            <a href="https://portal.perada.net" target="_blank" rel="noopener noreferrer" class="hero-slideshow__cta btn-tap">
                 <span>Buka Portal Karir</span>
-                <i class="fa-solid fa-external-link-alt"></i>
+                <i class="fa-solid fa-external-link-alt text-sm"></i>
             </a>
+        </div>
+        <div class="hero-slideshow__dots" role="tablist" aria-label="Indikator slide">
+            <button type="button" class="hero-slideshow__dot is-active" role="tab" aria-label="Slide 1" aria-selected="true" data-slide="0"></button>
+            <button type="button" class="hero-slideshow__dot" role="tab" aria-label="Slide 2" aria-selected="false" data-slide="1"></button>
+            <button type="button" class="hero-slideshow__dot" role="tab" aria-label="Slide 3" aria-selected="false" data-slide="2"></button>
+            <button type="button" class="hero-slideshow__dot" role="tab" aria-label="Slide 4" aria-selected="false" data-slide="3"></button>
         </div>
     </section>
 
