@@ -137,7 +137,7 @@ img.brand-logo {
     height: 2.5rem; /* 40px — mobile */
     width: auto;
     max-width: none;
-    aspect-ratio: 1000 / 486;
+    aspect-ratio: 849 / 322;
     object-fit: contain;
     object-position: left center;
     display: block;
@@ -225,7 +225,7 @@ img.footer-logo {
     height: 5rem;
     width: auto;
     max-width: 22rem;
-    aspect-ratio: 1000 / 486;
+    aspect-ratio: 849 / 322;
     object-fit: contain;
     display: block;
     background: #ffffff;
@@ -422,6 +422,7 @@ img.footer-logo {
     aspect-ratio: 16 / 9;
 }
 
+.hero-static .hero-overlay,
 .hero-static .hero-slideshow__overlay {
     position: absolute;
     inset: 0;
