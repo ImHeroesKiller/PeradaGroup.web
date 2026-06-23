@@ -5,7 +5,7 @@ const path = require('path');
 const { GoogleGenerativeAI } = require('@google/generative-ai');
 
 const OUTPUT_PATH = path.join(__dirname, '..', 'data', 'hero-content.json');
-const MODEL = 'gemini-1.5-flash';
+const MODEL = 'gemini-2.5-flash';
 
 const PROMPT = `Anda adalah copywriter profesional untuk PERADA GROUP, perusahaan Indonesia yang mengintegrasikan:
 - Logistics & Freight Forwarding (PT Perkasa Adi Yuda)
