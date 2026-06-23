@@ -1,0 +1,85 @@
+{
+  "hero": {
+    "ariaLabel": "PERADA GROUP Services",
+    "headline": "Integrated Logistics & Business Operations Solutions",
+    "subheadline": "Two specialist entities — reliable logistics and comprehensive operational support, including licensed import services.",
+    "cta": {
+      "label": "Discuss Your Needs",
+      "href": "contact.html"
+    }
+  },
+  "perkasa": {
+    "name": "PT Perkasa Adi Yuda",
+    "title": "Logistics & Freight Forwarding",
+    "tagline": "Moving Your Business with Reliable Logistics",
+    "logoAlt": "PT Perkasa Adi Yuda — Logistics & Freight Forwarding",
+    "services": {
+      "title": "Core Services",
+      "icon": "fa-ship",
+      "items": [
+        "Freight forwarding (JPT)",
+        "Domestic and international shipment management",
+        "Customs clearance and documentation"
+      ]
+    },
+    "advantages": {
+      "title": "Advantages",
+      "icon": "fa-medal",
+      "summaryHtml": "Holds <strong>Standard Certification</strong> with a focus on time efficiency, cost optimization, and regulatory compliance.",
+      "items": [
+        { "icon": "fa-clock", "text": "Faster shipment turnaround" },
+        { "icon": "fa-coins", "text": "Optimized logistics costs" },
+        { "icon": "fa-scale-balanced", "text": "Guaranteed regulatory compliance" }
+      ]
+    }
+  },
+  "perdana": {
+    "name": "PT Perdana Adi Yuda",
+    "title": "Business Support & Integrated Solutions",
+    "tagline": "Supporting Your Operations from HR to Supply Chain",
+    "logoAlt": "PT Perdana Adi Yuda — Business Support & Integrated Solutions",
+    "categories": [
+      {
+        "icon": "fa-users",
+        "title": "Human Capital & Outsourcing",
+        "description": "Workforce provision, management, training, and recruitment for operational stability.",
+        "featured": false,
+        "colSpan": false
+      },
+      {
+        "icon": "fa-bullhorn",
+        "title": "Event, Marketing & Activation",
+        "description": "Events, MICE, exhibitions, and advertising to strengthen your brand presence.",
+        "featured": false,
+        "colSpan": false
+      },
+      {
+        "icon": "fa-building",
+        "title": "Facility & Operational Support",
+        "description": "Cleaning, facility management, and vehicle or equipment rental for daily operations.",
+        "featured": false,
+        "colSpan": false
+      },
+      {
+        "icon": "fa-globe",
+        "title": "Import & Trading Solutions",
+        "descriptionHtml": "PT Perdana Adi Yuda is a <strong>Licensed Importer</strong> with <strong>API-U</strong>, supporting machinery, industrial equipment, EV components, solar panels, and more.",
+        "badge": "USP",
+        "footnote": "Licensed and ready to support corporate import needs",
+        "featured": true,
+        "colSpan": false
+      },
+      {
+        "icon": "fa-chart-line",
+        "title": "Business Consulting & Development",
+        "description": "Management consulting and operational development for better business decisions.",
+        "featured": false,
+        "colSpan": true
+      }
+    ],
+    "cta": {
+      "label": "Start a Consultation with Our Team",
+      "href": "contact.html"
+    }
+  }
+}

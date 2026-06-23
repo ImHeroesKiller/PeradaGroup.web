@@ -1,56 +1,53 @@
 (function () {
     'use strict';
 
-    const CONTENT_URL = '/data/services-content.json';
+    const CONTENT_FILE = 'services-content.json';
 
     const FALLBACK = {
-        defaultLocale: 'id',
-        id: {
-            hero: {
-                ariaLabel: 'Layanan PERADA GROUP',
-                headline: 'Solusi Terintegrasi untuk Logistik & Operasional Bisnis',
-                subheadline: 'Dua entitas spesialis PERADA GROUP — logistik andal dan dukungan operasional menyeluruh, termasuk importir berijin resmi.',
-                cta: { label: 'Konsultasikan Kebutuhan Anda', href: 'contact.html' },
-            },
-            perkasa: {
-                name: 'PT Perkasa Adi Yuda',
-                title: 'Logistics & Freight Forwarding',
-                tagline: 'Menggerakkan Bisnis Anda dengan Logistik yang Andal',
-                logoAlt: 'Logo PT Perkasa Adi Yuda — divisi Logistics & Freight Forwarding PERADA GROUP',
-                services: {
-                    title: 'Layanan Utama',
-                    icon: 'fa-ship',
-                    items: [
-                        'Jasa Pengurusan Transportasi (JPT)',
-                        'Pengurusan pengiriman domestik dan internasional',
-                        'Customs clearance dan dokumentasi kepabeanan',
-                    ],
-                },
-                advantages: {
-                    title: 'Keunggulan',
-                    icon: 'fa-medal',
-                    summaryHtml: 'Memiliki <strong>Sertifikat Standar</strong> dan berfokus pada efisiensi waktu, biaya, serta kepatuhan regulasi dalam setiap proses pengurusan transportasi.',
-                    items: [
-                        { icon: 'fa-clock', text: 'Efisiensi waktu pengiriman' },
-                        { icon: 'fa-coins', text: 'Optimasi biaya logistik' },
-                        { icon: 'fa-scale-balanced', text: 'Kepatuhan regulasi terjamin' },
-                    ],
-                },
-            },
-            perdana: {
-                name: 'PT Perdana Adi Yuda',
-                title: 'Business Support & Integrated Solutions',
-                tagline: 'Mendukung Operasional Bisnis Anda dari SDM hingga Supply Chain',
-                logoAlt: 'Logo PT Perdana Adi Yuda — divisi Business Support & Integrated Solutions PERADA GROUP',
-                categories: [
-                    { icon: 'fa-users', title: 'Human Capital & Outsourcing', description: 'Penyediaan dan pengelolaan tenaga kerja, pelatihan, serta rekrutmen untuk mendukung produktivitas dan stabilitas operasional perusahaan Anda.', featured: false, colSpan: false },
-                    { icon: 'fa-bullhorn', title: 'Event, Marketing & Activation', description: 'Penyelenggaraan event, MICE, pameran bisnis, dan jasa periklanan untuk memperkuat brand presence dan engagement pasar Anda.', featured: false, colSpan: false },
-                    { icon: 'fa-building', title: 'Facility & Operational Support', description: 'Cleaning service, facility management, serta penyewaan kendaraan dan peralatan untuk menjaga kelancaran aktivitas harian di lokasi operasional.', featured: false, colSpan: false },
-                    { icon: 'fa-globe', title: 'Import & Trading Solutions', descriptionHtml: 'PT Perdana Adi Yuda adalah <strong>Importir Berijin Resmi</strong> yang memiliki <strong>API-U (Angka Pengenal Impor)</strong>. Kami mendukung perdagangan mesin, peralatan industri, komponen otomotif listrik, panel surya, dan berbagai kebutuhan impor klien secara legal dan terstruktur.', badge: 'USP', footnote: 'Berijin resmi — siap mendukung kebutuhan impor korporat', featured: true, colSpan: false },
-                    { icon: 'fa-chart-line', title: 'Konsultasi & Pengembangan Bisnis', description: 'Konsultasi manajemen, strategi bisnis, dan pengembangan operasional untuk membantu perusahaan mengambil keputusan yang lebih tepat dan berkelanjutan.', featured: false, colSpan: true },
+        hero: {
+            ariaLabel: 'Layanan PERADA GROUP',
+            headline: 'Solusi Terintegrasi untuk Logistik & Operasional Bisnis',
+            subheadline: 'Dua entitas spesialis PERADA GROUP — logistik andal dan dukungan operasional menyeluruh, termasuk importir berijin resmi.',
+            cta: { label: 'Konsultasikan Kebutuhan Anda', href: 'contact.html' },
+        },
+        perkasa: {
+            name: 'PT Perkasa Adi Yuda',
+            title: 'Logistics & Freight Forwarding',
+            tagline: 'Menggerakkan Bisnis Anda dengan Logistik yang Andal',
+            logoAlt: 'Logo PT Perkasa Adi Yuda — divisi Logistics & Freight Forwarding PERADA GROUP',
+            services: {
+                title: 'Layanan Utama',
+                icon: 'fa-ship',
+                items: [
+                    'Jasa Pengurusan Transportasi (JPT)',
+                    'Pengurusan pengiriman domestik dan internasional',
+                    'Customs clearance dan dokumentasi kepabeanan',
                 ],
-                cta: { label: 'Mulai Konsultasi dengan Tim Kami', href: 'contact.html' },
             },
+            advantages: {
+                title: 'Keunggulan',
+                icon: 'fa-medal',
+                summaryHtml: 'Memiliki <strong>Sertifikat Standar</strong> dan berfokus pada efisiensi waktu, biaya, serta kepatuhan regulasi dalam setiap proses pengurusan transportasi.',
+                items: [
+                    { icon: 'fa-clock', text: 'Efisiensi waktu pengiriman' },
+                    { icon: 'fa-coins', text: 'Optimasi biaya logistik' },
+                    { icon: 'fa-scale-balanced', text: 'Kepatuhan regulasi terjamin' },
+                ],
+            },
+        },
+        perdana: {
+            name: 'PT Perdana Adi Yuda',
+            title: 'Business Support & Integrated Solutions',
+            tagline: 'Mendukung Operasional Bisnis Anda dari SDM hingga Supply Chain',
+            logoAlt: 'Logo PT Perdana Adi Yuda — divisi Business Support & Integrated Solutions PERADA GROUP',
+            categories: [
+                { icon: 'fa-users', title: 'Human Capital & Outsourcing', description: 'Penyediaan dan pengelolaan tenaga kerja, pelatihan, serta rekrutmen untuk mendukung produktivitas dan stabilitas operasional perusahaan Anda.', featured: false, colSpan: false },
+                { icon: 'fa-bullhorn', title: 'Event, Marketing & Activation', description: 'Penyelenggaraan event, MICE, pameran bisnis, dan jasa periklanan untuk memperkuat brand presence dan engagement pasar Anda.', featured: false, colSpan: false },
+                { icon: 'fa-building', title: 'Facility & Operational Support', description: 'Cleaning service, facility management, serta penyewaan kendaraan dan peralatan untuk menjaga kelancaran aktivitas harian di lokasi operasional.', featured: false, colSpan: false },
+                { icon: 'fa-globe', title: 'Import & Trading Solutions', descriptionHtml: 'PT Perdana Adi Yuda adalah <strong>Importir Berijin Resmi</strong> yang memiliki <strong>API-U (Angka Pengenal Impor)</strong>. Kami mendukung perdagangan mesin, peralatan industri, komponen otomotif listrik, panel surya, dan berbagai kebutuhan impor klien secara legal dan terstruktur.', badge: 'USP', footnote: 'Berijin resmi — siap mendukung kebutuhan impor korporat', featured: true, colSpan: false },
+                { icon: 'fa-chart-line', title: 'Konsultasi & Pengembangan Bisnis', description: 'Konsultasi manajemen, strategi bisnis, dan pengembangan operasional untuk membantu perusahaan mengambil keputusan yang lebih tepat dan berkelanjutan.', featured: false, colSpan: true },
+            ],
+            cta: { label: 'Mulai Konsultasi dengan Tim Kami', href: 'contact.html' },
         },
     };
 
@@ -167,8 +164,13 @@
         renderPerdana(content.perdana);
     }
 
+    function loadContent() {
+        window.PeradaContent.loadLocalizedContent(CONTENT_FILE, FALLBACK).then(applyContent);
+    }
+
     function init() {
-        window.PeradaContent.loadPageContent(CONTENT_URL, FALLBACK).then(applyContent);
+        loadContent();
+        window.addEventListener('perada:localechange', loadContent);
     }
 
     if (document.readyState === 'loading') {

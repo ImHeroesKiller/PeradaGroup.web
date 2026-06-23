@@ -1,0 +1,85 @@
+{
+  "hero": {
+    "ariaLabel": "PERADA GROUP 服务",
+    "headline": "物流与商业运营一体化解决方案",
+    "subheadline": "PERADA GROUP 两大专业实体——可靠的物流支持与全面的运营服务，包括持证进口业务。",
+    "cta": {
+      "label": "咨询您的需求",
+      "href": "contact.html"
+    }
+  },
+  "perkasa": {
+    "name": "PT Perkasa Adi Yuda",
+    "title": "物流与货运代理",
+    "tagline": "以可靠物流推动您的业务发展",
+    "logoAlt": "PT Perkasa Adi Yuda 标志 — PERADA GROUP 物流与货运代理部门",
+    "services": {
+      "title": "核心服务",
+      "icon": "fa-ship",
+      "items": [
+        "货运代理服务（JPT）",
+        "国内与国际运输管理",
+        "海关清关与单证办理"
+      ]
+    },
+    "advantages": {
+      "title": "优势",
+      "icon": "fa-medal",
+      "summaryHtml": "拥有<strong>标准认证</strong>，专注于运输管理过程中的时效、成本效率与法规合规。",
+      "items": [
+        { "icon": "fa-clock", "text": "缩短运输周期" },
+        { "icon": "fa-coins", "text": "优化物流成本" },
+        { "icon": "fa-scale-balanced", "text": "确保法规合规" }
+      ]
+    }
+  },
+  "perdana": {
+    "name": "PT Perdana Adi Yuda",
+    "title": "商业支持与综合解决方案",
+    "tagline": "从人力资源到供应链，全方位支持您的业务运营",
+    "logoAlt": "PT Perdana Adi Yuda 标志 — PERADA GROUP 商业支持与综合解决方案部门",
+    "categories": [
+      {
+        "icon": "fa-users",
+        "title": "人力资本与外包",
+        "description": "提供劳动力配备与管理、培训及招聘服务，提升企业生产力与运营稳定性。",
+        "featured": false,
+        "colSpan": false
+      },
+      {
+        "icon": "fa-bullhorn",
+        "title": "活动、营销与推广",
+        "description": "活动策划、MICE、商业展览及广告服务，增强品牌曝光与市场互动。",
+        "featured": false,
+        "colSpan": false
+      },
+      {
+        "icon": "fa-building",
+        "title": "设施与运营支持",
+        "description": "保洁服务、设施管理，以及车辆与设备租赁，保障日常运营顺畅。",
+        "featured": false,
+        "colSpan": false
+      },
+      {
+        "icon": "fa-globe",
+        "title": "进口与贸易解决方案",
+        "descriptionHtml": "PT Perdana Adi Yuda 是持有 <strong>API-U（进口商识别号）</strong> 的<strong>持证进口商</strong>，依法支持机械设备、工业装备、电动汽车零部件、太阳能板及各类客户进口需求。",
+        "badge": "USP",
+        "footnote": "持证进口 — 随时支持企业进口需求",
+        "featured": true,
+        "colSpan": false
+      },
+      {
+        "icon": "fa-chart-line",
+        "title": "商业咨询与发展",
+        "description": "管理咨询、商业策略与运营发展，帮助企业做出更明智、可持续的决策。",
+        "featured": false,
+        "colSpan": true
+      }
+    ],
+    "cta": {
+      "label": "与我们团队开始咨询",
+      "href": "contact.html"
+    }
+  }
+}

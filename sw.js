@@ -1,4 +1,4 @@
-const CACHE_NAME = 'perada-group-v9';
+const CACHE_NAME = 'perada-group-v10';
 
 const PRECACHE_URLS = [
     '/offline.html',
@@ -9,11 +9,14 @@ const PRECACHE_URLS = [
     '/data/id/about-content.json',
     '/data/en/about-content.json',
     '/data/zh/about-content.json',
-    '/data/services-content.json',
+    '/data/id/services-content.json',
+    '/data/en/services-content.json',
+    '/data/zh/services-content.json',
     '/data/faq.json',
     '/js/content-loader.js',
     '/js/i18n.js',
     '/js/hero-content.js',
+    '/js/services-content.js',
     '/css/style.css',
     '/js/main.js',
     '/js/pwa.js',
