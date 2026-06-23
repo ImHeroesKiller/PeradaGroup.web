@@ -38,12 +38,14 @@ function initMobileMenu() {
         }
     });
 
-    // Tutup menu saat link diklik
-    menu.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', () => {
-            menu.classList.add('hidden');
-            btn.innerHTML = '<i class="fa-solid fa-bars text-xl"></i>';
-        });
+    const closeMenu = () => {
+        menu.classList.add('hidden');
+        btn.innerHTML = '<i class="fa-solid fa-bars text-xl"></i>';
+    };
+
+    // Tutup menu saat link atau tombol bahasa diklik
+    menu.querySelectorAll('a, .lang-switcher__btn').forEach((el) => {
+        el.addEventListener('click', closeMenu);
     });
 }
 
