@@ -1,0 +1,29 @@
+{
+  "advantages": {
+    "eyebrow": "MENGAPA PERADA GROUP",
+    "title": "Keunggulan yang Memberi Nilai bagi Bisnis Anda",
+    "intro": "Satu grup dengan dua spesialisasi kuat — dirancang untuk kebutuhan korporat yang membutuhkan kecepatan, kepatuhan, dan integrasi layanan.",
+    "items": [
+      {
+        "icon": "fa-layer-group",
+        "title": "Dua Spesialisasi, Satu Grup",
+        "description": "Logistik dan operasional bisnis terkoordinasi dalam satu mitra — lebih cepat, lebih efisien."
+      },
+      {
+        "icon": "fa-file-shield",
+        "title": "Importir Berijin Resmi (API-U)",
+        "description": "PT Perdana Adi Yuda memiliki API-U untuk mendukung kebutuhan impor klien secara legal dan terstruktur."
+      },
+      {
+        "icon": "fa-gears",
+        "title": "Solusi Operasional Terintegrasi",
+        "description": "Dari freight forwarding hingga SDM, event, dan facility management — dalam satu ekosistem layanan."
+      },
+      {
+        "icon": "fa-award",
+        "title": "Perizinan Lengkap & Tim Berpengalaman",
+        "description": "Didukung sertifikasi, perizinan, dan tim profesional yang memahami kebutuhan korporat."
+      }
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "advantages": {
+    "eyebrow": "为何选择 PERADA GROUP",
+    "title": "为您的业务创造价值的优势",
+    "intro": "一个集团，两大专长 — 专为需要速度、合规与服务一体化的企业需求而设计。",
+    "items": [
+      {
+        "icon": "fa-layer-group",
+        "title": "两大专长，一个集团",
+        "description": "物流与业务运营由同一合作伙伴协同推进 — 更快、更高效。"
+      },
+      {
+        "icon": "fa-file-shield",
+        "title": "合法进口商（API-U）",
+        "description": "PT Perdana Adi Yuda 持有 API-U，依法、有序地支持客户进口需求。"
+      },
+      {
+        "icon": "fa-gears",
+        "title": "综合运营解决方案",
+        "description": "从货运代理到人力资源、活动与设施管理 — 同一服务生态。"
+      },
+      {
+        "icon": "fa-award",
+        "title": "资质齐全与资深团队",
+        "description": "认证、许可与专业团队并重，深谙企业客户需求。"
+      }
+    ]
+  }
+}

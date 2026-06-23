@@ -1,0 +1,29 @@
+{
+  "advantages": {
+    "eyebrow": "WHY PERADA GROUP",
+    "title": "Advantages That Deliver Value for Your Business",
+    "intro": "One group with two strong specializations — built for corporate needs that demand speed, compliance, and integrated services.",
+    "items": [
+      {
+        "icon": "fa-layer-group",
+        "title": "Two Specializations, One Group",
+        "description": "Logistics and business operations coordinated through one partner — faster and more efficient."
+      },
+      {
+        "icon": "fa-file-shield",
+        "title": "Licensed Importer (API-U)",
+        "description": "PT Perdana Adi Yuda holds API-U to support clients' import needs legally and systematically."
+      },
+      {
+        "icon": "fa-gears",
+        "title": "Integrated Operational Solutions",
+        "description": "From freight forwarding to HR, events, and facility management — in one service ecosystem."
+      },
+      {
+        "icon": "fa-award",
+        "title": "Full Licensing & Experienced Team",
+        "description": "Backed by certifications, licenses, and professionals who understand corporate needs."
+      }
+    ]
+  }
+}
