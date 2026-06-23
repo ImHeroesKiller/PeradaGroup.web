@@ -49,3 +49,25 @@ jobs:
           fi
           git commit -m "chore: auto-update hero content via Gemini [skip ci]"
           git push
+
+      - name: Notify on failure
+        if: failure()
+        run: |
+          RUN_URL="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          echo "::error title=Hero Content Update Failed::Lihat detail di ${RUN_URL}"
+          echo ""
+          echo "============================================================"
+          echo "  WORKFLOW FAILURE NOTIFICATION"
+          echo "============================================================"
+          echo ""
+          echo "  Workflow : ${{ github.workflow }}"
+          echo "  Status   : Failed"
+          echo "  Run URL  : ${RUN_URL}"
+          echo ""
+          echo "  Saran troubleshooting:"
+          echo "  - Pastikan secret GEMINI_API_KEY sudah dikonfigurasi dan valid"
+          echo "  - Cek log langkah \"Generate hero content with Gemini\" untuk error API"
+          echo "  - Verifikasi kuota atau rate limit Gemini API"
+          echo "  - Pastikan npm ci berjalan normal di folder scripts/"
+          echo ""
+          echo "============================================================"
