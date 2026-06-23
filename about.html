@@ -133,7 +133,17 @@
                     <a href="contact.html" class="hover:text-[#0A2540] transition-colors">Kontak</a>
                 </div>
 
-                <div class="flex items-center gap-x-3">
+                <div class="flex items-center gap-x-2 sm:gap-x-3">
+                    <div class="lang-switcher lang-switcher--desktop hidden md:flex items-center" role="group" aria-label="Pilih bahasa">
+                        <i class="fa-solid fa-globe lang-switcher__globe" aria-hidden="true"></i>
+                        <div class="lang-switcher__panel">
+                            <button type="button" class="lang-switcher__btn" data-locale="id" aria-pressed="false" aria-current="false">ID</button>
+                            <span class="lang-switcher__sep" aria-hidden="true">|</span>
+                            <button type="button" class="lang-switcher__btn" data-locale="en" aria-pressed="false" aria-current="false">EN</button>
+                            <span class="lang-switcher__sep" aria-hidden="true">|</span>
+                            <button type="button" class="lang-switcher__btn" data-locale="zh" aria-pressed="false" aria-current="false">中文</button>
+                        </div>
+                    </div>
                     <a href="contact.html"
                        class="navbar-cta hidden md:inline-flex text-sm font-semibold bg-[#0A2540] hover:bg-[#1E3A5F] text-white rounded-xl transition-colors">
                         Hubungi Kami
@@ -148,6 +158,19 @@
 
         <div id="mobile-menu" class="hidden md:hidden border-t bg-white">
             <div class="px-5 sm:px-6 py-4 flex flex-col gap-y-1 font-medium">
+                <div class="lang-switcher lang-switcher--mobile md:hidden" role="group" aria-label="Pilih bahasa">
+                    <div class="lang-switcher__mobile-header">
+                        <i class="fa-solid fa-globe lang-switcher__globe" aria-hidden="true"></i>
+                        <span class="lang-switcher__mobile-label">Bahasa / Language</span>
+                    </div>
+                    <div class="lang-switcher__panel lang-switcher__panel--mobile">
+                        <button type="button" class="lang-switcher__btn" data-locale="id" aria-pressed="false" aria-current="false">ID</button>
+                        <span class="lang-switcher__sep" aria-hidden="true">|</span>
+                        <button type="button" class="lang-switcher__btn" data-locale="en" aria-pressed="false" aria-current="false">EN</button>
+                        <span class="lang-switcher__sep" aria-hidden="true">|</span>
+                        <button type="button" class="lang-switcher__btn" data-locale="zh" aria-pressed="false" aria-current="false">中文</button>
+                    </div>
+                </div>
                 <a href="index.html" class="mobile-menu-link hover:text-[#0A2540]">Home</a>
                 <a href="about.html" class="mobile-menu-link text-[#0A2540] font-semibold">Tentang Kami</a>
                 <a href="services.html" class="mobile-menu-link hover:text-[#0A2540]">Layanan</a>
@@ -237,6 +260,7 @@
     </footer>
 
     <script src="js/content-loader.js"></script>
+    <script src="js/i18n.js"></script>
     <script src="js/about-content.js"></script>
     <script src="js/main.js"></script>
     <script src="js/pwa.js"></script>

@@ -1,0 +1,76 @@
+{
+  "hero": {
+    "ariaLabel": "关于 PERADA GROUP",
+    "headline": "一个集团，两大专长，端到端商业解决方案。",
+    "subheadline": "PERADA GROUP 整合物流专业能力、人力资源管理与业务运营支持，为企业提供全方位服务。",
+    "cta": {
+      "label": "探索我们的服务",
+      "href": "services.html"
+    }
+  },
+  "whoWeAre": {
+    "eyebrow": "关于我们",
+    "title": "两大实体，一个商业增长愿景",
+    "intro": "PERADA GROUP 专为需要可靠物流与全面运营支持的企业而设计——从人力资源到合法进口业务，提供一体化解决方案。",
+    "entities": [
+      {
+        "id": "perkasa",
+        "name": "PT Perkasa Adi Yuda",
+        "nameClass": "perkasa",
+        "logo": "assets/logo-perkasa-new.png",
+        "logoAlt": "PT Perkasa Adi Yuda 标志",
+        "title": "运输代理服务专家",
+        "descriptionHtml": "PERADA GROUP 的物流实体，专注于<strong>货运代理（Freight Forwarding）</strong>及国内与国际货物运输管理。我们帮助企业高效、可量化且合规地管理分销链——让客户供应链顺畅运转，减轻不必要的行政负担。",
+        "borderHover": "blue"
+      },
+      {
+        "id": "perdana",
+        "name": "PT Perdana Adi Yuda",
+        "nameClass": "perdana",
+        "logo": "assets/logo-perdana-new.png",
+        "logoAlt": "PT Perdana Adi Yuda 标志",
+        "title": "业务支持与综合解决方案",
+        "descriptionHtml": "提供从人力资源管理、活动与营销执行、设施管理到<strong>合法进口商</strong>进口业务的全方位支持。贵司可获得一个值得信赖的合作伙伴，满足各类关键非核心业务需求。",
+        "borderHover": "emerald",
+        "highlight": {
+          "title": "合法进口商 — 持有 API-U",
+          "descriptionHtml": "PT Perdana Adi Yuda 持有<strong>进口识别号（API-U）</strong>，可依法、规范、专业地支持客户的进口需求。"
+        }
+      }
+    ]
+  },
+  "advantages": {
+    "eyebrow": "我们的优势",
+    "title": "企业客户为何选择 PERADA GROUP",
+    "items": [
+      {
+        "icon": "fa-layer-group",
+        "iconTone": "brand",
+        "title": "两大专长，一个集团",
+        "description": "物流与业务运营在同一服务生态中更快、更高效、更协同地整合。"
+      },
+      {
+        "icon": "fa-file-shield",
+        "iconTone": "emerald",
+        "title": "合法进口商（API-U）",
+        "description": "PT Perdana Adi Yuda 持有 API-U，战略性支持客户依法开展进口业务。"
+      },
+      {
+        "icon": "fa-gears",
+        "iconTone": "brand",
+        "title": "综合运营解决方案",
+        "description": "从货运代理到人力资源与设施管理，提供直接提升业务效率的实用方案。"
+      },
+      {
+        "icon": "fa-award",
+        "iconTone": "brand",
+        "title": "资质齐全与资深团队",
+        "description": "完善的许可资质与专业团队，赢得企业客户与投资者的信赖。"
+      }
+    ],
+    "cta": {
+      "label": "洽谈您的业务需求",
+      "href": "contact.html"
+    }
+  }
+}

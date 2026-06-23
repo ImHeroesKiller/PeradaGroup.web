@@ -1,59 +1,26 @@
 (function () {
     'use strict';
 
-    const CONTENT_URL = '/data/about-content.json';
+    const CONTENT_FILE = 'about-content.json';
 
     const FALLBACK = {
-        defaultLocale: 'id',
-        id: {
-            hero: {
-                ariaLabel: 'Tentang PERADA GROUP',
-                headline: 'Satu Grup. Dua Spesialisasi. Solusi End-to-End untuk Bisnis Anda.',
-                subheadline: 'PERADA GROUP menghadirkan kekuatan gabungan antara keahlian logistik dan pengelolaan sumber daya manusia serta operasional bisnis.',
-                cta: { label: 'Jelajahi Layanan Kami', href: 'services.html' },
-            },
-            whoWeAre: {
-                eyebrow: 'SIAPA KAMI',
-                title: 'Dua Entitas, Satu Visi Pertumbuhan Bisnis',
-                intro: 'PERADA GROUP dirancang untuk memberikan solusi terintegrasi bagi perusahaan yang membutuhkan keandalan logistik sekaligus dukungan operasional yang komprehensif — dari SDM hingga kegiatan impor resmi.',
-                entities: [
-                    {
-                        id: 'perkasa',
-                        name: 'PT Perkasa Adi Yuda',
-                        nameClass: 'perkasa',
-                        logo: 'assets/logo-perkasa-new.png',
-                        logoAlt: 'Logo PT Perkasa Adi Yuda',
-                        title: 'Spesialis Jasa Pengurusan Transportasi',
-                        descriptionHtml: 'Entitas logistik PERADA GROUP yang berfokus pada <strong>Freight Forwarding</strong> dan pengurusan pengiriman barang domestik maupun internasional. Kami membantu perusahaan mengelola rantai distribusi secara efisien, terukur, dan patuh regulasi — sehingga operasional supply chain klien tetap lancar tanpa beban administratif yang berlebihan.',
-                        borderHover: 'blue',
-                    },
-                    {
-                        id: 'perdana',
-                        name: 'PT Perdana Adi Yuda',
-                        nameClass: 'perdana',
-                        logo: 'assets/logo-perdana-new.png',
-                        logoAlt: 'Logo PT Perdana Adi Yuda',
-                        title: 'Business Support & Integrated Solutions',
-                        descriptionHtml: 'Menyediakan solusi menyeluruh mulai dari pengelolaan SDM, event & marketing activation, facility management, hingga kegiatan impor sebagai <strong>importir berijin resmi</strong>. Perusahaan Anda mendapatkan satu mitra terpercaya untuk berbagai kebutuhan operasional non-core yang kritis.',
-                        borderHover: 'emerald',
-                        highlight: {
-                            title: 'Importir Berijin Resmi — Memiliki API-U',
-                            descriptionHtml: 'PT Perdana Adi Yuda memiliki <strong>Angka Pengenal Impor (API-U)</strong>, sehingga dapat mendukung kebutuhan impor klien secara legal, terstruktur, dan profesional.',
-                        },
-                    },
-                ],
-            },
-            advantages: {
-                eyebrow: 'KEUNGGULAN KAMI',
-                title: 'Mengapa Mitra Korporat Memilih PERADA GROUP',
-                items: [
-                    { icon: 'fa-layer-group', iconTone: 'brand', title: 'Dua Spesialisasi dalam Satu Grup', description: 'Koordinasi logistik dan operasional bisnis berjalan lebih cepat, efisien, dan terintegrasi dalam satu ekosistem layanan.' },
-                    { icon: 'fa-file-shield', iconTone: 'emerald', title: 'Importir Berijin Resmi (API-U)', description: 'PT Perdana Adi Yuda memiliki API-U sebagai importir berijin resmi — keunggulan strategis untuk mendukung kebutuhan impor klien secara legal.' },
-                    { icon: 'fa-gears', iconTone: 'brand', title: 'Solusi Operasional Terintegrasi', description: 'Fokus pada solusi praktis yang langsung mendukung produktivitas bisnis — dari pengiriman barang hingga pengelolaan SDM dan fasilitas.' },
-                    { icon: 'fa-award', iconTone: 'brand', title: 'Perizinan Lengkap & Tim Berpengalaman', description: 'Didukung perizinan yang memadai serta tim profesional berpengalaman, memberikan kepercayaan bagi klien korporat maupun investor.' },
-                ],
-                cta: { label: 'Diskusikan Kebutuhan Bisnis Anda', href: 'contact.html' },
-            },
+        hero: {
+            ariaLabel: 'Tentang PERADA GROUP',
+            headline: 'Satu Grup. Dua Spesialisasi. Solusi End-to-End untuk Bisnis Anda.',
+            subheadline: 'PERADA GROUP menghadirkan kekuatan gabungan antara keahlian logistik dan pengelolaan sumber daya manusia serta operasional bisnis.',
+            cta: { label: 'Jelajahi Layanan Kami', href: 'services.html' },
+        },
+        whoWeAre: {
+            eyebrow: 'SIAPA KAMI',
+            title: 'Dua Entitas, Satu Visi Pertumbuhan Bisnis',
+            intro: 'PERADA GROUP dirancang untuk memberikan solusi terintegrasi bagi perusahaan yang membutuhkan keandalan logistik sekaligus dukungan operasional yang komprehensif — dari SDM hingga kegiatan impor resmi.',
+            entities: [],
+        },
+        advantages: {
+            eyebrow: 'KEUNGGULAN KAMI',
+            title: 'Mengapa Mitra Korporat Memilih PERADA GROUP',
+            items: [],
+            cta: { label: 'Diskusikan Kebutuhan Bisnis Anda', href: 'contact.html' },
         },
     };
 
@@ -155,8 +122,13 @@
         renderAdvantages(content.advantages);
     }
 
+    function loadContent() {
+        window.PeradaContent.loadLocalizedContent(CONTENT_FILE, FALLBACK).then(applyContent);
+    }
+
     function init() {
-        window.PeradaContent.loadPageContent(CONTENT_URL, FALLBACK).then(applyContent);
+        loadContent();
+        window.addEventListener('perada:localechange', loadContent);
     }
 
     if (document.readyState === 'loading') {

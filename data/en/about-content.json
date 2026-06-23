@@ -1,0 +1,76 @@
+{
+  "hero": {
+    "ariaLabel": "About PERADA GROUP",
+    "headline": "One Group. Two Specializations. End-to-End Solutions.",
+    "subheadline": "PERADA GROUP combines logistics expertise with human resources and business operations management.",
+    "cta": {
+      "label": "Explore Our Services",
+      "href": "services.html"
+    }
+  },
+  "whoWeAre": {
+    "eyebrow": "WHO WE ARE",
+    "title": "Two Entities, One Vision for Business Growth",
+    "intro": "PERADA GROUP delivers integrated solutions for companies that need reliable logistics and comprehensive operational support — from HR to licensed import activities.",
+    "entities": [
+      {
+        "id": "perkasa",
+        "name": "PT Perkasa Adi Yuda",
+        "nameClass": "perkasa",
+        "logo": "assets/logo-perkasa-new.png",
+        "logoAlt": "PT Perkasa Adi Yuda logo",
+        "title": "Freight Forwarding Specialist",
+        "descriptionHtml": "PERADA GROUP's logistics entity focused on <strong>Freight Forwarding</strong> and domestic and international shipment management. We help companies run distribution chains efficiently, measurably, and in full regulatory compliance — keeping client supply chains smooth without excessive administrative burden.",
+        "borderHover": "blue"
+      },
+      {
+        "id": "perdana",
+        "name": "PT Perdana Adi Yuda",
+        "nameClass": "perdana",
+        "logo": "assets/logo-perdana-new.png",
+        "logoAlt": "PT Perdana Adi Yuda logo",
+        "title": "Business Support & Integrated Solutions",
+        "descriptionHtml": "End-to-end support from HR management, events & marketing activation, and facility management to import activities as a <strong>licensed importer</strong>. Your company gains one trusted partner for critical non-core operational needs.",
+        "borderHover": "emerald",
+        "highlight": {
+          "title": "Licensed Importer — API-U Certified",
+          "descriptionHtml": "PT Perdana Adi Yuda holds <strong>API-U (Import Identification Number)</strong>, enabling legal, structured, and professional import support for clients."
+        }
+      }
+    ]
+  },
+  "advantages": {
+    "eyebrow": "OUR STRENGTHS",
+    "title": "Why Corporate Partners Choose PERADA GROUP",
+    "items": [
+      {
+        "icon": "fa-layer-group",
+        "iconTone": "brand",
+        "title": "Two Specializations, One Group",
+        "description": "Logistics and business operations coordinated faster and more efficiently within one service ecosystem."
+      },
+      {
+        "icon": "fa-file-shield",
+        "iconTone": "emerald",
+        "title": "Licensed Importer (API-U)",
+        "description": "Strategic advantage for clients' import needs handled legally through PT Perdana Adi Yuda."
+      },
+      {
+        "icon": "fa-gears",
+        "iconTone": "brand",
+        "title": "Integrated Operational Solutions",
+        "description": "Practical solutions from freight forwarding to HR and facility management."
+      },
+      {
+        "icon": "fa-award",
+        "iconTone": "brand",
+        "title": "Full Licensing & Experienced Team",
+        "description": "Backed by proper licenses and a professional team trusted by corporate clients and investors."
+      }
+    ],
+    "cta": {
+      "label": "Discuss Your Business Needs",
+      "href": "contact.html"
+    }
+  }
+}
