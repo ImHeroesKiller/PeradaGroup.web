@@ -1,0 +1,90 @@
+{
+  "hero": {
+    "ariaLabel": "Hubungi PERADA GROUP",
+    "imageAlt": "Kantor modern PERADA GROUP",
+    "headline": "Mari Diskusikan Kebutuhan Bisnis Anda",
+    "subheadline": "Satu mitra untuk logistik, operasional bisnis, dan import resmi — tim PERADA GROUP siap merespons dengan solusi terintegrasi yang disesuaikan.",
+    "cta": {
+      "label": "Konsultasikan Sekarang",
+      "href": "#contact-form"
+    }
+  },
+  "channels": {
+    "eyebrow": "HUBUNGI KAMI",
+    "title": "Tim Konsultan Siap Mendampingi Anda",
+    "intro": "Dari freight forwarding hingga SDM, event, facility management, hingga kebutuhan impor API-U — kami siap membantu mitra korporat di seluruh Indonesia.",
+    "address": {
+      "title": "Alamat Kantor",
+      "line1": "Plaza Summarecon Bekasi Lt. 7",
+      "line2": "Jl. Boulevard Ahmad Yani, Sentra Summarecon, Bekasi"
+    },
+    "email": {
+      "title": "Email"
+    },
+    "phone": {
+      "title": "Telepon"
+    },
+    "whatsapp": {
+      "title": "WhatsApp"
+    }
+  },
+  "form": {
+    "eyebrow": "FORMULIR KONTAK",
+    "title": "Kirim Pesan",
+    "intro": "Isi formulir di bawah dan tim kami akan menghubungi Anda dalam 1–2 hari kerja.",
+    "hidden": {
+      "subject": "Pesan Baru dari Website PERADA GROUP",
+      "fromName": "Website PERADA GROUP"
+    },
+    "fields": {
+      "name": {
+        "label": "Nama Lengkap *",
+        "placeholder": "Nama Anda"
+      },
+      "company": {
+        "label": "Perusahaan",
+        "placeholder": "Nama Perusahaan"
+      },
+      "email": {
+        "label": "Email *",
+        "placeholder": "email@perusahaan.com"
+      },
+      "phone": {
+        "label": "No. Telepon / WA *",
+        "placeholder": "0812-XXXX-XXXX"
+      },
+      "service": {
+        "label": "Layanan yang Diminati",
+        "placeholder": "Pilih layanan (opsional)",
+        "options": [
+          { "value": "", "label": "Pilih layanan (opsional)" },
+          { "value": "Logistics & Freight Forwarding", "label": "Logistics & Freight Forwarding" },
+          { "value": "Human Capital & Outsourcing", "label": "Human Capital & Outsourcing" },
+          { "value": "Import & Trading (API-U)", "label": "Import & Trading (API-U)" },
+          { "value": "Event & Facility Support", "label": "Event & Facility Support" },
+          { "value": "Konsultasi Umum / Lainnya", "label": "Konsultasi Umum / Lainnya" }
+        ]
+      },
+      "message": {
+        "label": "Kebutuhan / Pesan *",
+        "placeholder": "Jelaskan kebutuhan bisnis Anda — logistik, SDM, impor, atau layanan terintegrasi lainnya..."
+      }
+    },
+    "submit": "Kirim Pesan"
+  },
+  "sidebar": {
+    "eyebrow": "LOKASI & JAM KERJA",
+    "title": "Kantor Pusat",
+    "hours": "Senin–Jumat, 08.00–17.00 WIB",
+    "addressLabel": "Alamat",
+    "line1": "Plaza Summarecon Bekasi Lt. 7",
+    "line2": "Jl. Boulevard Ahmad Yani, Sentra Summarecon, Bekasi",
+    "mapsLink": "Buka di Google Maps",
+    "emailLabel": "Email",
+    "phoneLabel": "Telepon",
+    "whatsappLabel": "WhatsApp",
+    "mapTitle": "Peta Lokasi",
+    "mapCaption": "Plaza Summarecon Bekasi Lt. 7, Jl. Boulevard Ahmad Yani, Sentra Summarecon, Bekasi",
+    "mapIframeTitle": "Lokasi PERADA GROUP - Plaza Summarecon Bekasi Lt. 7"
+  }
+}

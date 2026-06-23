@@ -1,0 +1,90 @@
+{
+  "hero": {
+    "ariaLabel": "联系 PERADA GROUP",
+    "imageAlt": "PERADA GROUP 现代化办公室",
+    "headline": "让我们探讨您的业务需求",
+    "subheadline": "物流、商业运营与持证进口的一站式合作伙伴 — PERADA GROUP 团队随时为您提供量身定制的综合解决方案。",
+    "cta": {
+      "label": "立即咨询",
+      "href": "#contact-form"
+    }
+  },
+  "channels": {
+    "eyebrow": "联系我们",
+    "title": "顾问团队随时为您服务",
+    "intro": "从货运代理到人力资源、活动、设施管理，再到 API-U 进口需求 — 我们为印尼各地的企业合作伙伴提供支持。",
+    "address": {
+      "title": "办公地址",
+      "line1": "勿加泗 Summarecon 广场 7 楼",
+      "line2": "Jl. Boulevard Ahmad Yani, Sentra Summarecon, 勿加泗"
+    },
+    "email": {
+      "title": "电子邮件"
+    },
+    "phone": {
+      "title": "电话"
+    },
+    "whatsapp": {
+      "title": "WhatsApp"
+    }
+  },
+  "form": {
+    "eyebrow": "联系表单",
+    "title": "发送留言",
+    "intro": "填写下方表单，我们的团队将在 1–2 个工作日内与您联系。",
+    "hidden": {
+      "subject": "来自 PERADA GROUP 网站的新留言",
+      "fromName": "PERADA GROUP 网站"
+    },
+    "fields": {
+      "name": {
+        "label": "姓名 *",
+        "placeholder": "您的姓名"
+      },
+      "company": {
+        "label": "公司",
+        "placeholder": "公司名称"
+      },
+      "email": {
+        "label": "电子邮件 *",
+        "placeholder": "email@company.com"
+      },
+      "phone": {
+        "label": "电话 / WhatsApp *",
+        "placeholder": "0812-XXXX-XXXX"
+      },
+      "service": {
+        "label": "感兴趣的服务",
+        "placeholder": "选择服务（可选）",
+        "options": [
+          { "value": "", "label": "选择服务（可选）" },
+          { "value": "Logistics & Freight Forwarding", "label": "物流与货运代理" },
+          { "value": "Human Capital & Outsourcing", "label": "人力资本与外包" },
+          { "value": "Import & Trading (API-U)", "label": "进口与贸易 (API-U)" },
+          { "value": "Event & Facility Support", "label": "活动与设施支持" },
+          { "value": "Konsultasi Umum / Lainnya", "label": "一般咨询 / 其他" }
+        ]
+      },
+      "message": {
+        "label": "需求 / 留言 *",
+        "placeholder": "请描述您的业务需求 — 物流、人力资源、进口或其他综合服务..."
+      }
+    },
+    "submit": "发送留言"
+  },
+  "sidebar": {
+    "eyebrow": "地址与营业时间",
+    "title": "总部办公室",
+    "hours": "周一至周五，08:00–17:00（印尼西部时间）",
+    "addressLabel": "地址",
+    "line1": "勿加泗 Summarecon 广场 7 楼",
+    "line2": "Jl. Boulevard Ahmad Yani, Sentra Summarecon, 勿加泗",
+    "mapsLink": "在 Google 地图中打开",
+    "emailLabel": "电子邮件",
+    "phoneLabel": "电话",
+    "whatsappLabel": "WhatsApp",
+    "mapTitle": "位置地图",
+    "mapCaption": "勿加泗 Summarecon 广场 7 楼 — Jl. Boulevard Ahmad Yani, Sentra Summarecon, 勿加泗",
+    "mapIframeTitle": "PERADA GROUP 位置 — 勿加泗 Summarecon 广场 7 楼"
+  }
+}
