@@ -7,6 +7,18 @@
         zh: '简体中文',
     };
 
+    function closeMobileMenu() {
+        const menu = document.getElementById('mobile-menu');
+        const btn = document.getElementById('mobile-menu-btn');
+        if (!menu || menu.classList.contains('hidden')) return;
+
+        menu.classList.add('hidden');
+        if (btn) {
+            btn.innerHTML = '<i class="fa-solid fa-bars text-xl"></i>';
+            btn.setAttribute('aria-expanded', 'false');
+        }
+    }
+
     function syncSwitcherUI(locale) {
         document.querySelectorAll('.lang-switcher__btn[data-locale]').forEach((btn) => {
             const isActive = btn.dataset.locale === locale;
@@ -28,9 +40,14 @@
 
             btn.addEventListener('click', () => {
                 const locale = btn.dataset.locale;
-                if (!locale || locale === window.PeradaContent.getLocale()) return;
-                window.PeradaContent.setLocale(locale);
+                if (!locale || !window.PeradaContent) return;
+
+                if (locale !== window.PeradaContent.getLocale()) {
+                    window.PeradaContent.setLocale(locale);
+                }
+
                 syncSwitcherUI(locale);
+                closeMobileMenu();
             });
         });
     }

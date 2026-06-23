@@ -300,10 +300,10 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden border-t bg-white">
             <div class="px-5 sm:px-6 py-4 flex flex-col gap-y-1 font-medium">
-                <div class="lang-switcher lang-switcher--mobile md:hidden" role="group" aria-label="Pilih bahasa">
+                <div class="mobile-menu__lang lang-switcher lang-switcher--mobile" role="group" aria-label="Pilih bahasa">
                     <div class="lang-switcher__mobile-header">
                         <i class="fa-solid fa-globe lang-switcher__globe" aria-hidden="true"></i>
-                        <span class="lang-switcher__mobile-label">Bahasa / Language</span>
+                        <span class="lang-switcher__mobile-label">Bahasa</span>
                     </div>
                     <div class="lang-switcher__panel lang-switcher__panel--mobile">
                         <button type="button" class="lang-switcher__btn" data-locale="id" aria-pressed="false" aria-current="false">ID</button>
@@ -722,22 +722,26 @@
             const menu = document.getElementById('mobile-menu');
             
             btn.addEventListener('click', () => {
-                if (menu.classList.contains('hidden')) {
+                const isOpen = menu.classList.contains('hidden');
+                if (isOpen) {
                     menu.classList.remove('hidden');
                     btn.innerHTML = '<i class="fa-solid fa-times text-xl"></i>';
+                    btn.setAttribute('aria-expanded', 'true');
                 } else {
                     menu.classList.add('hidden');
                     btn.innerHTML = '<i class="fa-solid fa-bars text-xl"></i>';
+                    btn.setAttribute('aria-expanded', 'false');
                 }
             });
-            
+
             const closeMenu = () => {
                 menu.classList.add('hidden');
                 btn.innerHTML = '<i class="fa-solid fa-bars text-xl"></i>';
+                btn.setAttribute('aria-expanded', 'false');
             };
 
-            // Close menu on link or language button click
-            menu.querySelectorAll('a, .lang-switcher__btn').forEach((el) => {
+            // Close menu on navigation link click (language buttons handled by i18n.js)
+            menu.querySelectorAll('a').forEach((el) => {
                 el.addEventListener('click', closeMenu);
             });
         }

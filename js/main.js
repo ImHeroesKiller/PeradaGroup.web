@@ -29,22 +29,26 @@ function initMobileMenu() {
     if (!btn || !menu) return;
 
     btn.addEventListener('click', () => {
-        if (menu.classList.contains('hidden')) {
+        const isOpen = menu.classList.contains('hidden');
+        if (isOpen) {
             menu.classList.remove('hidden');
             btn.innerHTML = '<i class="fa-solid fa-times text-xl"></i>';
+            btn.setAttribute('aria-expanded', 'true');
         } else {
             menu.classList.add('hidden');
             btn.innerHTML = '<i class="fa-solid fa-bars text-xl"></i>';
+            btn.setAttribute('aria-expanded', 'false');
         }
     });
 
     const closeMenu = () => {
         menu.classList.add('hidden');
         btn.innerHTML = '<i class="fa-solid fa-bars text-xl"></i>';
+        btn.setAttribute('aria-expanded', 'false');
     };
 
-    // Tutup menu saat link atau tombol bahasa diklik
-    menu.querySelectorAll('a, .lang-switcher__btn').forEach((el) => {
+    // Tutup menu saat link navigasi diklik (tombol bahasa ditangani i18n.js)
+    menu.querySelectorAll('a').forEach((el) => {
         el.addEventListener('click', closeMenu);
     });
 }
