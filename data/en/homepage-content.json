@@ -25,5 +25,30 @@
         "description": "Backed by certifications, licenses, and professionals who understand corporate needs."
       }
     ]
+  },
+  "testimonials": {
+    "eyebrow": "TESTIMONIALS",
+    "title": "Trusted by Leading Companies",
+    "intro": "Experiences from corporate partners who have entrusted logistics operations and business support to PERADA GROUP.",
+    "items": [
+      {
+        "quote": "Having logistics and operational support coordinated within one group made our processes far more efficient. The team is responsive and understands corporate needs.",
+        "name": "Budi Santoso",
+        "position": "Supply Chain Manager",
+        "company": "Manufacturing Company — West Java"
+      },
+      {
+        "quote": "Freight forwarding and customs clearance run smoothly. We have seen significant time and cost savings since partnering with them.",
+        "name": "Dewi Kusuma",
+        "position": "Head of Logistics",
+        "company": "Distribution Company — Jakarta"
+      },
+      {
+        "quote": "HR, event, and licensed import support through a registered importer is a major added value. One partner for various operational needs.",
+        "name": "Rizky Pratama",
+        "position": "Director of Operations",
+        "company": "Industrial Company — Nationwide"
+      }
+    ]
   }
 }

@@ -25,5 +25,30 @@
         "description": "Didukung sertifikasi, perizinan, dan tim profesional yang memahami kebutuhan korporat."
       }
     ]
+  },
+  "testimonials": {
+    "eyebrow": "TESTIMONI",
+    "title": "Dipercaya oleh Perusahaan Terbaik",
+    "intro": "Pengalaman mitra korporat yang telah mempercayakan operasional logistik dan dukungan bisnis kepada PERADA GROUP.",
+    "items": [
+      {
+        "quote": "Koordinasi logistik dan dukungan operasional dalam satu grup membuat proses kami jauh lebih efisien. Tim responsif dan memahami kebutuhan korporat.",
+        "name": "Budi Santoso",
+        "position": "Supply Chain Manager",
+        "company": "Perusahaan Manufaktur — Jawa Barat"
+      },
+      {
+        "quote": "Layanan freight forwarding dan customs clearance berjalan rapi. Kami merasakan penghematan waktu dan biaya yang signifikan sejak bermitra.",
+        "name": "Dewi Kusuma",
+        "position": "Head of Logistics",
+        "company": "Perusahaan Distribusi — Jakarta"
+      },
+      {
+        "quote": "Dukungan SDM, event, dan kebutuhan impor melalui importir berijin resmi menjadi nilai tambah besar. Satu mitra untuk berbagai kebutuhan operasional.",
+        "name": "Rizky Pratama",
+        "position": "Director of Operations",
+        "company": "Perusahaan Industri — Nasional"
+      }
+    ]
   }
 }
