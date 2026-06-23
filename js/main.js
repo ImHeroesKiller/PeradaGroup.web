@@ -87,9 +87,13 @@ function initHeroSlideshows() {
             return slide.querySelector('.hero-slideshow__image');
         }
 
+        function isPreloaded(src) {
+            return Boolean(src && preloaded.has(src));
+        }
+
         function preloadImage(src) {
             if (!src) return Promise.resolve();
-            if (preloaded.has(src)) return preloaded.get(src);
+            if (isPreloaded(src)) return preloaded.get(src);
 
             const promise = new Promise((resolve) => {
                 const img = new Image();
@@ -103,14 +107,11 @@ function initHeroSlideshows() {
             return promise;
         }
 
-        function preloadAround(index) {
+        function preloadNext(index) {
             const nextIndex = (index + 1) % slides.length;
-            const prevIndex = (index - 1 + slides.length) % slides.length;
-
-            [index, nextIndex, prevIndex].forEach((i) => {
-                const src = getSlideImage(slides[i])?.src;
-                if (src) preloadImage(src);
-            });
+            const src = getSlideImage(slides[nextIndex])?.src;
+            if (!src || isPreloaded(src)) return;
+            preloadImage(src);
         }
 
         async function goTo(index) {
@@ -137,7 +138,7 @@ function initHeroSlideshows() {
             dots[current]?.classList.add('is-active');
             dots[current]?.setAttribute('aria-selected', 'true');
 
-            preloadAround(current);
+            preloadNext(current);
             transitioning = false;
         }
 
@@ -177,7 +178,7 @@ function initHeroSlideshows() {
         root.addEventListener('focusin', stop);
         root.addEventListener('focusout', start);
 
-        preloadAround(0);
+        preloadNext(0);
         if (!reducedMotion) start();
     });
 }
