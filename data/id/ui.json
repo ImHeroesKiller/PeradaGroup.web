@@ -1,0 +1,45 @@
+{
+  "navbar": {
+    "brandAriaLabel": "PERADA GROUP — Beranda",
+    "logoAlt": "Logo PERADA GROUP — solusi logistik dan SDM terintegrasi Indonesia",
+    "openMenuAria": "Buka menu",
+    "languageLabel": "Bahasa",
+    "cta": "Hubungi Kami",
+    "menu": {
+      "home": "Home",
+      "about": "Tentang Kami",
+      "services": "Layanan",
+      "careers": "Karir",
+      "contact": "Kontak"
+    }
+  },
+  "footer": {
+    "brandAriaLabel": "PERADA GROUP — Beranda",
+    "logoAlt": "Logo PERADA GROUP di footer website",
+    "tagline": "Satu grup, dua spesialisasi — solusi logistik dan operasional bisnis terintegrasi untuk mitra korporat di Indonesia.",
+    "entities": {
+      "perdana": "PT Perdana Adi Yuda",
+      "perkasa": "PT Perkasa Adi Yuda"
+    },
+    "entitiesLine": "PT Perdana Adi Yuda · PT Perkasa Adi Yuda",
+    "headings": {
+      "company": "PERUSAHAAN",
+      "services": "LAYANAN",
+      "contact": "HUBUNGI"
+    },
+    "links": {
+      "about": "Tentang Kami",
+      "advantages": "Keunggulan Kami",
+      "careers": "Karir",
+      "logistics": "Logistics & Freight Forwarding",
+      "hr": "Human Capital & Outsourcing",
+      "import": "Import & Trading (API-U)",
+      "event": "Event & Facility Support",
+      "contact": "Kontak Kami",
+      "address": "Plaza Summarecon Bekasi Lt. 7"
+    },
+    "copyright": "© 2026 PERADA GROUP. All rights reserved.",
+    "privacy": "Privasi",
+    "terms": "Syarat"
+  }
+}

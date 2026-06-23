@@ -207,39 +207,40 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white/70 text-sm">
+    <footer id="site-footer" class="bg-gray-900 text-white/70 text-sm">
         <div class="max-w-7xl mx-auto px-5 sm:px-6 pt-10 sm:pt-14 pb-8 sm:pb-10">
             <div class="flex flex-col md:flex-row justify-between gap-y-8 sm:gap-y-10">
                 <div>
-                    <a href="index.html" class="footer-logo-link mb-4" aria-label="PERADA GROUP — Home">
-                        <img src="assets/logo-perada-new.png" alt="Logo PERADA GROUP di footer website" class="footer-logo" width="849" height="322" loading="lazy">
+                    <a href="index.html" class="footer-logo-link mb-4" data-ui-aria="footer.brandAriaLabel" aria-label="PERADA GROUP — Home">
+                        <img src="assets/logo-perada-new.png" data-ui-alt="footer.logoAlt" alt="Logo PERADA GROUP di footer website" class="footer-logo" width="849" height="322" loading="lazy">
                     </a>
-                    <p class="max-w-xs text-sm">Satu grup, dua spesialisasi — solusi logistik dan operasional bisnis terintegrasi untuk mitra korporat di Indonesia.</p>
+                    <p class="max-w-xs text-sm" data-ui="footer.tagline">Satu grup, dua spesialisasi — solusi logistik dan operasional bisnis terintegrasi untuk mitra korporat di Indonesia.</p>
+                    <p class="max-w-xs text-xs text-white/50 mt-2" data-ui="footer.entitiesLine">PT Perdana Adi Yuda · PT Perkasa Adi Yuda</p>
                 </div>
                 
                 <div class="grid grid-cols-2 md:grid-cols-3 gap-x-8 sm:gap-x-12 gap-y-8 text-sm">
                     <div>
-                        <div class="font-semibold text-white mb-3 tracking-wider text-xs">PERUSAHAAN</div>
+                        <div class="font-semibold text-white mb-3 tracking-wider text-xs" data-ui="footer.headings.company">PERUSAHAAN</div>
                         <div class="space-y-1 flex flex-col">
-                            <a href="about.html" class="footer-link hover:text-white transition-colors">Tentang Kami</a>
-                            <a href="about.html#keunggulan-heading" class="footer-link hover:text-white transition-colors">Keunggulan Kami</a>
-                            <a href="careers.html" class="footer-link hover:text-white transition-colors">Karir</a>
+                            <a href="about.html" class="footer-link hover:text-white transition-colors" data-ui="footer.links.about">Tentang Kami</a>
+                            <a href="about.html#keunggulan-heading" class="footer-link hover:text-white transition-colors" data-ui="footer.links.advantages">Keunggulan Kami</a>
+                            <a href="careers.html" class="footer-link hover:text-white transition-colors" data-ui="footer.links.careers">Karir</a>
                         </div>
                     </div>
                     <div>
-                        <div class="font-semibold text-white mb-3 tracking-wider text-xs">LAYANAN</div>
+                        <div class="font-semibold text-white mb-3 tracking-wider text-xs" data-ui="footer.headings.services">LAYANAN</div>
                         <div class="space-y-1 flex flex-col">
-                            <a href="services.html" class="footer-link hover:text-white transition-colors">Logistics &amp; Freight Forwarding</a>
-                            <a href="services.html" class="footer-link hover:text-white transition-colors">Human Capital &amp; Outsourcing</a>
-                            <a href="services.html" class="footer-link hover:text-white transition-colors">Import &amp; Trading (API-U)</a>
-                            <a href="services.html" class="footer-link hover:text-white transition-colors">Event &amp; Facility Support</a>
+                            <a href="services.html" class="footer-link hover:text-white transition-colors" data-ui="footer.links.logistics">Logistics &amp; Freight Forwarding</a>
+                            <a href="services.html" class="footer-link hover:text-white transition-colors" data-ui="footer.links.hr">Human Capital &amp; Outsourcing</a>
+                            <a href="services.html" class="footer-link hover:text-white transition-colors" data-ui="footer.links.import">Import &amp; Trading (API-U)</a>
+                            <a href="services.html" class="footer-link hover:text-white transition-colors" data-ui="footer.links.event">Event &amp; Facility Support</a>
                         </div>
                     </div>
                     <div class="col-span-2 md:col-span-1">
-                        <div class="font-semibold text-white mb-3 tracking-wider text-xs">HUBUNGI</div>
+                        <div class="font-semibold text-white mb-3 tracking-wider text-xs" data-ui="footer.headings.contact">HUBUNGI</div>
                         <div class="space-y-1 flex flex-col">
-                            <a href="contact.html" class="footer-link hover:text-white transition-colors">Kontak Kami</a>
-                            <a href="https://maps.google.com/?q=Plaza+Summarecon+Bekasi+Lt.+7" target="_blank" rel="noopener" class="footer-link hover:text-white transition-colors">Plaza Summarecon Bekasi Lt. 7</a>
+                            <a href="contact.html" class="footer-link hover:text-white transition-colors" data-ui="footer.links.contact">Kontak Kami</a>
+                            <a href="https://maps.google.com/?q=Plaza+Summarecon+Bekasi+Lt.+7" target="_blank" rel="noopener" class="footer-link hover:text-white transition-colors" data-ui="footer.links.address">Plaza Summarecon Bekasi Lt. 7</a>
                             <a href="mailto:info@perada.co.id" class="footer-link hover:text-white transition-colors">info@perada.co.id</a>
                             <a href="https://wa.me/6281214144214" target="_blank" rel="noopener" class="footer-link hover:text-white transition-colors flex items-center gap-x-2">
                                 <i class="fa-brands fa-whatsapp text-green-400"></i>
@@ -251,10 +252,10 @@
             </div>
             
             <div class="mt-16 pt-8 border-t border-white/10 text-xs flex flex-col md:flex-row justify-between items-center gap-y-2">
-                <div>© 2026 PERADA GROUP. All rights reserved.</div>
+                <div data-ui="footer.copyright">© 2026 PERADA GROUP. All rights reserved.</div>
                 <div class="flex gap-x-5">
-                    <div>Privacy</div>
-                    <div>Terms</div>
+                    <div data-ui="footer.privacy">Privacy</div>
+                    <div data-ui="footer.terms">Terms</div>
                 </div>
             </div>
         </div>
@@ -262,6 +263,7 @@
 
     <script src="js/content-loader.js"></script>
     <script src="js/i18n.js"></script>
+    <script src="js/ui-content.js"></script>
     <script src="js/about-content.js"></script>
     <script src="js/main.js"></script>
     <script src="js/pwa.js"></script>
