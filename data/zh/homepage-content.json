@@ -1,4 +1,11 @@
 {
+  "stats": {
+    "items": [
+      { "value": "200+", "label": "企业客户" },
+      { "value": "全国", "label": "服务覆盖" },
+      { "value": "2018", "label": "服务印尼" }
+    ]
+  },
   "advantages": {
     "eyebrow": "为何选择 PERADA GROUP",
     "title": "为您的业务创造价值的优势",
@@ -26,6 +33,97 @@
       }
     ]
   },
+  "solutions": {
+    "eyebrow": "我们的解决方案",
+    "title": "两大实体，一个服务生态",
+    "intro": "PT Perkasa Adi Yuda 驱动您的物流。PT Perdana Adi Yuda 支持全部商业运营 — 包括持证进口。",
+    "moreLabel": "了解更多",
+    "viewAll": "查看全部服务",
+    "viewAllHref": "services.html",
+    "entities": [
+      {
+        "id": "perkasa",
+        "name": "PT Perkasa Adi Yuda",
+        "nameClass": "perkasa",
+        "logo": "assets/logo-perkasa-new.png",
+        "logoAlt": "PT Perkasa Adi Yuda — 物流与货运代理",
+        "title": "物流与货运代理",
+        "description": "以可靠物流推动您的业务 — JPT、海关清关及国内与国际运输。",
+        "items": [
+          "货运代理服务（JPT）",
+          "海关清关与单证办理",
+          "标准认证与法规合规"
+        ],
+        "accent": "blue"
+      },
+      {
+        "id": "perdana",
+        "name": "PT Perdana Adi Yuda",
+        "nameClass": "perdana",
+        "logo": "assets/logo-perdana-new.png",
+        "logoAlt": "PT Perdana Adi Yuda — 商业支持与综合解决方案",
+        "title": "商业支持与综合解决方案",
+        "description": "全面运营支持 — 人力资源、活动、设施管理，以及作为持证进口商的进口与贸易。",
+        "items": [
+          "人力资本与外包",
+          "进口与贸易解决方案 (API-U)",
+          "活动、设施与商业咨询"
+        ],
+        "accent": "emerald"
+      }
+    ]
+  },
+  "clients": {
+    "eyebrow": "值得信赖",
+    "title": "深受印尼领先企业信赖",
+    "intro": "将物流运营与人力资源托付给 PERADA GROUP 的企业合作伙伴。",
+    "logos": [
+      {
+        "type": "image",
+        "src": "https://www.tvsscs.com/wp-content/uploads/2025/01/TVS-SCS-logo-with-tagline-white-2.svg",
+        "alt": "企业合作伙伴 TVS Supply Chain Solutions 标志",
+        "darkBg": true
+      },
+      {
+        "type": "image",
+        "src": "https://ioh.co.id/_nuxt/logo-ioh.BliL6vXr.svg",
+        "alt": "企业合作伙伴 Indosat Ooredoo Hutchison 标志"
+      },
+      {
+        "type": "text",
+        "textHtml": "Astra<br>Daihatsu",
+        "textClass": "text-xs sm:text-sm md:text-base"
+      },
+      {
+        "type": "text",
+        "text": "Persaels",
+        "textClass": "text-sm sm:text-base md:text-lg"
+      },
+      {
+        "type": "image",
+        "src": "https://imip.co.id/wp-content/uploads/2024/06/cropped-IMIP_logo-removebg-preview-270x270.png",
+        "alt": "企业合作伙伴 Indonesia Morowali Industrial Park (IMIP) 标志",
+        "imgClass": "h-10 sm:h-12 max-w-[80%]"
+      },
+      {
+        "type": "image",
+        "src": "https://www.lintasarta.net/storage/2024/06/Logo-Lintasarta-new-300x132.png",
+        "alt": "企业合作伙伴 Lintasarta 标志"
+      },
+      {
+        "type": "image",
+        "src": "https://dyandramedia.com/image/logo.png",
+        "alt": "企业合作伙伴 Dyandra Media 标志",
+        "imgClass": "h-8 sm:h-10 max-w-[85%]"
+      },
+      {
+        "type": "image",
+        "src": "https://bintang7.com/images/home/bintang-toejoe.png",
+        "alt": "企业合作伙伴 Bintang Toedjoe 标志",
+        "imgClass": "h-8 sm:h-10 max-w-[85%]"
+      }
+    ]
+  },
   "testimonials": {
     "eyebrow": "客户评价",
     "title": "深受领先企业信赖",
@@ -50,5 +148,14 @@
         "company": "工业企业 — 全国"
       }
     ]
+  },
+  "finalCta": {
+    "title": "准备与 PERADA GROUP 合作？",
+    "intro": "我们的团队随时协助您的物流与人力资源需求。了解更多或直接联系我们。",
+    "buttons": {
+      "contact": { "label": "联系我们", "href": "contact.html", "icon": "fa-envelope", "primary": true },
+      "about": { "label": "关于我们", "href": "about.html" },
+      "careers": { "label": "职业发展", "href": "careers.html", "icon": "fa-briefcase" }
+    }
   }
 }

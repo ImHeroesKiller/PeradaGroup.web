@@ -1,4 +1,4 @@
-const CACHE_NAME = 'perada-group-v16';
+const CACHE_NAME = 'perada-group-v17';
 
 const PRECACHE_URLS = [
     '/offline.html',

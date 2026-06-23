@@ -1,4 +1,11 @@
 {
+  "stats": {
+    "items": [
+      { "value": "200+", "label": "Klien Korporat" },
+      { "value": "Nasional", "label": "Jangkauan Layanan" },
+      { "value": "2018", "label": "Melayani Indonesia" }
+    ]
+  },
   "advantages": {
     "eyebrow": "MENGAPA PERADA GROUP",
     "title": "Keunggulan yang Memberi Nilai bagi Bisnis Anda",
@@ -26,6 +33,97 @@
       }
     ]
   },
+  "solutions": {
+    "eyebrow": "OUR SOLUTIONS",
+    "title": "Dua Entitas, Satu Ekosistem Layanan",
+    "intro": "PT Perkasa Adi Yuda menggerakkan logistik Anda. PT Perdana Adi Yuda mendukung seluruh operasional bisnis — termasuk impor resmi.",
+    "moreLabel": "Selengkapnya",
+    "viewAll": "Lihat Semua Layanan",
+    "viewAllHref": "services.html",
+    "entities": [
+      {
+        "id": "perkasa",
+        "name": "PT Perkasa Adi Yuda",
+        "nameClass": "perkasa",
+        "logo": "assets/logo-perkasa-new.png",
+        "logoAlt": "Logo PT Perkasa Adi Yuda — divisi Logistics & Freight Forwarding PERADA GROUP",
+        "title": "Logistics & Freight Forwarding",
+        "description": "Menggerakkan bisnis Anda dengan logistik yang andal — JPT, customs clearance, dan pengiriman domestik & internasional.",
+        "items": [
+          "Jasa Pengurusan Transportasi (JPT)",
+          "Customs Clearance & Dokumentasi",
+          "Sertifikat Standar & Kepatuhan Regulasi"
+        ],
+        "accent": "blue"
+      },
+      {
+        "id": "perdana",
+        "name": "PT Perdana Adi Yuda",
+        "nameClass": "perdana",
+        "logo": "assets/logo-perdana-new.png",
+        "logoAlt": "Logo PT Perdana Adi Yuda — divisi Business Support & Integrated Solutions PERADA GROUP",
+        "title": "Business Support & Integrated Solutions",
+        "description": "Dukungan operasional menyeluruh — SDM, event, facility management, hingga import & trading sebagai importir berijin resmi.",
+        "items": [
+          "Human Capital & Outsourcing",
+          "Import & Trading Solutions (API-U)",
+          "Event, Facility & Konsultasi Bisnis"
+        ],
+        "accent": "emerald"
+      }
+    ]
+  },
+  "clients": {
+    "eyebrow": "TRUSTED BY",
+    "title": "Dipercaya oleh Perusahaan Terbaik di Indonesia",
+    "intro": "Mitra korporat yang telah mempercayakan operasional logistik dan sumber daya manusia kepada PERADA GROUP.",
+    "logos": [
+      {
+        "type": "image",
+        "src": "https://www.tvsscs.com/wp-content/uploads/2025/01/TVS-SCS-logo-with-tagline-white-2.svg",
+        "alt": "Logo mitra korporat TVS Supply Chain Solutions",
+        "darkBg": true
+      },
+      {
+        "type": "image",
+        "src": "https://ioh.co.id/_nuxt/logo-ioh.BliL6vXr.svg",
+        "alt": "Logo mitra korporat Indosat Ooredoo Hutchison"
+      },
+      {
+        "type": "text",
+        "textHtml": "Astra<br>Daihatsu",
+        "textClass": "text-xs sm:text-sm md:text-base"
+      },
+      {
+        "type": "text",
+        "text": "Persaels",
+        "textClass": "text-sm sm:text-base md:text-lg"
+      },
+      {
+        "type": "image",
+        "src": "https://imip.co.id/wp-content/uploads/2024/06/cropped-IMIP_logo-removebg-preview-270x270.png",
+        "alt": "Logo mitra korporat Indonesia Morowali Industrial Park (IMIP)",
+        "imgClass": "h-10 sm:h-12 max-w-[80%]"
+      },
+      {
+        "type": "image",
+        "src": "https://www.lintasarta.net/storage/2024/06/Logo-Lintasarta-new-300x132.png",
+        "alt": "Logo mitra korporat Lintasarta"
+      },
+      {
+        "type": "image",
+        "src": "https://dyandramedia.com/image/logo.png",
+        "alt": "Logo mitra korporat Dyandra Media",
+        "imgClass": "h-8 sm:h-10 max-w-[85%]"
+      },
+      {
+        "type": "image",
+        "src": "https://bintang7.com/images/home/bintang-toejoe.png",
+        "alt": "Logo mitra korporat Bintang Toedjoe",
+        "imgClass": "h-8 sm:h-10 max-w-[85%]"
+      }
+    ]
+  },
   "testimonials": {
     "eyebrow": "TESTIMONI",
     "title": "Dipercaya oleh Perusahaan Terbaik",
@@ -50,5 +148,14 @@
         "company": "Perusahaan Industri — Nasional"
       }
     ]
+  },
+  "finalCta": {
+    "title": "Siap Bermitra dengan PERADA GROUP?",
+    "intro": "Tim kami siap membantu kebutuhan logistik dan SDM Anda. Pelajari lebih lanjut atau hubungi kami langsung.",
+    "buttons": {
+      "contact": { "label": "Hubungi Kami", "href": "contact.html", "icon": "fa-envelope", "primary": true },
+      "about": { "label": "Tentang Kami", "href": "about.html" },
+      "careers": { "label": "Karir", "href": "careers.html", "icon": "fa-briefcase" }
+    }
   }
 }

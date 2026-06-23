@@ -1,4 +1,11 @@
 {
+  "stats": {
+    "items": [
+      { "value": "200+", "label": "Corporate Clients" },
+      { "value": "Nationwide", "label": "Service Coverage" },
+      { "value": "2018", "label": "Serving Indonesia" }
+    ]
+  },
   "advantages": {
     "eyebrow": "WHY PERADA GROUP",
     "title": "Advantages That Deliver Value for Your Business",
@@ -26,6 +33,97 @@
       }
     ]
   },
+  "solutions": {
+    "eyebrow": "OUR SOLUTIONS",
+    "title": "Two Entities, One Service Ecosystem",
+    "intro": "PT Perkasa Adi Yuda drives your logistics. PT Perdana Adi Yuda supports all business operations — including licensed imports.",
+    "moreLabel": "Learn More",
+    "viewAll": "View All Services",
+    "viewAllHref": "services.html",
+    "entities": [
+      {
+        "id": "perkasa",
+        "name": "PT Perkasa Adi Yuda",
+        "nameClass": "perkasa",
+        "logo": "assets/logo-perkasa-new.png",
+        "logoAlt": "PT Perkasa Adi Yuda — Logistics & Freight Forwarding",
+        "title": "Logistics & Freight Forwarding",
+        "description": "Moving your business with reliable logistics — JPT, customs clearance, and domestic & international shipping.",
+        "items": [
+          "Freight Forwarding (JPT)",
+          "Customs Clearance & Documentation",
+          "Standard Certification & Regulatory Compliance"
+        ],
+        "accent": "blue"
+      },
+      {
+        "id": "perdana",
+        "name": "PT Perdana Adi Yuda",
+        "nameClass": "perdana",
+        "logo": "assets/logo-perdana-new.png",
+        "logoAlt": "PT Perdana Adi Yuda — Business Support & Integrated Solutions",
+        "title": "Business Support & Integrated Solutions",
+        "description": "Comprehensive operational support — HR, events, facility management, and import & trading as a licensed importer.",
+        "items": [
+          "Human Capital & Outsourcing",
+          "Import & Trading Solutions (API-U)",
+          "Event, Facility & Business Consulting"
+        ],
+        "accent": "emerald"
+      }
+    ]
+  },
+  "clients": {
+    "eyebrow": "TRUSTED BY",
+    "title": "Trusted by Leading Companies in Indonesia",
+    "intro": "Corporate partners who have entrusted logistics operations and human resources to PERADA GROUP.",
+    "logos": [
+      {
+        "type": "image",
+        "src": "https://www.tvsscs.com/wp-content/uploads/2025/01/TVS-SCS-logo-with-tagline-white-2.svg",
+        "alt": "TVS Supply Chain Solutions corporate partner logo",
+        "darkBg": true
+      },
+      {
+        "type": "image",
+        "src": "https://ioh.co.id/_nuxt/logo-ioh.BliL6vXr.svg",
+        "alt": "Indosat Ooredoo Hutchison corporate partner logo"
+      },
+      {
+        "type": "text",
+        "textHtml": "Astra<br>Daihatsu",
+        "textClass": "text-xs sm:text-sm md:text-base"
+      },
+      {
+        "type": "text",
+        "text": "Persaels",
+        "textClass": "text-sm sm:text-base md:text-lg"
+      },
+      {
+        "type": "image",
+        "src": "https://imip.co.id/wp-content/uploads/2024/06/cropped-IMIP_logo-removebg-preview-270x270.png",
+        "alt": "Indonesia Morowali Industrial Park (IMIP) corporate partner logo",
+        "imgClass": "h-10 sm:h-12 max-w-[80%]"
+      },
+      {
+        "type": "image",
+        "src": "https://www.lintasarta.net/storage/2024/06/Logo-Lintasarta-new-300x132.png",
+        "alt": "Lintasarta corporate partner logo"
+      },
+      {
+        "type": "image",
+        "src": "https://dyandramedia.com/image/logo.png",
+        "alt": "Dyandra Media corporate partner logo",
+        "imgClass": "h-8 sm:h-10 max-w-[85%]"
+      },
+      {
+        "type": "image",
+        "src": "https://bintang7.com/images/home/bintang-toejoe.png",
+        "alt": "Bintang Toedjoe corporate partner logo",
+        "imgClass": "h-8 sm:h-10 max-w-[85%]"
+      }
+    ]
+  },
   "testimonials": {
     "eyebrow": "TESTIMONIALS",
     "title": "Trusted by Leading Companies",
@@ -50,5 +148,14 @@
         "company": "Industrial Company — Nationwide"
       }
     ]
+  },
+  "finalCta": {
+    "title": "Ready to Partner with PERADA GROUP?",
+    "intro": "Our team is ready to help with your logistics and HR needs. Learn more or contact us directly.",
+    "buttons": {
+      "contact": { "label": "Contact Us", "href": "contact.html", "icon": "fa-envelope", "primary": true },
+      "about": { "label": "About Us", "href": "about.html" },
+      "careers": { "label": "Careers", "href": "careers.html", "icon": "fa-briefcase" }
+    }
   }
 }
