@@ -316,23 +316,21 @@
                     PERADA GROUP
                 </p>
 
-                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight leading-[1.14] sm:leading-[1.1] mb-4 sm:mb-5">
-                    Satu Mitra untuk Logistik &amp; SDM —<br class="hidden sm:inline"> Tanpa Silo, Lebih Efisien
+                <h1 id="hero-headline" class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight leading-[1.14] sm:leading-[1.1] mb-4 sm:mb-5">
+                    Loading...
                 </h1>
 
-                <p class="text-base sm:text-lg text-white/80 leading-relaxed max-w-xl mb-8 sm:mb-10">
-                    Satu grup, dua spesialisasi kuat — freight forwarding dan pengelolaan SDM — mendukung operasional bisnis Anda end-to-end di seluruh Indonesia.
-                </p>
+                <p id="hero-value" class="text-base sm:text-lg text-white/80 leading-relaxed max-w-xl mb-8 sm:mb-10"></p>
 
                 <div class="flex flex-col sm:flex-row gap-3 sm:gap-4">
-                    <a href="contact.html"
+                    <a id="hero-primary-cta" href="contact.html"
                        class="btn-tap inline-flex items-center justify-center gap-x-2.5 bg-white text-[#0A2540] font-semibold px-6 sm:px-8 h-12 sm:h-14 rounded-xl hover:bg-blue-50 transition-colors text-base">
-                        <span>Konsultasikan Kebutuhan Anda</span>
+                        <span>Loading...</span>
                         <i class="fa-solid fa-arrow-right text-sm"></i>
                     </a>
-                    <a href="services.html"
+                    <a id="hero-secondary-cta" href="services.html"
                        class="btn-tap inline-flex items-center justify-center gap-x-2.5 border border-white/40 hover:border-white/70 hover:bg-white/5 font-medium px-6 sm:px-8 h-12 sm:h-14 rounded-xl transition-colors text-base">
-                        <span>Lihat Solusi Terintegrasi</span>
+                        <span>Loading...</span>
                         <i class="fa-solid fa-chevron-right text-xs opacity-70"></i>
                     </a>
                 </div>
@@ -707,6 +705,40 @@
         }
         
         window.onload = init;
+    </script>
+
+    <script>
+        (function () {
+            const HERO_FALLBACK = {
+                headline: 'Satu Mitra untuk Logistik & SDM',
+                valueProposition: 'Dua spesialisasi kuat dalam satu grup — Freight Forwarding dan pengelolaan SDM — untuk mendukung operasional bisnis Anda secara end-to-end di seluruh Indonesia.',
+                primaryCta: 'Konsultasikan Kebutuhan Anda',
+                secondaryCta: 'Lihat Solusi Terintegrasi'
+            };
+
+            function applyHeroContent(data) {
+                const headline = document.getElementById('hero-headline');
+                const value = document.getElementById('hero-value');
+                const primaryCta = document.getElementById('hero-primary-cta');
+                const secondaryCta = document.getElementById('hero-secondary-cta');
+
+                if (headline) headline.textContent = data.headline || HERO_FALLBACK.headline;
+                if (value) value.textContent = data.valueProposition || HERO_FALLBACK.valueProposition;
+
+                const primaryLabel = primaryCta?.querySelector('span');
+                const secondaryLabel = secondaryCta?.querySelector('span');
+                if (primaryLabel) primaryLabel.textContent = data.primaryCta || HERO_FALLBACK.primaryCta;
+                if (secondaryLabel) secondaryLabel.textContent = data.secondaryCta || HERO_FALLBACK.secondaryCta;
+            }
+
+            fetch('/data/hero-content.json')
+                .then((response) => {
+                    if (!response.ok) throw new Error('Hero content not found');
+                    return response.json();
+                })
+                .then(applyHeroContent)
+                .catch(() => applyHeroContent(HERO_FALLBACK));
+        })();
     </script>
 </body>
 </html>
