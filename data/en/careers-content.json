@@ -1,0 +1,92 @@
+{
+  "hero": {
+    "ariaLabel": "Careers at PERADA GROUP",
+    "imageAlt": "PERADA GROUP professionals working in the office",
+    "headline": "Build Your Career in a Growing Group",
+    "subheadline": "Join PERADA GROUP — two specialist entities in logistics and business operations serving corporate partners across Indonesia.",
+    "cta": {
+      "label": "View Open Positions",
+      "href": "https://portal.perada.net"
+    }
+  },
+  "culture": {
+    "eyebrow": "WORK CULTURE",
+    "title": "Professional, Collaborative, and Results-Driven",
+    "intro": "At PERADA GROUP, every team member contributes to integrated solutions that make a real impact for corporate clients. We value initiative, cross-functional collaboration, and a commitment to the highest professional standards.",
+    "introSecondaryHtml": "With two entities — <strong class=\"text-[#0A2540]\">PT Perkasa Adi Yuda</strong> (logistics) and <strong class=\"text-[#0A2540]\">PT Perdana Adi Yuda</strong> (business operations &amp; API-U imports) — you gain exposure to diverse projects and broader career development opportunities.",
+    "values": [
+      {
+        "icon": "fa-people-group",
+        "title": "Teamwork",
+        "description": "Cross-functional collaboration to solve client challenges holistically.",
+        "featured": false
+      },
+      {
+        "icon": "fa-bullseye",
+        "title": "Quality Focus",
+        "description": "High work standards and regulatory compliance in every project.",
+        "featured": false
+      },
+      {
+        "icon": "fa-seedling",
+        "title": "Growth",
+        "description": "An environment that supports learning and competency development.",
+        "featured": true
+      },
+      {
+        "icon": "fa-handshake",
+        "title": "Integrity",
+        "description": "A culture of respect, transparency, and long-term partnership.",
+        "featured": false
+      }
+    ]
+  },
+  "benefits": {
+    "eyebrow": "WHY JOIN US",
+    "title": "Benefits of Working at PERADA GROUP",
+    "intro": "More than a job — an opportunity to grow in a corporate services ecosystem that keeps expanding.",
+    "items": [
+      {
+        "icon": "fa-chart-line",
+        "title": "Clear Career Path",
+        "description": "Structured training, mentoring, and promotion opportunities.",
+        "featured": false
+      },
+      {
+        "icon": "fa-layer-group",
+        "title": "Two Entities, One Group",
+        "description": "Exposure to logistics and business operations — including API-U import projects.",
+        "featured": false
+      },
+      {
+        "icon": "fa-building",
+        "title": "Real Corporate Projects",
+        "description": "Work with leading corporate partners across various industries.",
+        "featured": false
+      },
+      {
+        "icon": "fa-heart",
+        "title": "Supportive Environment",
+        "description": "A collaborative culture that values every team member's contribution.",
+        "featured": true
+      }
+    ]
+  },
+  "portal": {
+    "eyebrow": "HOW TO APPLY",
+    "title": "Official Career Portal",
+    "intro": "All job openings and recruitment are handled through our official career portal. Find the right position, submit your application, and track your status in one place.",
+    "cta": {
+      "label": "Open Career Portal",
+      "href": "https://portal.perada.net"
+    },
+    "portalUrl": "portal.perada.net"
+  },
+  "hrCta": {
+    "text": "Questions about the hiring process? Our HR team is ready to help.",
+    "cta": {
+      "label": "Contact HR Team",
+      "href": "contact.html"
+    }
+  }
+}

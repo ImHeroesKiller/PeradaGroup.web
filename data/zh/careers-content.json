@@ -1,0 +1,92 @@
+{
+  "hero": {
+    "ariaLabel": "PERADA GROUP 职业发展",
+    "imageAlt": "PERADA GROUP 专业团队在办公室工作",
+    "headline": "在持续发展的集团中成就事业",
+    "subheadline": "加入 PERADA GROUP — 两大专业实体，涵盖物流与商业运营，为印尼各地的企业合作伙伴提供服务。",
+    "cta": {
+      "label": "查看开放职位",
+      "href": "https://portal.perada.net"
+    }
+  },
+  "culture": {
+    "eyebrow": "工作文化",
+    "title": "专业、协作、以成果为导向",
+    "intro": "在 PERADA GROUP，每位团队成员都为企业客户带来切实影响的综合解决方案。我们重视主动性、跨部门协作，以及对最高专业标准的承诺。",
+    "introSecondaryHtml": "集团旗下两大实体 — <strong class=\"text-[#0A2540]\">PT Perkasa Adi Yuda</strong>（物流）与 <strong class=\"text-[#0A2540]\">PT Perdana Adi Yuda</strong>（商业运营与 API-U 进口）— 让您接触多元项目，获得更广阔的职业发展空间。",
+    "values": [
+      {
+        "icon": "fa-people-group",
+        "title": "团队合作",
+        "description": "跨职能协作，全面解决客户挑战。",
+        "featured": false
+      },
+      {
+        "icon": "fa-bullseye",
+        "title": "注重质量",
+        "description": "每个项目均保持高标准工作与法规合规。",
+        "featured": false
+      },
+      {
+        "icon": "fa-seedling",
+        "title": "成长发展",
+        "description": "支持学习与能力提升的工作环境。",
+        "featured": true
+      },
+      {
+        "icon": "fa-handshake",
+        "title": "诚信正直",
+        "description": "相互尊重、透明沟通、注重长期合作伙伴关系。",
+        "featured": false
+      }
+    ]
+  },
+  "benefits": {
+    "eyebrow": "为何加入我们",
+    "title": "在 PERADA GROUP 工作的优势",
+    "intro": "不仅是一份工作 — 更是在持续扩展的企业服务生态中发展的机会。",
+    "items": [
+      {
+        "icon": "fa-chart-line",
+        "title": "清晰的职业路径",
+        "description": "结构化的培训、导师辅导与晋升机会。",
+        "featured": false
+      },
+      {
+        "icon": "fa-layer-group",
+        "title": "两大实体，一个集团",
+        "description": "接触物流与商业运营 — 包括 API-U 进口项目。",
+        "featured": false
+      },
+      {
+        "icon": "fa-building",
+        "title": "真实企业项目",
+        "description": "与各行业领先企业合作伙伴共同工作。",
+        "featured": false
+      },
+      {
+        "icon": "fa-heart",
+        "title": "支持性环境",
+        "description": "重视每位团队成员贡献的协作文化。",
+        "featured": true
+      }
+    ]
+  },
+  "portal": {
+    "eyebrow": "如何申请",
+    "title": "官方招聘门户",
+    "intro": "所有职位空缺与招聘流程均通过官方招聘门户进行。查找合适岗位、提交申请，并在一处跟踪申请状态。",
+    "cta": {
+      "label": "打开招聘门户",
+      "href": "https://portal.perada.net"
+    },
+    "portalUrl": "portal.perada.net"
+  },
+  "hrCta": {
+    "text": "对招聘流程有疑问？人力资源团队随时为您服务。",
+    "cta": {
+      "label": "联系人力资源团队",
+      "href": "contact.html"
+    }
+  }
+}

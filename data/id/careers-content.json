@@ -1,0 +1,92 @@
+{
+  "hero": {
+    "ariaLabel": "Karir di PERADA GROUP",
+    "imageAlt": "Tim profesional PERADA GROUP bekerja di kantor",
+    "headline": "Bangun Karier di Grup yang Terus Berkembang",
+    "subheadline": "Bergabung dengan PERADA GROUP — dua entitas spesialis di logistik dan operasional bisnis yang melayani mitra korporat di seluruh Indonesia.",
+    "cta": {
+      "label": "Lihat Lowongan Terbuka",
+      "href": "https://portal.perada.net"
+    }
+  },
+  "culture": {
+    "eyebrow": "BUDAYA KERJA",
+    "title": "Profesional, Kolaboratif, dan Berorientasi Hasil",
+    "intro": "Di PERADA GROUP, setiap anggota tim berkontribusi pada solusi terintegrasi yang berdampak nyata bagi klien korporat. Kami menghargai inisiatif, kerja sama lintas divisi, dan komitmen terhadap standar profesional tertinggi.",
+    "introSecondaryHtml": "Dengan dua entitas — <strong class=\"text-[#0A2540]\">PT Perkasa Adi Yuda</strong> (logistik) dan <strong class=\"text-[#0A2540]\">PT Perdana Adi Yuda</strong> (operasional bisnis &amp; import API-U) — Anda mendapat eksposur ke beragam proyek dan peluang pengembangan karier yang lebih luas.",
+    "values": [
+      {
+        "icon": "fa-people-group",
+        "title": "Kerja Tim",
+        "description": "Kolaborasi lintas fungsi untuk menyelesaikan tantangan klien secara holistik.",
+        "featured": false
+      },
+      {
+        "icon": "fa-bullseye",
+        "title": "Fokus Kualitas",
+        "description": "Standar kerja tinggi dan kepatuhan regulasi dalam setiap proyek.",
+        "featured": false
+      },
+      {
+        "icon": "fa-seedling",
+        "title": "Pertumbuhan",
+        "description": "Lingkungan yang mendukung pembelajaran dan pengembangan kompetensi.",
+        "featured": true
+      },
+      {
+        "icon": "fa-handshake",
+        "title": "Integritas",
+        "description": "Budaya saling menghormati, transparan, dan berorientasi mitra jangka panjang.",
+        "featured": false
+      }
+    ]
+  },
+  "benefits": {
+    "eyebrow": "MENGAPA BERGABUNG",
+    "title": "Keunggulan Bekerja di PERADA GROUP",
+    "intro": "Lebih dari sekadar pekerjaan — kesempatan untuk berkembang di ekosistem layanan korporat yang terus berkembang.",
+    "items": [
+      {
+        "icon": "fa-chart-line",
+        "title": "Jalur Karier Jelas",
+        "description": "Program pelatihan, mentoring, dan kesempatan naik jabatan yang terstruktur.",
+        "featured": false
+      },
+      {
+        "icon": "fa-layer-group",
+        "title": "Dua Entitas, Satu Grup",
+        "description": "Eksposur ke logistik maupun operasional bisnis — termasuk proyek impor API-U.",
+        "featured": false
+      },
+      {
+        "icon": "fa-building",
+        "title": "Proyek Korporat Nyata",
+        "description": "Bekerja dengan mitra korporat terkemuka di berbagai sektor industri.",
+        "featured": false
+      },
+      {
+        "icon": "fa-heart",
+        "title": "Lingkungan Suportif",
+        "description": "Budaya kerja kolaboratif yang menghargai kontribusi setiap anggota tim.",
+        "featured": true
+      }
+    ]
+  },
+  "portal": {
+    "eyebrow": "CARA MELAMAR",
+    "title": "Portal Karir Resmi",
+    "intro": "Semua lowongan kerja dan proses rekrutmen dilakukan melalui portal karir resmi kami. Cari posisi yang sesuai, unggah lamaran, dan pantau status aplikasi Anda di satu tempat.",
+    "cta": {
+      "label": "Buka Portal Karir",
+      "href": "https://portal.perada.net"
+    },
+    "portalUrl": "portal.perada.net"
+  },
+  "hrCta": {
+    "text": "Ada pertanyaan tentang proses rekrutmen? Tim HR kami siap membantu.",
+    "cta": {
+      "label": "Hubungi Tim HR",
+      "href": "contact.html"
+    }
+  }
+}
