@@ -1,31 +1,32 @@
 (function () {
     'use strict';
 
-    const CONTENT_URL = '/data/faq.json';
+    const CONTENT_FILE = 'faq-content.json';
 
     const FALLBACK = {
-        defaultLocale: 'id',
-        id: {
-            section: {
-                eyebrow: 'FAQ',
-                title: 'Pertanyaan yang Sering Diajukan',
-                intro: 'Jawaban singkat seputar layanan, proses kerja sama, dan cakupan operasional PERADA GROUP. Masih ada pertanyaan lain? Tim kami siap membantu.',
-                cta: { label: 'Hubungi Tim Konsultan', href: 'contact.html' },
-            },
-            items: [
-                {
-                    id: 'layanan-utama',
-                    question: 'Apa saja layanan utama PERADA GROUP?',
-                    answerHtml: 'PERADA GROUP menghadirkan dua spesialisasi dalam satu grup — logistik melalui PT Perkasa Adi Yuda dan dukungan operasional bisnis melalui PT Perdana Adi Yuda, termasuk importir berijin resmi (API-U).',
-                },
-                {
-                    id: 'impor-api-u',
-                    question: 'Apakah PT Perdana Adi Yuda bisa membantu impor barang?',
-                    answerHtml: 'Ya. PT Perdana Adi Yuda memiliki API-U sebagai importir berijin resmi dan dapat mendukung kebutuhan impor klien secara legal dan terstruktur.',
-                },
-            ],
+        section: {
+            eyebrow: 'FAQ',
+            title: 'Pertanyaan yang Sering Diajukan',
+            intro: 'Jawaban singkat seputar layanan, proses kerja sama, dan cakupan operasional PERADA GROUP. Masih ada pertanyaan lain? Tim kami siap membantu.',
+            cta: { label: 'Hubungi Tim Konsultan', href: 'contact.html' },
         },
+        items: [
+            {
+                id: 'layanan-utama',
+                question: 'Apa saja layanan utama PERADA GROUP?',
+                answer: 'PERADA GROUP menghadirkan dua spesialisasi dalam satu grup — logistik melalui PT Perkasa Adi Yuda dan dukungan operasional bisnis melalui PT Perdana Adi Yuda, termasuk importir berijin resmi (API-U).',
+            },
+            {
+                id: 'impor-api-u',
+                question: 'Apakah PT Perdana Adi Yuda bisa membantu impor barang?',
+                answer: 'Ya. PT Perdana Adi Yuda memiliki API-U sebagai importir berijin resmi dan dapat mendukung kebutuhan impor klien secara legal dan terstruktur.',
+            },
+        ],
     };
+
+    function getAnswerHtml(item) {
+        return item.answer || item.answerHtml || '';
+    }
 
     function renderFaq(faq) {
         const root = document.getElementById('services-faq');
@@ -35,7 +36,7 @@
         const items = faq.items || [];
 
         const itemsHtml = items.map((item, index) => `
-            <details class="faq-item" id="faq-${item.id || index}">
+            <details class="faq-item" id="faq-${item.id || index}"${index === 0 ? ' open' : ''}>
                 <summary class="faq-item__summary">
                     <span class="faq-item__question">${item.question || ''}</span>
                     <span class="faq-item__icon" aria-hidden="true">
@@ -43,7 +44,7 @@
                     </span>
                 </summary>
                 <div class="faq-item__answer">
-                    <p>${item.answerHtml || ''}</p>
+                    <p>${getAnswerHtml(item)}</p>
                 </div>
             </details>`).join('');
 
@@ -62,7 +63,7 @@
             </div>`;
 
         initAccordion(root);
-        injectFaqSchema(section, items);
+        injectFaqSchema(items);
     }
 
     function initAccordion(root) {
@@ -77,7 +78,7 @@
         });
     }
 
-    function injectFaqSchema(section, items) {
+    function injectFaqSchema(items) {
         if (!items.length) return;
 
         const existing = document.getElementById('faq-schema');
@@ -91,7 +92,7 @@
                 name: item.question,
                 acceptedAnswer: {
                     '@type': 'Answer',
-                    text: stripHtml(item.answerHtml || ''),
+                    text: stripHtml(getAnswerHtml(item)),
                 },
             })),
         };
@@ -109,8 +110,13 @@
         return el.textContent || '';
     }
 
+    function loadContent() {
+        window.PeradaContent.loadLocalizedContent(CONTENT_FILE, FALLBACK).then(renderFaq);
+    }
+
     function init() {
-        window.PeradaContent.loadPageContent(CONTENT_URL, FALLBACK).then(renderFaq);
+        loadContent();
+        window.addEventListener('perada:localechange', loadContent);
     }
 
     if (document.readyState === 'loading') {

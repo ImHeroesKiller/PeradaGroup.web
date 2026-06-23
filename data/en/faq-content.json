@@ -1,0 +1,53 @@
+{
+  "section": {
+    "eyebrow": "FAQ",
+    "title": "Frequently Asked Questions",
+    "intro": "Quick answers about our services, partnership process, and operational coverage. Still have questions? Our team is ready to help.",
+    "cta": {
+      "label": "Contact Our Consultants",
+      "href": "contact.html"
+    }
+  },
+  "items": [
+    {
+      "id": "layanan-utama",
+      "question": "What are PERADA GROUP's main services?",
+      "answer": "PERADA GROUP offers two specializations in one group. Through <strong>PT Perkasa Adi Yuda</strong>, we provide <strong>Logistics &amp; Freight Forwarding</strong> — including JPT, domestic &amp; international shipping, and customs clearance. Through <strong>PT Perdana Adi Yuda</strong>, we offer <strong>Human Capital &amp; Outsourcing</strong>, event &amp; facility support, business consulting, and <strong>Import &amp; Trading (API-U)</strong> as a licensed importer."
+    },
+    {
+      "id": "impor-api-u",
+      "question": "Can PT Perdana Adi Yuda help with importing goods?",
+      "answer": "Yes. PT Perdana Adi Yuda is a <strong>licensed importer</strong> with a valid <strong>Importer Identification Number (API-U)</strong>. We support imports of machinery, industrial equipment, electric automotive components, solar panels, and other goods in a legal, structured manner compliant with Indonesian trade regulations."
+    },
+    {
+      "id": "proses-kerja-sama",
+      "question": "How does the partnership process work?",
+      "answer": "It begins with a <strong>needs consultation</strong> via our contact form, email, or WhatsApp. Our team analyzes the service scope, prepares a proposal or quotation, and defines SLAs and execution mechanisms. Once agreed, services are delivered with structured coordination and periodic reporting tailored to corporate clients."
+    },
+    {
+      "id": "cakupan-layanan",
+      "question": "Are services available outside Greater Jakarta?",
+      "answer": "Yes. PERADA GROUP serves corporate clients <strong>across Indonesia</strong>. For logistics and freight forwarding, coverage includes domestic and international shipments. For operational services such as HR outsourcing, events, and facility support, coverage is tailored to project location and client needs — our team will confirm details during the initial consultation."
+    },
+    {
+      "id": "perbedaan-entitas",
+      "question": "What is the difference between PT Perkasa Adi Yuda and PT Perdana Adi Yuda?",
+      "answer": "<strong>PT Perkasa Adi Yuda</strong> focuses on logistics and transportation management — handling shipments, customs documentation, and supply chain efficiency. <strong>PT Perdana Adi Yuda</strong> handles business operational support — HR, events, facility management, API-U imports, and business development consulting. Both operate under PERADA GROUP as one integrated partner."
+    },
+    {
+      "id": "klien-korporat",
+      "question": "Does PERADA GROUP serve corporate and industrial clients?",
+      "answer": "Yes. PERADA GROUP has experience supporting <strong>corporate partners</strong> across sectors — from manufacturing, automotive, and telecommunications to heavy industry. We understand the compliance, scale, and service standards required by mid-to-large enterprises."
+    },
+    {
+      "id": "permintaan-penawaran",
+      "question": "How can I request a quotation or consultation?",
+      "answer": "Reach us via our <a href=\"contact.html\" class=\"faq-link\">contact page</a>, email <a href=\"mailto:info@perada.co.id\" class=\"faq-link\">info@perada.co.id</a>, or WhatsApp <a href=\"https://wa.me/6281214144214\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"faq-link\">0812-1414-4214</a>. Describe your business needs — our consultants will respond within 1–2 business days."
+    },
+    {
+      "id": "customs-clearance",
+      "question": "Does the logistics service include customs clearance and documentation?",
+      "answer": "Yes. Through PT Perkasa Adi Yuda, our logistics services include <strong>customs clearance</strong>, customs documentation, and regulatory compliance for export-import processes. Our team focuses on time efficiency, cost optimization, and regulatory compliance in every transportation arrangement."
+    }
+  ]
+}

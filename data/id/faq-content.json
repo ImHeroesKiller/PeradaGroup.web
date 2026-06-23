@@ -1,0 +1,53 @@
+{
+  "section": {
+    "eyebrow": "FAQ",
+    "title": "Pertanyaan yang Sering Diajukan",
+    "intro": "Jawaban singkat seputar layanan, proses kerja sama, dan cakupan operasional PERADA GROUP. Masih ada pertanyaan lain? Tim kami siap membantu.",
+    "cta": {
+      "label": "Hubungi Tim Konsultan",
+      "href": "contact.html"
+    }
+  },
+  "items": [
+    {
+      "id": "layanan-utama",
+      "question": "Apa saja layanan utama PERADA GROUP?",
+      "answer": "PERADA GROUP menghadirkan dua spesialisasi dalam satu grup. Melalui <strong>PT Perkasa Adi Yuda</strong>, kami menyediakan <strong>Logistics &amp; Freight Forwarding</strong> — termasuk JPT, pengiriman domestik &amp; internasional, serta customs clearance. Melalui <strong>PT Perdana Adi Yuda</strong>, kami menawarkan <strong>Human Capital &amp; Outsourcing</strong>, event &amp; facility support, konsultasi bisnis, serta <strong>Import &amp; Trading (API-U)</strong> sebagai importir berijin resmi."
+    },
+    {
+      "id": "impor-api-u",
+      "question": "Apakah PT Perdana Adi Yuda bisa membantu impor barang?",
+      "answer": "Ya. PT Perdana Adi Yuda adalah <strong>importir berijin resmi</strong> yang memiliki <strong>Angka Pengenal Impor (API-U)</strong>. Kami dapat mendukung kebutuhan impor mesin, peralatan industri, komponen otomotif listrik, panel surya, dan berbagai barang lainnya secara legal, terstruktur, dan sesuai regulasi perdagangan Indonesia."
+    },
+    {
+      "id": "proses-kerja-sama",
+      "question": "Bagaimana proses kerja sama dengan PERADA GROUP?",
+      "answer": "Prosesnya dimulai dengan <strong>konsultasi kebutuhan</strong> — melalui formulir kontak, email, atau WhatsApp. Tim kami menganalisis ruang lingkup layanan, menyusun proposal atau penawaran, lalu menetapkan SLA dan mekanisme pelaksanaan. Setelah kesepakatan, layanan dijalankan dengan koordinasi terstruktur dan laporan berkala sesuai kebutuhan klien korporat."
+    },
+    {
+      "id": "cakupan-layanan",
+      "question": "Apakah tersedia layanan di luar Jabodetabek?",
+      "answer": "Ya. PERADA GROUP melayani klien korporat di <strong>seluruh Indonesia</strong>. Untuk logistik dan freight forwarding, jangkauan mencakup pengiriman domestik dan internasional. Untuk layanan operasional seperti outsourcing SDM, event, dan facility support, cakupan disesuaikan dengan lokasi proyek dan kebutuhan klien — tim kami akan menginformasikan detail saat konsultasi awal."
+    },
+    {
+      "id": "perbedaan-entitas",
+      "question": "Apa perbedaan PT Perkasa Adi Yuda dan PT Perdana Adi Yuda?",
+      "answer": "<strong>PT Perkasa Adi Yuda</strong> berfokus pada logistik dan pengurusan transportasi — mengelola pengiriman barang, dokumentasi kepabeanan, dan efisiensi supply chain. <strong>PT Perdana Adi Yuda</strong> menangani dukungan operasional bisnis — SDM, event, facility management, impor API-U, hingga konsultasi pengembangan bisnis. Keduanya beroperasi di bawah PERADA GROUP sebagai satu mitra terintegrasi."
+    },
+    {
+      "id": "klien-korporat",
+      "question": "Apakah PERADA GROUP melayani klien korporat dan industri?",
+      "answer": "Ya. PERADA GROUP berpengalaman mendukung <strong>mitra korporat</strong> di berbagai sektor — mulai dari manufaktur, otomotif, telekomunikasi, hingga industri berat. Kami memahami kebutuhan kepatuhan, skala operasional, dan standar layanan yang dibutuhkan perusahaan berskala menengah hingga besar."
+    },
+    {
+      "id": "permintaan-penawaran",
+      "question": "Bagaimana cara meminta penawaran atau konsultasi?",
+      "answer": "Anda dapat menghubungi kami melalui <a href=\"contact.html\" class=\"faq-link\">halaman kontak</a>, mengirim email ke <a href=\"mailto:info@perada.co.id\" class=\"faq-link\">info@perada.co.id</a>, atau WhatsApp <a href=\"https://wa.me/6281214144214\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"faq-link\">0812-1414-4214</a>. Jelaskan kebutuhan bisnis Anda — tim konsultan akan merespons dalam 1–2 hari kerja."
+    },
+    {
+      "id": "customs-clearance",
+      "question": "Apakah layanan logistik mencakup customs clearance dan dokumentasi kepabeanan?",
+      "answer": "Ya. Melalui PT Perkasa Adi Yuda, layanan logistik kami mencakup <strong>customs clearance</strong>, pengurusan dokumentasi kepabeanan, dan kepatuhan regulasi dalam proses export-import. Tim kami berfokus pada efisiensi waktu, optimasi biaya, dan kepatuhan regulasi di setiap pengurusan transportasi."
+    }
+  ]
+}
