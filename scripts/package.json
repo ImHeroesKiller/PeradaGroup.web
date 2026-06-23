@@ -1,0 +1,8 @@
+{
+  "name": "perada-hero-generator",
+  "private": true,
+  "type": "commonjs",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.0"
+  }
+}
