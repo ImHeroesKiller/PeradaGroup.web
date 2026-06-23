@@ -694,6 +694,7 @@
 
     <script src="js/content-loader.js"></script>
     <script src="js/i18n.js"></script>
+    <script src="js/hero-content.js"></script>
     <script src="js/pwa.js"></script>
     <script>
         // Tailwind script
@@ -830,38 +831,6 @@
         window.onload = init;
     </script>
 
-    <script>
-        (function () {
-            const HERO_FALLBACK = {
-                headline: 'Satu Mitra. Dua Keahlian. Solusi Terintegrasi.',
-                valueProposition: 'Logistik andal dari PT Perkasa Adi Yuda dan solusi operasional lengkap dari PT Perdana Adi Yuda, termasuk layanan impor sebagai importir berijin resmi.',
-                primaryCta: 'Diskusikan Kebutuhan Anda',
-                secondaryCta: 'Lihat Layanan Lengkap'
-            };
 
-            function applyHeroContent(data) {
-                const headline = document.getElementById('hero-headline');
-                const value = document.getElementById('hero-value');
-                const primaryCta = document.getElementById('hero-primary-cta');
-                const secondaryCta = document.getElementById('hero-secondary-cta');
-
-                if (headline) headline.textContent = data.headline || HERO_FALLBACK.headline;
-                if (value) value.textContent = data.valueProposition || HERO_FALLBACK.valueProposition;
-
-                const primaryLabel = primaryCta?.querySelector('span');
-                const secondaryLabel = secondaryCta?.querySelector('span');
-                if (primaryLabel) primaryLabel.textContent = data.primaryCta || HERO_FALLBACK.primaryCta;
-                if (secondaryLabel) secondaryLabel.textContent = data.secondaryCta || HERO_FALLBACK.secondaryCta;
-            }
-
-            fetch('/data/hero-content.json')
-                .then((response) => {
-                    if (!response.ok) throw new Error('Hero content not found');
-                    return response.json();
-                })
-                .then(applyHeroContent)
-                .catch(() => applyHeroContent(HERO_FALLBACK));
-        })();
-    </script>
 </body>
 </html>
