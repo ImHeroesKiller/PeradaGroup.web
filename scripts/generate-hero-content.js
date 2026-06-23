@@ -8,16 +8,16 @@ const OUTPUT_PATH = path.join(__dirname, '..', 'data', 'hero-content.json');
 const MODEL = 'gemini-3.1-flash-lite';
 
 const PROMPT = `Anda adalah copywriter profesional untuk PERADA GROUP, perusahaan Indonesia yang mengintegrasikan:
-- Logistics & Freight Forwarding (PT Perkasa Adi Yuda)
-- Outsourcing & HR Solutions (PT Perdana Adi Yuda)
+- Logistics & Freight Forwarding (PT Perkasa Adi Yuda) — JPT, customs clearance
+- Business Support & Integrated Solutions (PT Perdana Adi Yuda) — SDM, event, facility, importir berijin resmi (API-U)
 
 Buat konten hero homepage dalam Bahasa Indonesia dengan tone profesional, modern, percaya diri, dan tidak berlebihan.
 
 Aturan:
-- headline: maksimal 8–10 kata, kuat, spesifik, menonjolkan manfaat integrasi Logistik + SDM
-- valueProposition: 1–2 kalimat, jelaskan keunggulan "satu grup, dua spesialis", benefit-oriented bagi klien
-- primaryCta: singkat, langsung, profesional (contoh: "Konsultasikan Kebutuhan Anda")
-- secondaryCta: gunakan "Lihat Solusi Terintegrasi" atau variasi setara yang natural
+- headline: maksimal 8–10 kata, kuat, menonjolkan "satu mitra, dua keahlian, solusi terintegrasi"
+- valueProposition: 1–2 kalimat, sebutkan PT Perkasa (logistik) dan PT Perdana (operasional + importir berijin resmi)
+- primaryCta: gunakan "Diskusikan Kebutuhan Anda" atau variasi setara
+- secondaryCta: gunakan "Lihat Layanan Lengkap" atau variasi setara
 
 Kembalikan HANYA JSON valid tanpa markdown, tanpa penjelasan tambahan, dengan struktur persis:
 {
