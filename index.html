@@ -34,6 +34,93 @@
 
     <script defer data-domain="perada.net" src="https://plausible.io/js/script.js"></script>
 
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": ["Organization", "LocalBusiness"],
+          "@id": "https://perada.net/#organization",
+          "name": "PERADA GROUP",
+          "alternateName": ["PT Perkasa Adi Yuda", "PT Perdana Adi Yuda"],
+          "url": "https://perada.net/",
+          "logo": "https://perada.net/assets/logo-new-perada.png",
+          "image": "https://perada.net/assets/logo-new-perada.png",
+          "description": "PERADA GROUP menyediakan solusi logistik dan sumber daya manusia terintegrasi melalui PT Perkasa Adi Yuda dan PT Perdana Adi Yuda untuk mendukung bisnis di seluruh Indonesia.",
+          "foundingDate": "2018",
+          "email": "info@perada.co.id",
+          "telephone": "+62-812-1414-4214",
+          "priceRange": "$$",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Plaza Summarecon Bekasi Lt. 7, Jl. Boulevard Ahmad Yani, Sentra Summarecon",
+            "addressLocality": "Bekasi",
+            "addressRegion": "Jawa Barat",
+            "postalCode": "17142",
+            "addressCountry": "ID"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -6.2414,
+            "longitude": 107.0021
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "Indonesia"
+          },
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Layanan PERADA GROUP",
+            "itemListElement": [
+              { "@type": "Offer", "itemOffered": { "@id": "https://perada.net/#logistics-service" } },
+              { "@type": "Offer", "itemOffered": { "@id": "https://perada.net/#hr-service" } }
+            ]
+          },
+          "subOrganization": [
+            {
+              "@type": "Organization",
+              "name": "PT Perkasa Adi Yuda",
+              "description": "Divisi Logistics & Freight Forwarding"
+            },
+            {
+              "@type": "Organization",
+              "name": "PT Perdana Adi Yuda",
+              "description": "Divisi Outsourcing & HR Solutions"
+            }
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://perada.net/#website",
+          "url": "https://perada.net/",
+          "name": "PERADA GROUP",
+          "publisher": { "@id": "https://perada.net/#organization" },
+          "inLanguage": "id-ID"
+        },
+        {
+          "@type": "Service",
+          "@id": "https://perada.net/#logistics-service",
+          "name": "Logistics & Freight Forwarding",
+          "serviceType": "Freight Forwarding",
+          "provider": { "@id": "https://perada.net/#organization" },
+          "areaServed": "Indonesia",
+          "url": "https://perada.net/services",
+          "description": "Layanan freight forwarding, export-import, customs clearance, pengiriman alat berat, batubara, dan supply chain dengan jangkauan nasional melalui PT Perkasa Adi Yuda."
+        },
+        {
+          "@type": "Service",
+          "@id": "https://perada.net/#hr-service",
+          "name": "Outsourcing & HR Solutions",
+          "serviceType": "Human Resource Outsourcing",
+          "provider": { "@id": "https://perada.net/#organization" },
+          "areaServed": "Indonesia",
+          "url": "https://perada.net/services",
+          "description": "Layanan outsourcing tenaga kerja, rekrutmen, pelatihan, event management, dan pengadaan perlengkapan kantor melalui PT Perdana Adi Yuda."
+        }
+      ]
+    }
+    </script>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -171,7 +258,7 @@
             <div class="navbar-inner flex items-center justify-between">
                 <!-- Logo -->
                 <a href="index.html" class="brand-logo-link" aria-label="PERADA GROUP — Home">
-                    <img src="assets/logo-new-perada.png" alt="PERADA GROUP" class="brand-logo" width="1000" height="486" fetchpriority="high">
+                    <img src="assets/logo-new-perada.png" alt="Logo PERADA GROUP — solusi logistik dan SDM terintegrasi Indonesia" class="brand-logo" width="1000" height="486" fetchpriority="high">
                 </a>
 
                 <!-- Desktop Menu -->
@@ -213,9 +300,12 @@
     <header id="hero" class="relative text-white overflow-hidden min-h-[min(88vh,920px)] flex items-center">
         <div class="hero-media" aria-hidden="true">
             <video id="hero-video" class="hero-video" autoplay muted loop playsinline
-                   poster="/assets/hero-poster.jpg" preload="metadata">
+                   poster="/assets/hero-poster.jpg" preload="metadata"
+                   title="Video aktivitas pelabuhan kontainer dan jaringan logistik Indonesia"
+                   aria-label="Video latar aktivitas logistik pelabuhan kontainer di Indonesia">
             </video>
-            <div class="hero-poster-fallback hero-moving-bg"
+            <div class="hero-poster-fallback hero-moving-bg" role="img"
+                 aria-label="Gambar aktivitas pelabuhan kontainer dan jaringan logistik Indonesia"
                  style="background-image: url('/assets/hero-poster.jpg');"></div>
             <div class="absolute inset-0 hero-overlay"></div>
         </div>
@@ -283,7 +373,7 @@
             <a href="services.html" class="service-card group block bg-white border border-gray-200 rounded-2xl p-5 sm:p-6 md:p-8 hover:border-blue-200 transition-all">
                 <div class="entity-card-header">
                     <div class="entity-logo-wrap">
-                        <img src="assets/logo_perkasa.png" alt="PT Perkasa Adi Yuda" class="entity-logo" width="400" height="266" loading="lazy">
+                        <img src="assets/logo_perkasa.png" alt="Logo PT Perkasa Adi Yuda — divisi Logistics &amp; Freight Forwarding PERADA GROUP" class="entity-logo" width="400" height="266" loading="lazy">
                     </div>
                     <div class="entity-name entity-name--perkasa">PT Perkasa Adi Yuda</div>
                     <h3 class="entity-title">Logistics &amp; Freight</h3>
@@ -300,7 +390,7 @@
             <a href="services.html" class="service-card group block bg-white border border-gray-200 rounded-2xl p-5 sm:p-6 md:p-8 hover:border-emerald-200 transition-all">
                 <div class="entity-card-header">
                     <div class="entity-logo-wrap">
-                        <img src="assets/logo_perdana.png" alt="PT Perdana Adi Yuda" class="entity-logo" width="400" height="117" loading="lazy">
+                        <img src="assets/logo_perdana.png" alt="Logo PT Perdana Adi Yuda — divisi Outsourcing &amp; HR Solutions PERADA GROUP" class="entity-logo" width="400" height="117" loading="lazy">
                     </div>
                     <div class="entity-name entity-name--perdana">PT Perdana Adi Yuda</div>
                     <h3 class="entity-title">Outsourcing &amp; HR</h3>
@@ -336,14 +426,14 @@
                 <div class="client-logo-card flex items-center justify-center h-24 sm:h-24 md:h-28 px-3 sm:px-4 bg-white border border-gray-100 rounded-xl md:rounded-2xl">
                     <div class="w-full h-10 sm:h-12 flex items-center justify-center bg-[#0A2540] rounded-lg px-3">
                         <img src="https://www.tvsscs.com/wp-content/uploads/2025/01/TVS-SCS-logo-with-tagline-white-2.svg"
-                             alt="TVS Supply Chain" class="client-logo-img h-6 sm:h-7 w-auto max-w-full object-contain" loading="lazy">
+                             alt="Logo mitra korporat TVS Supply Chain Solutions" class="client-logo-img h-6 sm:h-7 w-auto max-w-full object-contain" loading="lazy">
                     </div>
                 </div>
 
                 <!-- Indosat Ooredoo Hutchison -->
                 <div class="client-logo-card flex items-center justify-center h-24 sm:h-24 md:h-28 px-3 sm:px-4 bg-white border border-gray-100 rounded-xl md:rounded-2xl">
                     <img src="https://ioh.co.id/_nuxt/logo-ioh.BliL6vXr.svg"
-                         alt="Indosat Ooredoo Hutchison" class="client-logo-img h-7 sm:h-9 w-auto max-w-[90%] object-contain" loading="lazy">
+                         alt="Logo mitra korporat Indosat Ooredoo Hutchison" class="client-logo-img h-7 sm:h-9 w-auto max-w-[90%] object-contain" loading="lazy">
                 </div>
 
                 <!-- Astra Daihatsu -->
@@ -359,25 +449,25 @@
                 <!-- IMIP -->
                 <div class="client-logo-card flex items-center justify-center h-24 sm:h-24 md:h-28 px-3 sm:px-4 bg-white border border-gray-100 rounded-xl md:rounded-2xl">
                     <img src="https://imip.co.id/wp-content/uploads/2024/06/cropped-IMIP_logo-removebg-preview-270x270.png"
-                         alt="IMIP" class="client-logo-img h-10 sm:h-12 w-auto max-w-[80%] object-contain" loading="lazy">
+                         alt="Logo mitra korporat Indonesia Morowali Industrial Park (IMIP)" class="client-logo-img h-10 sm:h-12 w-auto max-w-[80%] object-contain" loading="lazy">
                 </div>
 
                 <!-- Lintasarta -->
                 <div class="client-logo-card flex items-center justify-center h-24 sm:h-24 md:h-28 px-3 sm:px-4 bg-white border border-gray-100 rounded-xl md:rounded-2xl">
                     <img src="https://www.lintasarta.net/storage/2024/06/Logo-Lintasarta-new-300x132.png"
-                         alt="Lintasarta" class="client-logo-img h-7 sm:h-9 w-auto max-w-[90%] object-contain" loading="lazy">
+                         alt="Logo mitra korporat Lintasarta" class="client-logo-img h-7 sm:h-9 w-auto max-w-[90%] object-contain" loading="lazy">
                 </div>
 
                 <!-- Dyandra -->
                 <div class="client-logo-card flex items-center justify-center h-24 sm:h-24 md:h-28 px-3 sm:px-4 bg-white border border-gray-100 rounded-xl md:rounded-2xl">
                     <img src="https://dyandramedia.com/image/logo.png"
-                         alt="Dyandra" class="client-logo-img h-8 sm:h-10 w-auto max-w-[85%] object-contain" loading="lazy">
+                         alt="Logo mitra korporat Dyandra Media" class="client-logo-img h-8 sm:h-10 w-auto max-w-[85%] object-contain" loading="lazy">
                 </div>
 
                 <!-- Bintang Toedjoe -->
                 <div class="client-logo-card flex items-center justify-center h-24 sm:h-24 md:h-28 px-3 sm:px-4 bg-white border border-gray-100 rounded-xl md:rounded-2xl">
                     <img src="https://bintang7.com/images/home/bintang-toejoe.png"
-                         alt="Bintang Toedjoe" class="client-logo-img h-8 sm:h-10 w-auto max-w-[85%] object-contain" loading="lazy">
+                         alt="Logo mitra korporat Bintang Toedjoe" class="client-logo-img h-8 sm:h-10 w-auto max-w-[85%] object-contain" loading="lazy">
                 </div>
             </div>
         </div>
@@ -408,7 +498,7 @@
             <div class="flex flex-col md:flex-row justify-between gap-y-8 sm:gap-y-10">
                 <div>
                     <a href="index.html" class="footer-logo-link mb-4" aria-label="PERADA GROUP — Home">
-                        <img src="assets/logo-new-perada.png" alt="PERADA GROUP" class="footer-logo" width="1000" height="486" loading="lazy">
+                        <img src="assets/logo-new-perada.png" alt="Logo PERADA GROUP di footer website" class="footer-logo" width="1000" height="486" loading="lazy">
                     </a>
                     <p class="max-w-xs text-sm">Solusi logistik dan SDM terpercaya untuk pertumbuhan bisnis Anda.</p>
                 </div>

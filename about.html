@@ -34,6 +34,83 @@
 
     <script defer data-domain="perada.net" src="https://plausible.io/js/script.js"></script>
 
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": ["Organization", "LocalBusiness"],
+          "@id": "https://perada.net/#organization",
+          "name": "PERADA GROUP",
+          "alternateName": ["PT Perkasa Adi Yuda", "PT Perdana Adi Yuda"],
+          "url": "https://perada.net/",
+          "logo": "https://perada.net/assets/logo-new-perada.png",
+          "image": "https://perada.net/assets/logo-new-perada.png",
+          "description": "PERADA GROUP terdiri dari PT Perkasa Adi Yuda (logistik) dan PT Perdana Adi Yuda (SDM) yang berkolaborasi memberikan solusi end-to-end bagi mitra bisnis di Indonesia.",
+          "foundingDate": "2018",
+          "email": "info@perada.co.id",
+          "telephone": "+62-812-1414-4214",
+          "priceRange": "$$",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Plaza Summarecon Bekasi Lt. 7, Jl. Boulevard Ahmad Yani, Sentra Summarecon",
+            "addressLocality": "Bekasi",
+            "addressRegion": "Jawa Barat",
+            "postalCode": "17142",
+            "addressCountry": "ID"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -6.2414,
+            "longitude": 107.0021
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "Indonesia"
+          }
+        },
+        {
+          "@type": "AboutPage",
+          "@id": "https://perada.net/about#webpage",
+          "url": "https://perada.net/about",
+          "name": "Tentang Kami | PERADA GROUP",
+          "description": "Kenali sejarah, nilai, dan dua entitas spesialis PERADA GROUP yang melayani kebutuhan logistik dan sumber daya manusia di Indonesia.",
+          "isPartOf": { "@id": "https://perada.net/#website" },
+          "about": { "@id": "https://perada.net/#organization" },
+          "inLanguage": "id-ID"
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://perada.net/#website",
+          "url": "https://perada.net/",
+          "name": "PERADA GROUP",
+          "publisher": { "@id": "https://perada.net/#organization" },
+          "inLanguage": "id-ID"
+        },
+        {
+          "@type": "Service",
+          "@id": "https://perada.net/#logistics-service",
+          "name": "Logistics & Freight Forwarding",
+          "serviceType": "Freight Forwarding",
+          "provider": { "@id": "https://perada.net/#organization" },
+          "areaServed": "Indonesia",
+          "url": "https://perada.net/services",
+          "description": "Layanan freight forwarding, export-import, customs clearance, pengiriman alat berat, batubara, dan supply chain dengan jangkauan nasional melalui PT Perkasa Adi Yuda."
+        },
+        {
+          "@type": "Service",
+          "@id": "https://perada.net/#hr-service",
+          "name": "Outsourcing & HR Solutions",
+          "serviceType": "Human Resource Outsourcing",
+          "provider": { "@id": "https://perada.net/#organization" },
+          "areaServed": "Indonesia",
+          "url": "https://perada.net/services",
+          "description": "Layanan outsourcing tenaga kerja, rekrutmen, pelatihan, event management, dan pengadaan perlengkapan kantor melalui PT Perdana Adi Yuda."
+        }
+      ]
+    }
+    </script>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -45,7 +122,7 @@
         <div class="max-w-7xl mx-auto">
             <div class="navbar-inner flex items-center justify-between">
                 <a href="index.html" class="brand-logo-link" aria-label="PERADA GROUP — Home">
-                    <img src="assets/logo-new-perada.png" alt="PERADA GROUP" class="brand-logo" width="1000" height="486" fetchpriority="high">
+                    <img src="assets/logo-new-perada.png" alt="Logo PERADA GROUP — solusi logistik dan SDM terintegrasi Indonesia" class="brand-logo" width="1000" height="486" fetchpriority="high">
                 </a>
 
                 <div class="navbar-menu hidden md:flex items-center text-sm font-medium">
@@ -84,8 +161,8 @@
     <!-- Hero -->
     <section class="bg-[#0A2540] text-white py-14 sm:py-20">
         <div class="max-w-5xl mx-auto px-5 sm:px-6 text-center">
-            <h1 class="text-3xl sm:text-4xl md:text-6xl font-semibold tracking-tight leading-tight mb-4">Membangun Kepercayaan<br>Sejak 2018</h1>
-            <p class="text-base sm:text-lg md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">PERADA GROUP terdiri dari dua entitas spesialis yang saling melengkapi untuk memberikan solusi end-to-end bagi mitra bisnis di seluruh Indonesia.</p>
+            <h1 class="text-3xl sm:text-4xl md:text-6xl font-semibold tracking-tight leading-tight mb-4">Tentang PERADA GROUP</h1>
+            <p class="text-base sm:text-lg md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">Membangun kepercayaan sejak 2018 — dua entitas spesialis yang saling melengkapi untuk memberikan solusi end-to-end bagi mitra bisnis di seluruh Indonesia.</p>
         </div>
     </section>
 
@@ -137,7 +214,7 @@
     <footer class="bg-gray-900 text-white/70 text-sm py-8 sm:py-10">
         <div class="max-w-7xl mx-auto px-5 sm:px-6 text-center">
             <a href="index.html" class="footer-logo-link mb-4 mx-auto" aria-label="PERADA GROUP — Home">
-                <img src="assets/logo-new-perada.png" alt="PERADA GROUP" class="footer-logo mx-auto" width="1000" height="486" loading="lazy">
+                <img src="assets/logo-new-perada.png" alt="Logo PERADA GROUP di footer website" class="footer-logo mx-auto" width="1000" height="486" loading="lazy">
             </a>
             <p>© 2026 PERADA GROUP. All rights reserved.</p>
         </div>
