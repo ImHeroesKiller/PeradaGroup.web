@@ -1,4 +1,4 @@
-const CACHE_NAME = 'perada-group-v17';
+const CACHE_NAME = 'perada-group-v18';
 
 const PRECACHE_URLS = [
     '/offline.html',
@@ -45,7 +45,85 @@ const PRECACHE_URLS = [
     '/assets/icon-perada-new-maskable-512.png',
     '/assets/logo-perkasa-new.png',
     '/assets/logo-perdana-new.png',
+    '/assets/hero/about-hero.webp',
+    '/assets/hero/about-hero.jpg',
+    '/assets/hero/services-hero.webp',
+    '/assets/hero/services-hero.jpg',
+    '/assets/hero/contact-hero.webp',
+    '/assets/hero/contact-hero.jpg',
+    '/assets/hero/careers-hero.webp',
+    '/assets/hero/careers-hero.jpg',
 ];
+
+const STATIC_PATH_PREFIXES = ['/assets/', '/css/', '/js/', '/data/'];
+
+function isNavigationRequest(request) {
+    return request.mode === 'navigate' ||
+        (request.headers.get('accept') || '').includes('text/html');
+}
+
+function isSameOrigin(url) {
+    return url.origin === self.location.origin;
+}
+
+function isStaticAsset(pathname) {
+    return STATIC_PATH_PREFIXES.some((prefix) => pathname.startsWith(prefix));
+}
+
+function isCacheableResponse(response) {
+    return response && response.status === 200 && response.type === 'basic';
+}
+
+function putInCache(request, response) {
+    caches.open(CACHE_NAME).then((cache) => cache.put(request, response));
+}
+
+function staleWhileRevalidate(request) {
+    return caches.open(CACHE_NAME).then(async (cache) => {
+        const cached = await cache.match(request);
+
+        const networkFetch = fetch(request)
+            .then((response) => {
+                if (isCacheableResponse(response)) {
+                    putInCache(request, response.clone());
+                }
+                return response;
+            })
+            .catch(() => null);
+
+        if (cached) {
+            networkFetch.catch(() => {});
+            return cached;
+        }
+
+        const networkResponse = await networkFetch;
+        if (networkResponse) return networkResponse;
+
+        return caches.match('/offline.html');
+    });
+}
+
+function networkFirstNavigation(request) {
+    return fetch(request)
+        .then((response) => {
+            if (isCacheableResponse(response)) {
+                putInCache(request, response.clone());
+            }
+            return response;
+        })
+        .catch(async () => {
+            const cachedPage = await caches.match(request);
+            if (cachedPage) return cachedPage;
+
+            const offlinePage = await caches.match('/offline.html');
+            if (offlinePage) return offlinePage;
+
+            return new Response('Anda sedang offline.', {
+                status: 503,
+                headers: { 'Content-Type': 'text/plain; charset=utf-8' },
+            });
+        });
+}
 
 self.addEventListener('install', (event) => {
     event.waitUntil(
@@ -67,53 +145,18 @@ self.addEventListener('activate', (event) => {
     self.clients.claim();
 });
 
-function isNavigationRequest(request) {
-    return request.mode === 'navigate' ||
-        (request.headers.get('accept') || '').includes('text/html');
-}
-
 self.addEventListener('fetch', (event) => {
     if (event.request.method !== 'GET') return;
 
+    const url = new URL(event.request.url);
+    if (!isSameOrigin(url)) return;
+
     if (isNavigationRequest(event.request)) {
-        event.respondWith(
-            fetch(event.request)
-                .then((response) => {
-                    if (response && response.status === 200) {
-                        const copy = response.clone();
-                        caches.open(CACHE_NAME).then((cache) => cache.put(event.request, copy));
-                    }
-                    return response;
-                })
-                .catch(async () => {
-                    const cachedPage = await caches.match(event.request);
-                    if (cachedPage) return cachedPage;
-
-                    const offlinePage = await caches.match('/offline.html');
-                    if (offlinePage) return offlinePage;
-
-                    return new Response('Anda sedang offline.', {
-                        status: 503,
-                        headers: { 'Content-Type': 'text/plain; charset=utf-8' },
-                    });
-                })
-        );
+        event.respondWith(networkFirstNavigation(event.request));
         return;
     }
 
-    event.respondWith(
-        caches.match(event.request).then((cached) => {
-            if (cached) return cached;
-
-            return fetch(event.request)
-                .then((response) => {
-                    if (response && response.status === 200) {
-                        const copy = response.clone();
-                        caches.open(CACHE_NAME).then((cache) => cache.put(event.request, copy));
-                    }
-                    return response;
-                })
-                .catch(() => caches.match('/offline.html'));
-        })
-    );
+    if (isStaticAsset(url.pathname)) {
+        event.respondWith(staleWhileRevalidate(event.request));
+    }
 });
