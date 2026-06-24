@@ -58,6 +58,11 @@
                 linkedin: 'LinkedIn PERADA GROUP',
             },
             copyright: '© 2026 PERADA GROUP. Seluruh hak cipta dilindungi.',
+            creator: {
+                prefix: 'Dibuat & Dirancang oleh ',
+                linkText: 'AWI',
+                suffix: '',
+            },
         },
     };
 

@@ -44,6 +44,11 @@
       "email": "PERADA GROUP Email",
       "linkedin": "PERADA GROUP LinkedIn"
     },
-    "copyright": "© 2026 PERADA GROUP. All rights reserved."
+    "copyright": "© 2026 PERADA GROUP. All rights reserved.",
+    "creator": {
+      "prefix": "Created & Designed by ",
+      "linkText": "AWI",
+      "suffix": ""
+    }
   }
 }
