@@ -9,7 +9,7 @@
 
     const CHATBOT_CONFIG = {
         apiKey: null, // Will be injected via window.__GEMINI_KEY__
-        apiUrl: 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent',
+        apiUrl: 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-lite:generateContent',
         systemPrompt: `You are a helpful customer service chatbot for PERADA GROUP, an Indonesian logistics and business operations company. 
 
 PERADA GROUP provides integrated solutions through two specialized entities:
