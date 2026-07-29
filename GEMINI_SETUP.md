@@ -74,10 +74,10 @@ export GEMINI_KEY="your-api-key-here"
 ```
 
 ## API Configuration
-- **Model**: Gemini 1.5 Flash Lite (ultra-fast, cost-effective)
+- **Model**: Gemini 3.5 Flash Lite
 - **Max Tokens**: 500 per response
 - **Temperature**: 0.7 (balanced creativity and consistency)
-- **Endpoint**: `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-lite:generateContent`
+- **Endpoint**: `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent`
 
 ## Troubleshooting
 
