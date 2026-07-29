@@ -701,11 +701,7 @@
         </div>
     </div>
 
-    <!-- Floating WhatsApp Button -->
-    <a id="wa-float" href="https://wa.me/6281214144214" target="_blank" rel="noopener"
-       class="wa-float fixed bottom-6 right-4 sm:right-6 z-50 flex items-center justify-center w-14 h-14 bg-[#25D366] hover:bg-[#128C7E] text-white rounded-full shadow-2xl transition-all duration-300 hover:scale-110 active:scale-95">
-        <i class="fa-brands fa-whatsapp text-3xl"></i>
-    </a>
+    <!-- Gemini Chatbot Widget (replaces WhatsApp) -->
 
     <script src="js/content-loader.js"></script>
     <script src="js/i18n.js"></script>
@@ -713,6 +709,11 @@
     <script src="js/hero-content.js"></script>
     <script src="js/homepage-content.js"></script>
     <script src="js/pwa.js"></script>
+    <script src="js/gemini-chatbot.js"></script>
+    <script>
+        // Inject Gemini API key from Vercel environment
+        window.__GEMINI_KEY__ = '${GEMINI_KEY}' || null;
+    </script>
     <script>
         // Tailwind script
         function initializeTailwind() {
