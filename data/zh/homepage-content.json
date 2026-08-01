@@ -9,7 +9,7 @@
   "advantages": {
     "eyebrow": "为何选择 PERADA GROUP",
     "title": "为您的业务创造价值的优势",
-    "intro": "一个集团，两大专长 — 专为需要速度、合规与服务一体化的企业需求而设计。",
+    "intro": "一个集团，两大专长，并以 OMS 与 ARAH 数字化 UVP 加持 — 为需要速度、合规、一体化服务与运营可见性的企业伙伴而设计。",
     "items": [
       {
         "icon": "fa-layer-group",
@@ -27,9 +27,68 @@
         "description": "从货运代理到人力资源、活动与设施管理 — 同一服务生态。"
       },
       {
-        "icon": "fa-award",
-        "title": "资质齐全与资深团队",
-        "description": "认证、许可与专业团队并重，深谙企业客户需求。"
+        "icon": "fa-display",
+        "title": "数字化 UVP：OMS 与 ARAH",
+        "description": "订单、结算、车队与现场问题由内部平台管理 — 合作伙伴运营更透明、可衡量。"
+      }
+    ]
+  },
+  "platforms": {
+    "eyebrow": "数字化 UVP",
+    "title": "不只是服务交付 — 运营看得见、管得住、可衡量",
+    "intro": "PERADA GROUP 的独特价值主张：物流专长与运营支持，叠加内部数字平台。合作伙伴获得的不只是现场执行，还有管控力、透明度与清晰的运营数据。",
+    "narrative": "在仍依赖人工报表与分散协调的行业中，我们自建系统，使订单、车队、结算与现场问题走同一条工作流。结果是：决策更快、风险更可控，运营团队与企业客户的责任边界更清晰。",
+    "proofPoints": [
+      {
+        "icon": "fa-link",
+        "title": "端到端一体化",
+        "description": "从订单到车队执行 — 而非彼此割裂的系统孤岛。"
+      },
+      {
+        "icon": "fa-gauge-high",
+        "title": "实时可见",
+        "description": "运营状态当下可见 — 不必等到次日汇总。"
+      },
+      {
+        "icon": "fa-shield-halved",
+        "title": "受控访问与留痕",
+        "description": "内部平台受保护访问，运营更安全、可追溯。"
+      }
+    ],
+    "ctaLabel": "进入平台",
+    "closing": "OMS 与 ARAH 证明 PERADA GROUP 不止于传统服务交付 — 我们以持续强化的数字基础设施运营现代物流。",
+    "items": [
+      {
+        "id": "oms",
+        "icon": "fa-boxes-stacked",
+        "name": "OMS PERADA",
+        "tagline": "订单管理系统",
+        "entity": "PT Perkasa Adi Yuda",
+        "description": "PERADA 物流订单管理系统：集中接单、推进、结算与汇报。避免商务与运营流程散落在表格或零散聊天中。",
+        "features": [
+          "订单与作业状态集中管理",
+          "结算与报表轨迹更清晰",
+          "从接单到开票的完整流程",
+          "为服务绩效评估提供数据基础"
+        ],
+        "href": "https://oms.perada.net/login",
+        "accent": "blue"
+      },
+      {
+        "id": "arah",
+        "icon": "fa-truck-fast",
+        "name": "ARAH Fleet",
+        "tagline": "车队智能平台",
+        "entity": "运营指挥中心",
+        "description": "车队与现场运营管控平台：在统一指挥中心监控车辆、关联订单、运营资金与现场问题 — 让主管与经理依据实时状况决策，而非凭假设。",
+        "features": [
+          "车队与运营实时监控",
+          "订单与现场问题管控",
+          "运营资金可见性",
+          "指挥中心加速响应"
+        ],
+        "href": "https://arah-app-delta.vercel.app/",
+        "accent": "emerald"
       }
     ]
   },
@@ -151,7 +210,7 @@
   },
   "finalCta": {
     "title": "准备与 PERADA GROUP 合作？",
-    "intro": "我们的团队随时协助您的物流与人力资源需求。了解更多或直接联系我们。",
+    "intro": "从物流、人力资源、合法进口到 OMS 与 ARAH 数字化 UVP — 我们的团队随时为您设计可衡量的解决方案。",
     "buttons": {
       "contact": { "label": "联系我们", "href": "contact.html", "icon": "fa-envelope", "primary": true },
       "about": { "label": "关于我们", "href": "about.html" },

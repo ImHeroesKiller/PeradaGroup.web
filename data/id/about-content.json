@@ -66,6 +66,12 @@
         "iconTone": "brand",
         "title": "Perizinan Lengkap & Tim Berpengalaman",
         "description": "Didukung perizinan yang memadai serta tim profesional berpengalaman, memberikan kepercayaan bagi klien korporat maupun investor."
+      },
+      {
+        "icon": "fa-display",
+        "iconTone": "brand",
+        "title": "UVP Digital: OMS & ARAH Fleet",
+        "description": "Kami tidak hanya menjanjikan eksekusi lapangan. OMS mengelola order dan billing logistik secara terpusat, sementara ARAH Fleet memberi visibilitas armada, dana operasional, dan isu lapangan secara real-time — sehingga operasi mitra lebih transparan, terukur, dan terkendali."
       }
     ],
     "cta": {

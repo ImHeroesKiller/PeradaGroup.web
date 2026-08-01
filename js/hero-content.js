@@ -5,7 +5,7 @@
 
     const FALLBACK = {
         headline: 'Satu Mitra. Dua Keahlian. Solusi Terintegrasi.',
-        valueProposition: 'Logistik andal dari PT Perkasa Adi Yuda dan solusi operasional lengkap dari PT Perdana Adi Yuda, termasuk layanan impor sebagai importir berijin resmi.',
+        valueProposition: 'Kami mengintegrasikan logistik PT Perkasa Adi Yuda dengan dukungan operasional dan importir resmi PT Perdana Adi Yuda. Unique value proposition kami: eksekusi lapangan yang andal, diperkuat OMS untuk order & billing serta ARAH Fleet untuk kendali armada real-time — sehingga operasi mitra lebih transparan, terukur, dan terkendali.',
         primaryCta: 'Diskusikan Kebutuhan Anda',
         secondaryCta: 'Lihat Layanan Lengkap',
     };

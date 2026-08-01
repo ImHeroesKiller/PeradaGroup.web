@@ -66,6 +66,12 @@
         "iconTone": "brand",
         "title": "Full Licensing & Experienced Team",
         "description": "Backed by proper licenses and a professional team trusted by corporate clients and investors."
+      },
+      {
+        "icon": "fa-display",
+        "iconTone": "brand",
+        "title": "Digital UVP: OMS & ARAH Fleet",
+        "description": "We don’t stop at field execution. OMS centralizes logistics orders and billing, while ARAH Fleet provides real-time visibility of fleet, operational funds, and field issues — so partner operations stay transparent, measurable, and under control."
       }
     ],
     "cta": {

@@ -75,6 +75,11 @@
       "id": "estimasi-biaya",
       "question": "Bagaimana struktur biaya dan estimasi penawaran layanan?",
       "answer": "Biaya disusun berdasarkan <strong>ruang lingkup layanan</strong>, volume, lokasi, dan kompleksitas operasional. Setelah konsultasi awal, tim kami memberikan estimasi atau penawaran tertulis yang transparan. Untuk proyek berkelanjutan, tersedia skema kerja sama yang disesuaikan dengan kebutuhan dan skala klien."
+    },
+    {
+      "id": "uvp-digital",
+      "question": "Apa Unique Value Proposition (UVP) digital PERADA GROUP?",
+      "answer": "Selain eksekusi lapangan, PERADA GROUP mengoperasikan platform digital internal sebagai UVP. <strong>OMS PERADA</strong> (<a href=\"https://oms.perada.net/login\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"faq-link\">oms.perada.net</a>) mengelola order, billing, dan laporan logistik secara terpusat. <strong>ARAH Fleet</strong> (<a href=\"https://arah-app-delta.vercel.app/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"faq-link\">ARAH Command Center</a>) memantau armada, order terkait, dana operasional, dan isu lapangan secara real-time. Kombinasi ini membuat operasi mitra lebih transparan, terukur, dan terkendali."
     }
   ]
 }

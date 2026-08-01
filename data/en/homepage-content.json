@@ -9,7 +9,7 @@
   "advantages": {
     "eyebrow": "WHY PERADA GROUP",
     "title": "Advantages That Deliver Value for Your Business",
-    "intro": "One group with two strong specializations — built for corporate needs that demand speed, compliance, and integrated services.",
+    "intro": "One group with two strong specializations, amplified by our OMS & ARAH digital UVP — built for corporate partners that need speed, compliance, integrated services, and operational visibility.",
     "items": [
       {
         "icon": "fa-layer-group",
@@ -27,9 +27,68 @@
         "description": "From freight forwarding to HR, events, and facility management — in one service ecosystem."
       },
       {
-        "icon": "fa-award",
-        "title": "Full Licensing & Experienced Team",
-        "description": "Backed by certifications, licenses, and professionals who understand corporate needs."
+        "icon": "fa-display",
+        "title": "Digital UVP: OMS & ARAH",
+        "description": "Orders, billing, fleet, and field issues run on internal platforms — so partner operations stay transparent and measurable."
+      }
+    ]
+  },
+  "platforms": {
+    "eyebrow": "DIGITAL UVP",
+    "title": "Not Just Service Delivery — Operations You Can See & Measure",
+    "intro": "PERADA GROUP’s unique value proposition: logistics expertise and operational support, powered by internal digital platforms. Partners gain execution in the field plus control, transparency, and clean operational data.",
+    "narrative": "In an industry that still leans on manual reports and fragmented coordination, we built our own systems so orders, fleet, billing, and field issues follow one workflow. The result: faster decisions, better risk control, and clearer accountability for operations teams and corporate partners.",
+    "proofPoints": [
+      {
+        "icon": "fa-link",
+        "title": "End-to-end integration",
+        "description": "From order to fleet execution — not disconnected system silos."
+      },
+      {
+        "icon": "fa-gauge-high",
+        "title": "Real-time visibility",
+        "description": "Operational status is visible now — not only in tomorrow’s recap."
+      },
+      {
+        "icon": "fa-shield-halved",
+        "title": "Controlled access & trail",
+        "description": "Internal platforms with protected access for safer operations."
+      }
+    ],
+    "ctaLabel": "Enter Platform",
+    "closing": "OMS and ARAH prove PERADA GROUP goes beyond conventional service delivery — we run modern logistics on digital infrastructure we keep strengthening.",
+    "items": [
+      {
+        "id": "oms",
+        "icon": "fa-boxes-stacked",
+        "name": "OMS PERADA",
+        "tagline": "Order Management System",
+        "entity": "PT Perkasa Adi Yuda",
+        "description": "PERADA’s logistics order management system: one hub to receive, progress, bill, and report work. Built so commercial and operational flows don’t break across spreadsheets or scattered chats.",
+        "features": [
+          "Centralized orders & job status",
+          "Cleaner billing and reporting trail",
+          "Workflow from intake to invoicing",
+          "Data foundation for service performance reviews"
+        ],
+        "href": "https://oms.perada.net/login",
+        "accent": "blue"
+      },
+      {
+        "id": "arah",
+        "icon": "fa-truck-fast",
+        "name": "ARAH Fleet",
+        "tagline": "Fleet Intelligence Platform",
+        "entity": "Operational Command Center",
+        "description": "Fleet and field operations control platform: monitor units, related orders, operational funds, and field issues from one command center — so supervisors and managers decide from live conditions, not assumptions.",
+        "features": [
+          "Real-time fleet & ops monitoring",
+          "Order and field-issue control",
+          "Visibility of operational funds",
+          "Command center for faster response"
+        ],
+        "href": "https://arah-app-delta.vercel.app/",
+        "accent": "emerald"
       }
     ]
   },
@@ -151,7 +210,7 @@
   },
   "finalCta": {
     "title": "Ready to Partner with PERADA GROUP?",
-    "intro": "Our team is ready to help with your logistics and HR needs. Learn more or contact us directly.",
+    "intro": "From logistics, HR, and licensed imports to our OMS & ARAH digital UVP — our team is ready to design measurable solutions for your business.",
     "buttons": {
       "contact": { "label": "Contact Us", "href": "contact.html", "icon": "fa-envelope", "primary": true },
       "about": { "label": "About Us", "href": "about.html" },

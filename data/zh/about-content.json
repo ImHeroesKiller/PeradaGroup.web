@@ -66,6 +66,12 @@
         "iconTone": "brand",
         "title": "资质齐全与资深团队",
         "description": "完善的许可资质与专业团队，赢得企业客户与投资者的信赖。"
+      },
+      {
+        "icon": "fa-display",
+        "iconTone": "brand",
+        "title": "数字化 UVP：OMS 与 ARAH Fleet",
+        "description": "我们不止于现场执行。OMS 集中管理物流订单与结算，ARAH Fleet 实时呈现车队、运营资金与现场问题 — 让合作伙伴的运营更透明、可衡量、可控。"
       }
     ],
     "cta": {

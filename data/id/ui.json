@@ -16,7 +16,7 @@
   "footer": {
     "brandAriaLabel": "PERADA GROUP — Beranda",
     "logoAlt": "Logo PERADA GROUP di footer website",
-    "tagline": "Satu grup, dua spesialisasi — solusi logistik dan operasional bisnis terintegrasi untuk mitra korporat di Indonesia.",
+    "tagline": "Satu grup, dua spesialisasi — logistik & operasional bisnis terintegrasi, diperkuat UVP digital OMS dan ARAH Fleet untuk mitra korporat di Indonesia.",
     "entitiesLine": "PT Perdana Adi Yuda · PT Perkasa Adi Yuda",
     "headings": {
       "company": "PERUSAHAAN",
@@ -27,6 +27,7 @@
     "links": {
       "about": "Tentang Kami",
       "advantages": "Keunggulan Kami",
+      "platforms": "UVP Digital",
       "services": "Layanan",
       "careers": "Karir",
       "faq": "FAQ",
@@ -34,6 +35,8 @@
       "hr": "Human Capital & Outsourcing",
       "import": "Import & Trading (API-U)",
       "event": "Event & Facility Support",
+      "oms": "OMS PERADA",
+      "arah": "ARAH Fleet",
       "contact": "Kontak Kami",
       "address": "Plaza Summarecon Bekasi Lt. 7",
       "privacy": "Kebijakan Privasi",

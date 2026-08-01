@@ -14,12 +14,59 @@
         advantages: {
             eyebrow: 'MENGAPA PERADA GROUP',
             title: 'Keunggulan yang Memberi Nilai bagi Bisnis Anda',
-            intro: 'Satu grup dengan dua spesialisasi kuat — dirancang untuk kebutuhan korporat yang membutuhkan kecepatan, kepatuhan, dan integrasi layanan.',
+            intro: 'Satu grup dengan dua spesialisasi kuat, diperkuat UVP digital OMS & ARAH — dirancang untuk mitra korporat yang membutuhkan kecepatan, kepatuhan, integrasi layanan, dan visibilitas operasional.',
             items: [
                 { icon: 'fa-layer-group', title: 'Dua Spesialisasi, Satu Grup', description: 'Logistik dan operasional bisnis terkoordinasi dalam satu mitra — lebih cepat, lebih efisien.' },
                 { icon: 'fa-file-shield', title: 'Importir Berijin Resmi (API-U)', description: 'PT Perdana Adi Yuda memiliki API-U untuk mendukung kebutuhan impor klien secara legal dan terstruktur.' },
                 { icon: 'fa-gears', title: 'Solusi Operasional Terintegrasi', description: 'Dari freight forwarding hingga SDM, event, dan facility management — dalam satu ekosistem layanan.' },
-                { icon: 'fa-award', title: 'Perizinan Lengkap & Tim Berpengalaman', description: 'Didukung sertifikasi, perizinan, dan tim profesional yang memahami kebutuhan korporat.' },
+                { icon: 'fa-display', title: 'UVP Digital: OMS & ARAH', description: 'Order, billing, armada, dan isu lapangan dikelola lewat platform internal — operasi mitra lebih transparan dan terukur.' },
+            ],
+        },
+        platforms: {
+            eyebrow: 'UVP DIGITAL',
+            title: 'Bukan Hanya Layanan — Operasi yang Bisa Dilihat & Diukur',
+            intro: 'Unique Value Proposition PERADA GROUP: keahlian logistik dan dukungan operasional digabung dengan platform digital internal. Mitra tidak hanya mendapat eksekusi lapangan, tetapi juga kendali, transparansi, dan jejak data yang rapi.',
+            narrative: 'Di industri yang sering mengandalkan laporan manual dan koordinasi terpisah, kami membangun sistem sendiri agar order, armada, billing, dan isu lapangan berada dalam satu alur kerja. Hasilnya: keputusan lebih cepat, risiko lebih terkendali, dan akuntabilitas yang lebih jelas bagi tim operasional maupun mitra korporat.',
+            proofPoints: [
+                { icon: 'fa-link', title: 'Terintegrasi end-to-end', description: 'Dari order hingga eksekusi armada — bukan silo sistem yang terpisah.' },
+                { icon: 'fa-gauge-high', title: 'Visibilitas real-time', description: 'Status operasi terlihat, bukan menunggu rekap harian.' },
+                { icon: 'fa-shield-halved', title: 'Akses & jejak kerja terkontrol', description: 'Platform internal dengan akses terlindungi untuk operasional yang lebih aman.' },
+            ],
+            ctaLabel: 'Masuk ke Platform',
+            closing: 'OMS dan ARAH adalah bukti bahwa PERADA GROUP tidak berhenti di layanan konvensional — kami mengoperasikan logistik modern dengan infrastruktur digital yang terus diperkuat.',
+            items: [
+                {
+                    id: 'oms',
+                    icon: 'fa-boxes-stacked',
+                    name: 'OMS PERADA',
+                    tagline: 'Order Management System',
+                    entity: 'PT Perkasa Adi Yuda',
+                    description: 'Sistem manajemen order logistik PERADA: satu pusat untuk menerima, menindaklanjuti, menagih, dan melaporkan pekerjaan. Dirancang agar alur komersial dan operasional tidak putus di spreadsheet atau chat terpisah.',
+                    features: [
+                        'Order & status pekerjaan terpusat',
+                        'Billing dan jejak laporan lebih rapi',
+                        'Alur kerja dari penerimaan hingga penagihan',
+                        'Dasar data untuk evaluasi performa layanan',
+                    ],
+                    href: 'https://oms.perada.net/login',
+                    accent: 'blue',
+                },
+                {
+                    id: 'arah',
+                    icon: 'fa-truck-fast',
+                    name: 'ARAH Fleet',
+                    tagline: 'Fleet Intelligence Platform',
+                    entity: 'Command Center Operasional',
+                    description: 'Platform kendali armada dan operasi lapangan: pantau unit, order terkait, dana operasional, dan isu di lapangan dari satu command center. Membantu supervisor dan manajer mengambil keputusan berdasarkan kondisi aktual, bukan asumsi.',
+                    features: [
+                        'Monitoring armada & operasi real-time',
+                        'Kendali order dan isu lapangan',
+                        'Visibilitas dana operasional',
+                        'Pusat komando untuk respons lebih cepat',
+                    ],
+                    href: 'https://arah-app-delta.vercel.app/',
+                    accent: 'emerald',
+                },
             ],
         },
         solutions: {
@@ -75,7 +122,7 @@
         },
         finalCta: {
             title: 'Siap Bermitra dengan PERADA GROUP?',
-            intro: 'Tim kami siap membantu kebutuhan logistik dan SDM Anda. Pelajari lebih lanjut atau hubungi kami langsung.',
+            intro: 'Dari logistik, SDM, impor resmi, hingga UVP digital OMS & ARAH — tim kami siap merancang solusi yang terukur untuk bisnis Anda.',
             buttons: {
                 contact: { label: 'Hubungi Kami', href: 'contact.html', icon: 'fa-envelope', primary: true },
                 about: { label: 'Tentang Kami', href: 'about.html' },
@@ -135,6 +182,76 @@
                 <p class="mt-3 text-gray-600 max-w-2xl mx-auto text-base leading-relaxed px-1">${advantages.intro || ''}</p>
             </div>
             <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 max-w-6xl mx-auto">${itemsHtml}</div>`;
+    }
+
+    function platformCard(item, ctaLabel) {
+        const accent = item.accent === 'emerald' ? 'emerald' : 'blue';
+        const borderHover = accent === 'emerald' ? 'hover:border-emerald-300' : 'hover:border-blue-300';
+        const checkClass = accent === 'emerald' ? 'text-emerald-600' : 'text-blue-600';
+        const iconBg = accent === 'emerald'
+            ? 'w-12 h-12 flex items-center justify-center rounded-xl bg-emerald-50 text-emerald-700 mb-4'
+            : 'w-12 h-12 flex items-center justify-center rounded-xl bg-[#0A2540]/5 text-[#0A2540] mb-4';
+        const href = item.href || '#';
+        const label = ctaLabel || 'Masuk ke Platform';
+        const featuresHtml = (item.features || []).map((feature) => `
+            <li class="flex items-start gap-x-2">
+                <i class="fa-solid fa-check ${checkClass} text-xs mt-1.5 shrink-0"></i>
+                <span>${feature}</span>
+            </li>`).join('');
+        const entityHtml = item.entity
+            ? `<div class="text-xs font-medium text-gray-400 mb-3">${item.entity}</div>`
+            : '';
+
+        return `<article class="service-card flex flex-col bg-white border border-gray-200 rounded-2xl p-5 sm:p-6 md:p-8 ${borderHover} transition-all h-full">
+            <div class="${iconBg}">
+                <i class="fa-solid ${item.icon || 'fa-display'} text-lg" aria-hidden="true"></i>
+            </div>
+            <div class="text-xs font-semibold tracking-wider uppercase text-gray-400 mb-1">${item.tagline || ''}</div>
+            <h3 class="text-xl font-semibold text-[#0A2540] mb-1">${item.name || ''}</h3>
+            ${entityHtml}
+            <p class="text-base text-gray-600 leading-relaxed mb-5">${item.description || ''}</p>
+            ${featuresHtml ? `<ul class="text-sm sm:text-base text-gray-700 space-y-2 mb-6 flex-1">${featuresHtml}</ul>` : '<div class="flex-1"></div>'}
+            <a href="${href}" target="_blank" rel="noopener noreferrer" class="btn-tap inline-flex items-center justify-center gap-x-2 self-start text-sm font-semibold text-white bg-[#0A2540] hover:bg-[#1E3A5F] px-5 py-2.5 rounded-xl transition-colors">
+                ${label}
+                <i class="fa-solid fa-arrow-up-right-from-square text-xs opacity-80" aria-hidden="true"></i>
+            </a>
+        </article>`;
+    }
+
+    function renderPlatforms(platforms) {
+        const root = document.getElementById('homepage-platforms');
+        if (!root || !platforms) return;
+
+        const itemsHtml = (platforms.items || []).map((item) => platformCard(item, platforms.ctaLabel)).join('');
+        const proofHtml = (platforms.proofPoints || []).map((point) => `
+            <div class="bg-white/80 border border-gray-200 rounded-2xl p-5 text-left">
+                <div class="w-10 h-10 flex items-center justify-center rounded-xl bg-[#0A2540]/5 text-[#0A2540] mb-3">
+                    <i class="fa-solid ${point.icon || 'fa-circle-check'}" aria-hidden="true"></i>
+                </div>
+                <h3 class="font-semibold text-[#0A2540] mb-1.5 text-base">${point.title || ''}</h3>
+                <p class="text-sm text-gray-600 leading-relaxed">${point.description || ''}</p>
+            </div>`).join('');
+
+        const narrativeHtml = platforms.narrative
+            ? `<p class="mt-4 text-gray-600 max-w-3xl mx-auto text-base leading-relaxed px-1">${platforms.narrative}</p>`
+            : '';
+        const proofSectionHtml = proofHtml
+            ? `<div class="grid sm:grid-cols-3 gap-4 max-w-5xl mx-auto mb-8 md:mb-10">${proofHtml}</div>`
+            : '';
+        const closingHtml = platforms.closing
+            ? `<p class="mt-8 md:mt-10 text-center text-base text-gray-600 max-w-3xl mx-auto leading-relaxed px-1">${platforms.closing}</p>`
+            : '';
+
+        root.innerHTML = `
+            <div class="text-center mb-8 md:mb-10">
+                <div class="text-xs sm:text-sm font-semibold tracking-[2px] sm:tracking-[3px] text-blue-600 mb-2">${platforms.eyebrow || ''}</div>
+                <h2 id="platforms-heading" class="text-2xl sm:text-3xl md:text-4xl tracking-tight font-semibold corporate-blue leading-snug">${platforms.title || ''}</h2>
+                <p class="mt-3 text-gray-600 max-w-3xl mx-auto text-base leading-relaxed px-1">${platforms.intro || ''}</p>
+                ${narrativeHtml}
+            </div>
+            ${proofSectionHtml}
+            <div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">${itemsHtml}</div>
+            ${closingHtml}`;
     }
 
     function solutionEntityCard(entity, moreLabel) {
@@ -280,6 +397,7 @@
     function applyContent(content) {
         renderStats(content.stats);
         renderAdvantages(content.advantages);
+        renderPlatforms(content.platforms);
         renderSolutions(content.solutions);
         renderClients(content.clients);
         renderTestimonials(content.testimonials);

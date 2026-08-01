@@ -75,6 +75,11 @@
       "id": "estimasi-biaya",
       "question": "服务费用如何构成和估算？",
       "answer": "费用根据 <strong>服务范围</strong>、数量、地点及运营复杂度确定。初步咨询后，团队提供透明估算或书面报价。对于持续项目，合作方案根据客户需求和规模定制。"
+    },
+    {
+      "id": "uvp-digital",
+      "question": "PERADA GROUP 的数字化独特价值主张（UVP）是什么？",
+      "answer": "除现场执行外，PERADA GROUP 以内部数字平台作为 UVP。<strong>OMS PERADA</strong>（<a href=\"https://oms.perada.net/login\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"faq-link\">oms.perada.net</a>）集中管理物流订单、结算与报表。<strong>ARAH Fleet</strong>（<a href=\"https://arah-app-delta.vercel.app/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"faq-link\">ARAH 指挥中心</a>）实时监控车队、关联订单、运营资金与现场问题。两者结合，使合作伙伴运营更透明、可衡量、可控。"
     }
   ]
 }

@@ -75,6 +75,11 @@
       "id": "estimasi-biaya",
       "question": "How are service fees structured and estimated?",
       "answer": "Fees are based on <strong>service scope</strong>, volume, location, and operational complexity. After an initial consultation, our team provides a transparent estimate or written quotation. For ongoing projects, partnership schemes are tailored to client needs and scale."
+    },
+    {
+      "id": "uvp-digital",
+      "question": "What is PERADA GROUP’s digital Unique Value Proposition (UVP)?",
+      "answer": "Beyond field execution, PERADA GROUP runs internal digital platforms as a UVP. <strong>OMS PERADA</strong> (<a href=\"https://oms.perada.net/login\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"faq-link\">oms.perada.net</a>) centralizes logistics orders, billing, and reporting. <strong>ARAH Fleet</strong> (<a href=\"https://arah-app-delta.vercel.app/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"faq-link\">ARAH Command Center</a>) monitors fleet, related orders, operational funds, and field issues in real time. Together, they make partner operations more transparent, measurable, and controllable."
     }
   ]
 }

@@ -16,7 +16,7 @@
   "footer": {
     "brandAriaLabel": "PERADA GROUP — Home",
     "logoAlt": "PERADA GROUP logo in website footer",
-    "tagline": "One group, two specializations — integrated logistics and business operations for corporate partners in Indonesia.",
+    "tagline": "One group, two specializations — integrated logistics and business operations, powered by OMS & ARAH Fleet digital UVP for corporate partners in Indonesia.",
     "entitiesLine": "PT Perdana Adi Yuda · PT Perkasa Adi Yuda",
     "headings": {
       "company": "COMPANY",
@@ -27,6 +27,7 @@
     "links": {
       "about": "About Us",
       "advantages": "Our Strengths",
+      "platforms": "Digital UVP",
       "services": "Services",
       "careers": "Careers",
       "faq": "FAQ",
@@ -34,6 +35,8 @@
       "hr": "Human Capital & Outsourcing",
       "import": "Import & Trading (API-U)",
       "event": "Event & Facility Support",
+      "oms": "OMS PERADA",
+      "arah": "ARAH Fleet",
       "contact": "Contact Us",
       "address": "Plaza Summarecon Bekasi, 7th Floor",
       "privacy": "Privacy Policy",

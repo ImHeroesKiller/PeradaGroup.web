@@ -9,7 +9,7 @@
   "advantages": {
     "eyebrow": "MENGAPA PERADA GROUP",
     "title": "Keunggulan yang Memberi Nilai bagi Bisnis Anda",
-    "intro": "Satu grup dengan dua spesialisasi kuat — dirancang untuk kebutuhan korporat yang membutuhkan kecepatan, kepatuhan, dan integrasi layanan.",
+    "intro": "Satu grup dengan dua spesialisasi kuat, diperkuat UVP digital OMS & ARAH — dirancang untuk mitra korporat yang membutuhkan kecepatan, kepatuhan, integrasi layanan, dan visibilitas operasional.",
     "items": [
       {
         "icon": "fa-layer-group",
@@ -27,9 +27,68 @@
         "description": "Dari freight forwarding hingga SDM, event, dan facility management — dalam satu ekosistem layanan."
       },
       {
-        "icon": "fa-award",
-        "title": "Perizinan Lengkap & Tim Berpengalaman",
-        "description": "Didukung sertifikasi, perizinan, dan tim profesional yang memahami kebutuhan korporat."
+        "icon": "fa-display",
+        "title": "UVP Digital: OMS & ARAH",
+        "description": "Order, billing, armada, dan isu lapangan dikelola lewat platform internal — operasi mitra lebih transparan dan terukur."
+      }
+    ]
+  },
+  "platforms": {
+    "eyebrow": "UVP DIGITAL",
+    "title": "Bukan Hanya Layanan — Operasi yang Bisa Dilihat & Diukur",
+    "intro": "Unique Value Proposition PERADA GROUP: keahlian logistik dan dukungan operasional digabung dengan platform digital internal. Mitra tidak hanya mendapat eksekusi lapangan, tetapi juga kendali, transparansi, dan jejak data yang rapi.",
+    "narrative": "Di industri yang sering mengandalkan laporan manual dan koordinasi terpisah, kami membangun sistem sendiri agar order, armada, billing, dan isu lapangan berada dalam satu alur kerja. Hasilnya: keputusan lebih cepat, risiko lebih terkendali, dan akuntabilitas yang lebih jelas bagi tim operasional maupun mitra korporat.",
+    "proofPoints": [
+      {
+        "icon": "fa-link",
+        "title": "Terintegrasi end-to-end",
+        "description": "Dari order hingga eksekusi armada — bukan silo sistem yang terpisah."
+      },
+      {
+        "icon": "fa-gauge-high",
+        "title": "Visibilitas real-time",
+        "description": "Status operasi terlihat, bukan menunggu rekap harian."
+      },
+      {
+        "icon": "fa-shield-halved",
+        "title": "Akses & jejak kerja terkontrol",
+        "description": "Platform internal dengan akses terlindungi untuk operasional yang lebih aman."
+      }
+    ],
+    "ctaLabel": "Masuk ke Platform",
+    "closing": "OMS dan ARAH adalah bukti bahwa PERADA GROUP tidak berhenti di layanan konvensional — kami mengoperasikan logistik modern dengan infrastruktur digital yang terus diperkuat.",
+    "items": [
+      {
+        "id": "oms",
+        "icon": "fa-boxes-stacked",
+        "name": "OMS PERADA",
+        "tagline": "Order Management System",
+        "entity": "PT Perkasa Adi Yuda",
+        "description": "Sistem manajemen order logistik PERADA: satu pusat untuk menerima, menindaklanjuti, menagih, dan melaporkan pekerjaan. Dirancang agar alur komersial dan operasional tidak putus di spreadsheet atau chat terpisah.",
+        "features": [
+          "Order & status pekerjaan terpusat",
+          "Billing dan jejak laporan lebih rapi",
+          "Alur kerja dari penerimaan hingga penagihan",
+          "Dasar data untuk evaluasi performa layanan"
+        ],
+        "href": "https://oms.perada.net/login",
+        "accent": "blue"
+      },
+      {
+        "id": "arah",
+        "icon": "fa-truck-fast",
+        "name": "ARAH Fleet",
+        "tagline": "Fleet Intelligence Platform",
+        "entity": "Command Center Operasional",
+        "description": "Platform kendali armada dan operasi lapangan: pantau unit, order terkait, dana operasional, dan isu di lapangan dari satu command center. Membantu supervisor dan manajer mengambil keputusan berdasarkan kondisi aktual, bukan asumsi.",
+        "features": [
+          "Monitoring armada & operasi real-time",
+          "Kendali order dan isu lapangan",
+          "Visibilitas dana operasional",
+          "Pusat komando untuk respons lebih cepat"
+        ],
+        "href": "https://arah-app-delta.vercel.app/",
+        "accent": "emerald"
       }
     ]
   },
@@ -151,7 +210,7 @@
   },
   "finalCta": {
     "title": "Siap Bermitra dengan PERADA GROUP?",
-    "intro": "Tim kami siap membantu kebutuhan logistik dan SDM Anda. Pelajari lebih lanjut atau hubungi kami langsung.",
+    "intro": "Dari logistik, SDM, impor resmi, hingga UVP digital OMS & ARAH — tim kami siap merancang solusi yang terukur untuk bisnis Anda.",
     "buttons": {
       "contact": { "label": "Hubungi Kami", "href": "contact.html", "icon": "fa-envelope", "primary": true },
       "about": { "label": "Tentang Kami", "href": "about.html" },
